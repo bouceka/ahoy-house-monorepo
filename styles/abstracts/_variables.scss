@@ -1,0 +1,79 @@
+:root {
+
+// COLORS
+// Primary Color
+--color-primary-25: #e8f7f5;
+--color-primary-50: #d2efec;
+--color-primary-100: #a8e1da;
+--color-primary-200: #7fd2c8;
+--color-primary-300: #55c3b6;
+--color-primary-400: #3caa9d;
+--color-primary-500: #35978c;
+--color-primary-600: #30887e;
+--color-primary-700: #256a62;
+--color-primary-800: #205b54;
+--color-primary-900: #1b4b46;
+
+// Secondary Color
+--color-secondary-25: #fefcf6;
+--color-secondary-50: #fbf5e5;
+--color-secondary-100: #f8eed3;
+--color-secondary-200: #f4e6bd;
+--color-secondary-300: #efd89a;
+--color-secondary-400: #ebd084;
+--color-secondary-500: #e7c56a;
+--color-secondary-600: #e1b847;
+--color-secondary-700: #dcac28;
+--color-secondary-800: #cea022;
+--color-secondary-900: #af881d;
+
+// Warning Color
+--color-warning-25: #fdf3f1;
+--color-warning-50: #fce8e3;
+--color-warning-100: #f7c5ba;
+--color-warning-200: #f29f8c;
+--color-warning-300: #ed795e;
+--color-warning-400: #e95a3a;
+--color-warning-500: #e53f1a;
+--color-warning-600: #e13e19;
+--color-warning-700: #dc3c18;
+--color-warning-800: #d83b18;
+--color-warning-900: #cf3917;
+
+// neutral Color
+--color-neutral-25: #f6f7f8;
+--color-neutral-50: #edeff2;
+--color-neutral-100: #d0d3dd;
+--color-neutral-200: #b0b5c4;
+--color-neutral-300: #8f96ae;
+--color-neutral-400: #78819b;
+--color-neutral-500: #606b8a;
+--color-neutral-600: #545d78;
+--color-neutral-700: #454d63;
+--color-neutral-800: #363c4e;
+--color-neutral-900: #252a37;
+
+// White Text Color
+--text-white-primary: #ffffff;
+--text-white-secondary: rgba(255, 255, 255, 0.6);
+--text-white-disabled: rgba(255, 255, 255, 0.38);
+
+// Black Text Color
+--text-black-primary: rgba(0, 0, 0, 0.88);
+--text-black-secondary: rgba(20, 0, 0, 0.6);
+--text-black-disabled: rgba(0, 0, 0, 0.38);
+
+// Background Color
+--background-color-primary: #fff;
+--background-color-secondary: #f8f9fb;
+--background-color-tertiary: #f3f4f7;
+
+// FONT
+--default-font-size: 1.6rem;
+
+// GRID
+--grid-width: 115.2rem;
+--gutter-vertical: 8rem;
+--gutter-vertical-small: 6rem;
+--gutter-horizontal: 6rem;
+}
