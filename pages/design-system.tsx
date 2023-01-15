@@ -2,6 +2,7 @@ import Head from 'next/head';
 import Image from 'next/image';
 import { Inter } from '@next/font/google';
 import styles from '../styles/Home.module.css';
+import { Button } from '../components/button/button.component';
 
 const inter = Inter({ subsets: ['latin'] });
 
@@ -56,6 +57,12 @@ export default function Home() {
           <div className='caption--large'>Caption Text Large</div>
           <div className='caption--medium--bold'>Caption Text Medium Bold</div>
           <div className='caption--medium'>Caption Text Medium</div>
+        </div>
+
+        <div className='card' style={{ marginTop: '10px' }}>
+          <Button className='primary'>Primary</Button>
+          <Button className='secondary'>Primary</Button>
+          <Button className='outline'>Primary</Button>
         </div>
       </main>
     </>
