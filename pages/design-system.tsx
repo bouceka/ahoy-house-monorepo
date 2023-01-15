@@ -3,6 +3,7 @@ import Image from 'next/image';
 import { Inter } from '@next/font/google';
 import styles from '../styles/Home.module.css';
 import { Button } from '../components/button/button.component';
+import { Header } from '../components/header/header.component';
 
 const inter = Inter({ subsets: ['latin'] });
 
@@ -16,7 +17,7 @@ export default function Home() {
         <link rel='icon' href='/favicon.ico' />
       </Head>
       <main className={styles.main}>
-        <div className='card'>
+        <div className='card' style={{ margin: '10px' }}>
           <div className='display--large--bold'>Display Text Large BoldThe quick</div>
           <div className='display--large'>Display Text Large Semibold</div>
           <div className='display--large--medium'>Display Text Large Medium</div>
@@ -24,7 +25,7 @@ export default function Home() {
           <div className='display--small'>Display Text Small Semibold</div>
           <div className='display--small--medium'>Display Text Medium</div>
         </div>
-        <div className='card' style={{ marginTop: '10px' }}>
+        <div className='card' style={{ margin: '10px' }}>
           <h1 className='heading--bold'>Heading 1 Bold</h1>
           <h1 className='heading'>Heading 1</h1>
           <h1 className='heading--medium'>Heading 1 Medium</h1>
@@ -44,7 +45,7 @@ export default function Home() {
           <h6 className='heading'>Heading 6</h6>
           <h6 className='heading--medium'>Heading 6 Medium</h6>
         </div>
-        <div className='card' style={{ marginTop: '10px' }}>
+        <div className='card' style={{ margin: '10px' }}>
           <p className='paragraph--large--bold'>Body Text Large Bold</p>
           <p className='paragraph--large'>Body Text Large</p>
           <p className='paragraph--medium--bold'>Body Text Medium Bold</p>
@@ -52,17 +53,19 @@ export default function Home() {
           <p className='paragraph--small--bold'>Body Text Small Bold</p>
           <p className='paragraph--small'>Body Text Small</p>
         </div>
-        <div className='card' style={{ marginTop: '10px' }}>
+        <div className='card' style={{ margin: '10px'}}>
           <div className='caption--large--bold'>Caption Text Large Bold</div>
           <div className='caption--large'>Caption Text Large</div>
           <div className='caption--medium--bold'>Caption Text Medium Bold</div>
           <div className='caption--medium'>Caption Text Medium</div>
         </div>
 
-        <div className='card' style={{ marginTop: '10px' }}>
-          <Button className='primary'>Primary</Button>
-          <Button className='secondary'>Primary</Button>
-          <Button className='outline'>Primary</Button>
+        <Header />
+        <div className='card' style={{ margin: '10px', backgroundColor:"#ddd"  }}>
+          <Button href='/' role="button" className='primary'>Primary</Button>
+          <Button  href='/'  role="button" className='secondary'>Primary</Button>
+          <Button href='/'  role="button" className='outline'>Primary</Button>
+          <Button href='/'  role="button" className='link'>Primary</Button>
         </div>
       </main>
     </>
