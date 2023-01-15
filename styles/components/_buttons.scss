@@ -60,6 +60,7 @@
     transition: background-color 0.2s;
     padding: 1rem .4rem .6rem .4rem;
     transition: border .2s;
+    @extend .paragraph--large;
     &:hover {
       color: var(--color-secondary-400);
       border-bottom: 2px solid var(--color-secondary-400);

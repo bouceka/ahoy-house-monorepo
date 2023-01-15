@@ -4,6 +4,7 @@ import { Inter } from '@next/font/google';
 import styles from '../styles/Home.module.css';
 import { Button } from '../components/button/button.component';
 import { Header } from '../components/header/header.component';
+import Link from 'next/link';
 
 const inter = Inter({ subsets: ['latin'] });
 
@@ -53,7 +54,7 @@ export default function Home() {
           <p className='paragraph--small--bold'>Body Text Small Bold</p>
           <p className='paragraph--small'>Body Text Small</p>
         </div>
-        <div className='card' style={{ margin: '10px'}}>
+        <div className='card' style={{ margin: '10px' }}>
           <div className='caption--large--bold'>Caption Text Large Bold</div>
           <div className='caption--large'>Caption Text Large</div>
           <div className='caption--medium--bold'>Caption Text Medium Bold</div>
@@ -61,11 +62,19 @@ export default function Home() {
         </div>
 
         <Header />
-        <div className='card' style={{ margin: '10px', backgroundColor:"#ddd"  }}>
-          <Button href='/' role="button" className='primary'>Primary</Button>
-          <Button  href='/'  role="button" className='secondary'>Primary</Button>
-          <Button href='/'  role="button" className='outline'>Primary</Button>
-          <Button href='/'  role="button" className='link'>Primary</Button>
+        <div className='card' style={{ margin: '10px', backgroundColor: '#8b8b8b' }}>
+          <Button role='button' className='primary'>
+            Primary
+          </Button>
+          <Button role='button' className='secondary'>
+            Primary
+          </Button>
+          <Button role='button' className='outline'>
+            Primary
+          </Button>
+          <Link href='/' className='btn--link'>
+            Primary
+          </Link>
         </div>
       </main>
     </>
