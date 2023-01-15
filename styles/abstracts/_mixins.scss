@@ -96,19 +96,19 @@
 
 @mixin paragraph($type, $fontSize, $lineHeight) {
   .paragraph--#{$type} {
-    @include body-text(400, $fontSize, $lineHeight);
+    @include body-text(500, $fontSize, $lineHeight);
 
     &--bold {
-      @include body-text(500, $fontSize, $lineHeight);
+      @include body-text(900, $fontSize, $lineHeight);
     }
   }
 }
 @mixin caption($type, $fontSize, $lineHeight) {
   .caption--#{$type} {
-    @include body-text(400, $fontSize, $lineHeight);
+    @include body-text(500, $fontSize, $lineHeight);
 
     &--bold {
-      @include body-text(500, $fontSize, $lineHeight);
+      @include body-text(900, $fontSize, $lineHeight);
     }
   }
 }
