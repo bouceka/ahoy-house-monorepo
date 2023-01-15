@@ -1,0 +1,20 @@
+@use '../abstracts' as *;
+
+
+@include display('large', 5.2rem, 5.6rem);
+@include display('small', 4.4rem, 4.8rem);
+
+@include heading('h1', 4rem, 4.8rem);
+@include heading('h2', 3.6rem, 4.4rem);
+@include heading('h3', 3.2rem, 3.6rem);
+@include heading('h4', 2.8rem, 3.6rem);
+@include heading('h5', 2.4rem, 3.2rem);
+@include heading('h6', 2rem, 2.8rem);
+
+@include caption('large', 1.2rem, 1.6rem);
+@include caption('medium', 1rem, 1.4rem);
+@include caption('small', 0.8rem, 1.2rem);
+
+@include paragraph('large', 1.8rem, 2.8rem);
+@include paragraph('medium', 1.6rem, 2.4rem);
+@include paragraph('small', 1.4rem, 2rem);
