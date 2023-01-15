@@ -1,0 +1,114 @@
+@mixin clearfix {
+  &::after {
+    content: '';
+    display: table;
+    clear: both;
+  }
+}
+
+@mixin absCenter {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+@mixin body-text($fontWeight, $fontSize, $lineHeight, $heading: false) {
+  font-weight: $fontWeight;
+  font-size: $fontSize;
+  line-height: $lineHeight;
+
+  @if $heading {
+    font-family: 'Halant', 'Times New Roman', Times, serif;
+  } @else {
+    font-family: 'Avenir', Tahoma, Geneva, Verdana, sans-serif;
+  }
+}
+
+@mixin background-opacity($color, $opacity) {
+  background-color: rgba($color, $opacity);
+}
+
+@mixin respond($breakpoint) {
+  @if $breakpoint == small-phone {
+    @media only screen and (max-width: 25em) {
+      @content;
+    } //400px
+  }
+  @if $breakpoint == phone {
+    @media only screen and (max-width: 37.5em) {
+      @content;
+    } //600px
+  }
+  @if $breakpoint == tab-port {
+    @media only screen and (max-width: 60em) {
+      @content;
+    } //960px
+  }
+  @if $breakpoint == tab-land {
+    @media only screen and (max-width: 64em) {
+      @content;
+    } //1024px
+  }
+  @if $breakpoint == desktop {
+    @media only screen and (max-width: 75em) {
+      @content;
+    } //1200px
+  }
+  @if $breakpoint == big-desktop {
+    @media only screen and (min-width: 96em) {
+      @content;
+    } //1536
+  }
+}
+
+/**************************/
+/* TYPOGRAPHY */
+/**************************/
+
+@mixin heading($selector, $fontSize, $lineHeight) {
+  #{$selector}.heading {
+    @include body-text(600, $fontSize, $lineHeight, true);
+
+    &--bold {
+      @include body-text(700, $fontSize, $lineHeight, true);
+    }
+
+    &--medium {
+      @include body-text(500, $fontSize, $lineHeight, true);
+    }
+  }
+}
+
+@mixin display($type, $fontSize, $lineHeight) {
+  .display--#{$type} {
+    @include body-text(600, $fontSize, $lineHeight, true);
+
+    &--bold {
+      @include body-text(700, $fontSize, $lineHeight, true);
+    }
+
+    &--medium {
+      @include body-text(500, $fontSize, $lineHeight, true);
+    }
+  }
+}
+
+@mixin paragraph($type, $fontSize, $lineHeight) {
+  .paragraph--#{$type} {
+    @include body-text(400, $fontSize, $lineHeight);
+
+    &--bold {
+      @include body-text(500, $fontSize, $lineHeight);
+    }
+  }
+}
+@mixin caption($type, $fontSize, $lineHeight) {
+  .caption--#{$type} {
+    @include body-text(400, $fontSize, $lineHeight);
+
+    &--bold {
+      @include body-text(500, $fontSize, $lineHeight);
+    }
+  }
+}
