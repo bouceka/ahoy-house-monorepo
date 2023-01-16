@@ -6,6 +6,7 @@ import { Button } from '../components/button/button.component';
 import { Header } from '../components/header/header.component';
 import Link from 'next/link';
 import { FeatureCard } from '../components/feature-card/feature-card.component';
+import { PropertyCard } from '../components/property-card/property-card.component';
 
 const inter = Inter({ subsets: ['latin'] });
 
@@ -97,6 +98,9 @@ export default function Home() {
             alt='Cafe meeting'
           />
         </div>
+      <div className='card' style={{ margin: '10px', display:"flex", gap:"2.4rem" }}>
+        <PropertyCard/>
+      </div>
       </main>
     </>
   );
