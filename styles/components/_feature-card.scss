@@ -1,0 +1,14 @@
+.feature-card {
+  display: flex;
+  flex-direction: column;
+  gap: 1.6rem;
+  position: relative;
+  max-width: 35.2rem;
+  & img {
+    border-radius: 5px;
+  }
+
+  & > h5 {
+    height: 6.4rem;
+  }
+}

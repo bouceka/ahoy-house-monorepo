@@ -5,6 +5,7 @@ import styles from '../styles/Home.module.css';
 import { Button } from '../components/button/button.component';
 import { Header } from '../components/header/header.component';
 import Link from 'next/link';
+import { FeatureCard } from '../components/feature-card/feature-card.component';
 
 const inter = Inter({ subsets: ['latin'] });
 
@@ -75,6 +76,26 @@ export default function Home() {
           <Link href='/' className='btn--link'>
             Primary
           </Link>
+        </div>
+        <div className='card' style={{ margin: '10px', display:"flex", gap:"2.4rem" }}>
+          <FeatureCard
+            description='Highly professional standards ensure sleep quality and cleanliness.'
+            title='Boutique experience in a private room'
+            imgUrl='/static/illustrations/bed.jpg'
+            alt='Cafe meeting'
+          />
+          <FeatureCard
+            description='Fully furnished a student room in each house and dedicated from the rush part.'
+            title='Study places in all houses'
+            imgUrl='/static/illustrations/cafe.jpg'
+            alt='Cafe meeting'
+          />
+          <FeatureCard
+            description='Meeting rooms used for business occasions or formal negotiations.'
+            title='Spaces for business meetings'
+            imgUrl='/static/illustrations/meeting-room.jpg'
+            alt='Cafe meeting'
+          />
         </div>
       </main>
     </>
