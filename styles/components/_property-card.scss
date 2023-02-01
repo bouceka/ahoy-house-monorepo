@@ -1,4 +1,7 @@
 .property-card {
+  & .content {
+  
+  }
 }
 
 .property-carousel {
@@ -40,7 +43,7 @@
     width: 4.8rem;
     border-radius: 50%;
     border: 1px solid var(--color-primary-800);
-    color: var(--color-neutral-200);
+    background-color: rgba(255, 255, 255, 0.8);
     bottom: 40%;
     cursor: pointer;
     z-index: 12;
@@ -57,11 +60,36 @@
     }
 
     &:hover {
-      background-color: var(--color-neutral-100);
+      background-color: var(--text-white-primary);
     }
 
     &:active {
-      background-color: var(--color-neutral-100);
+      background-color: var(--color-neutral-50);
+    }
+  }
+}
+
+.carousel-progress-bar {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 3.2rem;
+  padding: 0.4rem;
+  background-color: rgba(255, 255, 255, 0.8);
+  display: flex;
+  gap: 0.8rem;
+  border-radius: 5px;
+  z-index: 12;
+
+  & > span {
+    height: 0.8rem;
+    width: 0.8rem;
+    border-radius: 50%;
+    display: inline-block;
+    background-color: var(--text-black-disabled);
+    &.active {
+      background-color: var(--color-primary-800);
+      box-shadow: 0 0 0 2px rgba(#205b54, 50%);
     }
   }
 }
