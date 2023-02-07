@@ -1,0 +1,238 @@
+# ------------------------------------------------------
+# THIS FILE WAS AUTOMATICALLY GENERATED (DO NOT MODIFY)
+# ------------------------------------------------------
+
+type Amenity {
+  id: ID!
+  name: String!
+  type: String!
+  properties: [Property!]!
+}
+
+type Property {
+  id: ID!
+  title: String!
+  numberRooms: Float!
+  postCode: String!
+  numberBaths: Float!
+  size: Float!
+  name: String!
+  description: String!
+  address: String!
+  isActive: Boolean!
+  rooms: [Room!]
+  amenities: [Amenity!]!
+  images: [Image!]
+}
+
+type Image {
+  id: ID!
+  url: String!
+  publicId: String!
+  createdAt: DateTime!
+  propertyId: String!
+  roomId: String!
+  property: Property!
+  room: Room!
+}
+
+"""
+A date-time string at UTC, such as 2019-12-03T09:54:33Z, compliant with the date-time format.
+"""
+scalar DateTime
+
+type Room {
+  id: ID!
+  name: String!
+  capacity: Float!
+  amenities: String!
+  description: String!
+  size: Float!
+  propertyId: ID!
+  property: Property!
+  occupiedRooms: [OccupiedRoom!]!
+  images: [Image!]!
+}
+
+type OccupiedRoom {
+  id: ID!
+  dateIn: DateTime!
+  dateOut: DateTime!
+  bookingId: String!
+  booking: Booking!
+  roomId: String!
+  room: Room!
+}
+
+type User {
+  id: ID!
+  email: String!
+  password: String!
+  firstName: String!
+  lastName: String!
+  role: String!
+  phone: String!
+  isActive: Boolean!
+  tenant: Tenant
+}
+
+type Tenant {
+  id: ID!
+  profession: String!
+  nationality: String!
+  gender: String!
+  currentAddress: String!
+  personalId: String!
+  personalIdType: String!
+  age: Float!
+  userId: ID!
+  user: User!
+  bookings: [Booking!]
+}
+
+type Booking {
+  id: ID!
+  specialRequest: String!
+  checkIn: DateTime!
+  checkOut: DateTime!
+  cost: Float!
+  numberTenants: Float!
+  occupiedRooms: [OccupiedRoom!]!
+  tenantId: String!
+  tenant: Tenant!
+}
+
+type LoginResponse {
+  accessToken: String!
+  user: User!
+}
+
+type Query {
+  getAllProperties: [Property!]!
+  getAllActiveProperties: [Property!]!
+  getAllActivePropertiesPag(skip: Int, take: Int): [Property!]!
+  getActiveProperty(id: String!): Property!
+  getAllRooms: [Room!]!
+  getRoom(id: ID!): Room!
+  getAllAvailableRooms(dateIn: DateTime!, dateOut: DateTime!): [Room!]!
+  getUser(id: String!): User!
+  getAllUsers: [User!]!
+  getAllActiveUsers: [User!]!
+  getAllActiveTenants: [User!]!
+  getAllBookingsByTenant(tenantId: String!): [Booking!]!
+  getAllBookings: [Booking!]!
+  getBooking(id: String!): Booking!
+  getAllImages: [Image!]!
+  getImage(id: ID!): Image!
+  tenant(id: String!): Tenant!
+}
+
+type Mutation {
+  createProperty(createPropertyInput: CreatePropertyInput!): Property!
+  deleteProperty(id: String!): Property!
+  updateProperty(updatePropertyInput: UpdatePropertyInput!): Property!
+  deactivateProperty(id: String!): Property!
+  activateProperty(id: String!): Property!
+  createRoom(createRoomInput: CreateRoomInput!): Room!
+  removeRoom(id: Int!): Room!
+  deleteUser(id: String!): User!
+  login(loginUserInput: LoginUserInput!): LoginResponse!
+  createAdminUser(signupUserInput: SignupUserInput!): User!
+  updateUser(id: String!, updateUserInput: UpdateUserInput!): User!
+  deactivateUser(id: String!): User!
+  activateUser(id: String!): User!
+  checkRoomAvailability(roomId: String!, dateIn: DateTime!, dateOut: DateTime!): [OccupiedRoom!]!
+  checkAllRoomsAvailability(dateIn: DateTime!, dateOut: DateTime!): [OccupiedRoom!]!
+  createBooking(createBookingInput: CreateBookingInput!): Booking!
+  uploadImage(file: Upload!, createImageInput: CreateImageInput!): Image!
+  removeImage(id: Int!): Image!
+  createTenant(createTenantInput: CreateTenantInput!): Tenant!
+  removeAmenity(id: Int!): Amenity!
+}
+
+input CreatePropertyInput {
+  title: String!
+  description: String!
+  numberBaths: Float!
+  name: String!
+  numberRooms: Float!
+  size: Float!
+  postCode: String!
+  address: String!
+  isActive: Boolean!
+}
+
+input UpdatePropertyInput {
+  title: String
+  description: String
+  numberBaths: Float
+  name: String
+  numberRooms: Float
+  size: Float
+  postCode: String
+  address: String
+  isActive: Boolean
+  id: ID!
+}
+
+input CreateRoomInput {
+  name: String!
+  capacity: Float!
+  amenities: String!
+  description: String!
+  size: Float!
+  propertyId: ID!
+}
+
+input LoginUserInput {
+  email: String!
+  password: String!
+}
+
+input SignupUserInput {
+  email: String!
+  password: String!
+  firstName: String!
+  lastName: String!
+}
+
+input UpdateUserInput {
+  email: String
+  password: String
+  firstName: String
+  lastName: String
+  role: String
+  id: ID!
+}
+
+input CreateBookingInput {
+  cost: Float!
+  specialRequest: String
+  checkIn: DateTime!
+  checkOut: DateTime!
+  numberTenants: Float!
+  tenantId: ID!
+  roomId: ID!
+}
+
+"""The `Upload` scalar type represents a file upload."""
+scalar Upload
+
+input CreateImageInput {
+  propertyId: String!
+  roomId: String
+}
+
+input CreateTenantInput {
+  email: String!
+  password: String!
+  firstName: String!
+  lastName: String!
+  profession: String!
+  nationality: String!
+  gender: String!
+  currentAddress: String!
+  personalId: String!
+  personalIdType: String!
+  age: Float!
+}
