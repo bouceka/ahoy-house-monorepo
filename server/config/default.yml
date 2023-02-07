@@ -1,0 +1,14 @@
+server:
+  port: 3000
+
+db:
+  type: 'postgres'
+  port: 5432
+  database: 'ahoy-house-dev'
+
+jwt:
+  expiresIn: 3600
+
+image:
+  UPLOAD_LOCATION: './uploads'
+  MAX_FILE_SIZE: 5000000
