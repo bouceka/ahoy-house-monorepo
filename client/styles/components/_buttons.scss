@@ -7,9 +7,7 @@
     padding: 1rem 2.4rem;
     @extend .paragraph--large;
     cursor: pointer;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    display: inline-block;
     border: none;
     text-decoration: none;
     border-radius: 5px;
