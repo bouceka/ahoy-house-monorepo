@@ -11,7 +11,7 @@ import { Action } from '../components/action/action.component';
 
 const inter = Inter({ subsets: ['latin'] });
 
-export default function DesignSystem() {
+export default function Home() {
   return (
     <>
       <Head>

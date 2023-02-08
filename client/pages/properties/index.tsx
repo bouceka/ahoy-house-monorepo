@@ -1,17 +1,17 @@
 import Head from 'next/head';
 import Image from 'next/image';
 import { Inter } from '@next/font/google';
-import styles from '../styles/Home.module.css';
-import { Button } from '../components/button/button.component';
-import { Header } from '../components/header/header.component';
+import styles from '../../styles/Home.module.css';
 import Link from 'next/link';
-import { FeatureCard } from '../components/feature-card/feature-card.component';
-import { PropertyCard } from '../components/property-card/property-card.component';
-import { Action } from '../components/action/action.component';
+import { Header } from '../../components/header/header.component';
+import { Action } from '../../components/action/action.component';
+import { Button } from '../../components/button/button.component';
+import { FeatureCard } from '../../components/feature-card/feature-card.component';
+import { PropertyCard } from '../../components/property-card/property-card.component';
 
 const inter = Inter({ subsets: ['latin'] });
 
-export default function DesignSystem() {
+export default function Properties() {
   return (
     <>
       <Head>

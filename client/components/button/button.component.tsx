@@ -1,4 +1,6 @@
 // @flow
+
+// DEPRECATED!!!!!!
 import * as React from 'react';
 interface Props extends React.ButtonHTMLAttributes<HTMLButtonElement> {
   children: React.ReactNode;
