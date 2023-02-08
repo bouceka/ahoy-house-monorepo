@@ -2,6 +2,7 @@
 import * as React from 'react';
 import { PropertyImageCarousel } from './property-image-carousel.component';
 import Image from 'next/image';
+import { Action } from '../action/action.component';
 
 export interface ImageData {
   id: string;
@@ -64,24 +65,28 @@ export const PropertyCard = (props: Props) => {
   return (
     <div className='property-card'>
       <PropertyImageCarousel imageData={PROPERTY_DATA.images} />
-      <div className='content'>
+      <div className='property-card__content'>
         <h4 className='heading--bold'>{PROPERTY_DATA.title}</h4>
         <p className='paragraph--large'>
           <Image src='/icons/star-intersect.svg' width='24' height='24' alt='' /> {PROPERTY_DATA.rating}
         </p>
-        <p className='paragraph--medium'>
-          {' '}
-          <Image src='/icons/bed.svg' width='32' height='32' alt='' />
-          {PROPERTY_DATA.bedroomNo}
-        </p>
-        <p className='paragraph--medium'>
-          <Image src='/icons/bath.svg' width='32' height='32' alt='' />
-          {PROPERTY_DATA.bathroomNo}
-        </p>
-        <p className='paragraph--small'>
+        <div className='property-card__row'>
+          <div className='property-card__icon'>
+            <Image src='/icons/bed.svg' width='32' height='32' alt='' />
+            <span className='paragraph--medium'>{PROPERTY_DATA.bedroomNo} Bedrooms</span>
+          </div>
+          <div className='property-card__icon'>
+            <Image src='/icons/bath.svg' width='32' height='32' alt='' />
+            <span className='paragraph--medium'>{PROPERTY_DATA.bathroomNo} Bathrooms</span>
+          </div>
+        </div>
+        <div className='property-card__icon'>
           <Image src='/icons/venue/outline.svg' width='24' height='24' alt='' />
-          {PROPERTY_DATA.address}
-        </p>
+          <span className='paragraph--small'>{PROPERTY_DATA.address}</span>
+        </div>
+        <Action as='link' styleType='primary' className='property-card__btn' href='#!'>
+          Detail
+        </Action>
       </div>
     </div>
   );
