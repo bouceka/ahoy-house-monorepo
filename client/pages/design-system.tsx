@@ -1,8 +1,6 @@
 import Head from 'next/head';
 import Image from 'next/image';
 import { Inter } from '@next/font/google';
-import styles from '../styles/Home.module.css';
-import { Button } from '../components/button/button.component';
 import { Header } from '../components/header/header.component';
 import Link from 'next/link';
 import { FeatureCard } from '../components/feature-card/feature-card.component';
@@ -20,7 +18,7 @@ export default function DesignSystem() {
         <meta name='viewport' content='width=device-width, initial-scale=1' />
         <link rel='icon' href='/favicon.ico' />
       </Head>
-      <main className={styles.main}>
+      <main >
         <div className='card' style={{ margin: '10px' }}>
           <div className='display--large--bold'>Display Text Large BoldThe quick</div>
           <div className='display--large'>Display Text Large Semibold</div>
@@ -72,9 +70,9 @@ export default function DesignSystem() {
           <Action as='link' href='#!' styleType='secondary'>
             Primary
           </Action>
-          <Button role='button' className='outline'>
+          <Action as='button' role='button' styleType='outline'>
             Primary
-          </Button>
+          </Action>
           <Link href='/' className='btn--link'>
             Primary
           </Link>
