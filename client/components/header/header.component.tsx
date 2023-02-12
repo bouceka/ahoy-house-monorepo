@@ -2,13 +2,13 @@
 import Image from 'next/image';
 import Link from 'next/link';
 import * as React from 'react';
-import { Button } from '../button/button.component';
+import { Action } from '../action/action.component';
 type Props = {
   position: 'static' | 'relative' | 'absolute' | 'sticky' | 'fixed';
   imageExtend: boolean;
   type: 'transparent' | 'solid';
 };
-export const Header = ({ position, imageExtend }: Props) => {
+export const Header = ({ position, imageExtend = false, type = 'solid' }: Props) => {
   return (
     <>
       <header className='header' style={{ position: position }}>
@@ -40,7 +40,9 @@ export const Header = ({ position, imageExtend }: Props) => {
               </Link>
             </li>
             <li>
-              <Button className='secondary'>Sign Up</Button>
+              <Action as='button' styleType='secondary'>
+                Sign Up
+              </Action>
             </li>
           </ul>
         </nav>

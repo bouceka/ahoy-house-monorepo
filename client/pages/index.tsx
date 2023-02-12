@@ -8,6 +8,7 @@ import Link from 'next/link';
 import { FeatureCard } from '../components/feature-card/feature-card.component';
 import { PropertyCard } from '../components/property-card/property-card.component';
 import { Action } from '../components/action/action.component';
+import { Hero } from '../components/hero/hero.component';
 
 const inter = Inter({ subsets: ['latin'] });
 
@@ -20,8 +21,10 @@ export default function Home() {
         <meta name='viewport' content='width=device-width, initial-scale=1' />
         <link rel='icon' href='/favicon.ico' />
       </Head>
-      <Header position='sticky' />
-      <main className={styles.main}></main>
+      <Header type='solid' imageExtend={false} position='sticky' />
+      <main className={styles.main}>
+        <Hero />
+      </main>
     </>
   );
 }
