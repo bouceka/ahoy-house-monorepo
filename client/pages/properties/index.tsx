@@ -1,13 +1,7 @@
 import Head from 'next/head';
-import Image from 'next/image';
-import { Inter } from '@next/font/google';
-import Link from 'next/link';
 import { Header } from '../../components/header/header.component';
-import { Action } from '../../components/action/action.component';
-import { FeatureCard } from '../../components/feature-card/feature-card.component';
 import { PropertyCard } from '../../components/property-card/property-card.component';
 
-const inter = Inter({ subsets: ['latin'] });
 
 export default function Properties() {
   return (
