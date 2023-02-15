@@ -1,0 +1,8 @@
+.property-calculation{
+	filter: drop-shadow(6px 12px 36px rgba(0, 0, 0, 0.12));
+	background-color: var(--background-color-secondary);
+	display: flex;
+	flex-direction: column;
+	grid-area: calculation;
+	padding: 3.2rem;
+}

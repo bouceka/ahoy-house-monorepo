@@ -15,3 +15,11 @@
   left: 50%;
   transform: translate(-50%, -50%);
 }
+
+// TODO: Replace it to make it general
+.row-2-1{
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	grid-template-rows: 1fr;
+	grid-template-areas: 'gallery gallery calculation';
+}
