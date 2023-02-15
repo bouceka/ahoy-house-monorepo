@@ -15,7 +15,7 @@ type Props = {
     noGuests: number;
     checkIn: string;
     checkOut: string;
-    price: 0;
+    price: number;
   };
 };
 
