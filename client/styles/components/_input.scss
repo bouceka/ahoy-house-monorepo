@@ -1,0 +1,36 @@
+@use '../abstracts' as *;
+@use '../base' as *;
+
+.form-item {
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+  flex: 1;
+  label {
+    @extend .paragraph--small--bold;
+  }
+
+  .form-input {
+    border: .16rem solid var(--color-neutral-200);
+    padding: 0.8rem;
+    @extend .paragraph--small;
+    font-family: inherit;
+    border-radius: 0.2rem;
+
+    &:focus-visible{
+      outline: .1rem solid var(--color-primary-400);
+      border-color: var(--color-primary-400);
+
+    }
+  }
+
+  .help-text {
+    @extend .paragraph--small;
+    color: var(--text-black-secondary);
+  }
+
+  textarea{
+    height: 10.8rem;
+    font-family: inherit;
+  }
+}
