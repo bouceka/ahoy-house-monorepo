@@ -45,6 +45,7 @@ export const PropertyCalculation = (props: Props) => {
   };
 
   const handleRoomPriceForPeriod = (days: number, price: number) => days * price;
+  const handleTaxProportion = (price: number) => Math.ceil(price * 0.12 * 100) / 100;
 
   const handleGetTomorrow = (day: string) => {
     const checkIn = new Date(day);
@@ -71,6 +72,13 @@ export const PropertyCalculation = (props: Props) => {
         }}
       >
         {({ values, handleSubmit, handleChange, isSubmitting, dirty, isValid, errors }) => {
+          const roomPrice = handleRoomPriceForPeriod(
+            handleDateDifference(values.checkIn, values.checkOut),
+            props.property.rooms[0].pricePerNight
+          );
+
+          const tax = handleTaxProportion(roomPrice);
+          const totalPrice = tax + roomPrice;
           return (
             <>
               <form onSubmit={handleSubmit}>
@@ -97,6 +105,7 @@ export const PropertyCalculation = (props: Props) => {
                 />
                 <Input
                   min={1}
+                  max={props.property.rooms[0].capacity}
                   onChange={handleChange}
                   value={values.noGuests}
                   required
@@ -109,16 +118,10 @@ export const PropertyCalculation = (props: Props) => {
                   Submit
                 </Action>
               </form>
-              <div className='property-calculation'>
-                <span className='paragraph--medium'>
-                  Room{' '}
-                  {isValid || !dirty
-                    ? handleRoomPriceForPeriod(
-                        handleDateDifference(values.checkIn, values.checkOut),
-                        props.property.rooms[0].pricePerNight
-                      )
-                    : ''}
-                </span>
+              <div className='property-calculation__summary'>
+                <div className='paragraph--medium'>Room {!isValid || !dirty ? '$0' : `$${roomPrice}`}</div>
+                <div className='paragraph--medium'>GST/PST (12%) {!isValid || !dirty ? '$0' : `$${tax}`}</div>
+                <div className='paragraph--medium--bold'>Total {!isValid || !dirty ? '$0' : `$${totalPrice}`}</div>
               </div>
             </>
           );
