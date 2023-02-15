@@ -5,14 +5,16 @@ import { useRef, useState } from 'react';
 import Image from 'next/image';
 import { CarouselProgressBar } from './carousel-progress-bar.component';
 import { ImageData } from './property-card.component';
-
+import { PropertyImage } from '../../types/property';
 
 type Props = {
-  imageData: ImageData[]
+  imageData: PropertyImage[];
+  width?: string;
+  height?: string;
 };
-export const PropertyImageCarousel = ({imageData}: Props) => {
+export const PropertyImageCarousel = ({ imageData, height = '27.2rem', width = '50.4rem' }: Props) => {
   const [currentItem, setCurrentItem] = useState(0);
-  const [images, setImages] = useState<ImageData[]>(imageData);
+  const [images, setImages] = useState<PropertyImage[]>(imageData);
   const size = images.length - 1;
 
   const prevItem = () => {
@@ -29,13 +31,13 @@ export const PropertyImageCarousel = ({imageData}: Props) => {
 
   return (
     <div>
-      <section className='property-carousel'>
+      <section className='property-carousel' style={{ height, width }}>
         {images.map((image, index) => (
           <Image
             className={`${index === currentItem ? 'slide active wrapper' : 'slide'}`}
             width={504}
             height={272}
-            src={image.imgUrl}
+            src={image.url}
             alt={image.alt}
             key={index}
           />
