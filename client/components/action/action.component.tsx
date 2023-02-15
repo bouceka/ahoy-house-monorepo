@@ -29,6 +29,6 @@ export function Action(props: ButtonProps) {
     return <Link className={allClassNames} {...rest} />;
   } else {
     const { className, styleType, as, ...rest } = props;
-    return <button className={allClassNames} {...rest} />;
+    return <button className={`${allClassNames} ${props.disabled ? 'disabled' : ''}`} {...rest} />;
   }
 }
