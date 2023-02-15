@@ -3,7 +3,7 @@ import * as React from 'react';
 interface Props extends React.InputHTMLAttributes<HTMLInputElement> {
   label?: string;
   helpText?: string;
-  type?: string;
+  type?: React.HTMLInputTypeAttribute;
 }
 export const Input = ({ label, type = 'text', helpText, ...otherProps }: Props) => {
   return (
