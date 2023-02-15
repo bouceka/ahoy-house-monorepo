@@ -19,13 +19,14 @@ export type FormValue = {
 
 export const PropertyCalculation = (props: Props) => {
   const [openModal, setOpenModal] = useState(false);
-  const tomorrow = new Date();
-  tomorrow.setDate(tomorrow.getDate() + 1);
-  const initialValue = {
+  const [calculation, setCalculation] = useState({
     noGuests: 0,
     checkIn: '',
     checkOut: '',
-  };
+    price: 0,
+  });
+  const tomorrow = new Date();
+  tomorrow.setDate(tomorrow.getDate() + 1);
 
   const validationSchema = yup.object().shape({
     noGuests: yup.number().required('Number of guests is required').min(1),
@@ -53,10 +54,11 @@ export const PropertyCalculation = (props: Props) => {
   const handleGetTomorrow = (day: string) => {
     const checkIn = new Date(day);
     const tomorrow = new Date(checkIn);
-    console.log(checkIn);
     tomorrow.setDate(checkIn.getDate() + 1);
     return tomorrow.toISOString().split('T')[0];
   };
+
+
   return (
     <>
       <CheckoutModal
@@ -64,18 +66,31 @@ export const PropertyCalculation = (props: Props) => {
         onClose={() => setOpenModal(false)}
         primaryAction={() => setOpenModal(false)}
         secondaryAction={() => setOpenModal(false)}
+        calculation={calculation}
       />
       <aside className='property-calculation'>
         <Formik
-          initialValues={initialValue}
+          initialValues={calculation}
           validationSchema={validationSchema}
           onSubmit={async (values, actions) => {
-            console.log(values);
+            // TODO: Refactor -> duplication
+            const roomPrice = handleRoomPriceForPeriod(
+              handleDateDifference(values.checkIn, values.checkOut),
+              props.property.rooms[0].pricePerNight
+            );
+
+            const tax = handleTaxProportion(roomPrice);
+            const totalPrice = tax + roomPrice;
             try {
               console.log(values);
-              // addAthleteToFirestore(values).then(() => setOpenModal(true));
+              setCalculation({
+                checkIn: values.checkIn,
+                checkOut: values.checkOut,
+                noGuests: values.noGuests,
+                price: totalPrice
+              });
               setOpenModal(true);
-              actions.resetForm();
+              // actions.resetForm();
             } catch (error) {
               console.log(values);
               actions.resetForm();
