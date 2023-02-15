@@ -33,7 +33,6 @@ export const CheckoutModal = ({ open, onClose, primaryAction, secondaryAction, c
     email: yup.string().required('Check in date is required').email(),
     phoneNumber: yup.string().required('Phone number is required'),
   });
-  console.log(calculation);
   return (
     <>
       {!open ? null : (
