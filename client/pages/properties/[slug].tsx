@@ -2,31 +2,100 @@
 import * as React from 'react';
 import { Property } from '../../types/property';
 import { PROPERTY_DATA } from '../../mock/property.data';
-import { GetStaticProps, GetStaticPropsContext } from 'next';
+import { GetStaticPaths, GetStaticProps, GetStaticPropsContext } from 'next';
 import { Header } from '../../components/header/header.component';
 import Head from 'next/head';
 import { PropertyGallery } from '../../components/property-gallery/property-gallery.components';
 import { PropertyImageCarousel } from '../../components/property-card/property-image-carousel.component';
 import { PropertyCalculation } from '../../components/property-calculation/property-calculation.component';
+import client from '../../utils/apollo-client';
+import { gql } from '@apollo/client';
 
 type Props = {
   property: Property;
 };
 
-export const getStaticProps = ({ params }: GetStaticPropsContext<{ slug: string }>) => {
-  const properties = PROPERTY_DATA;
-  const findPropertyById = properties.find((property) => {
-    return property.id.toString() === params?.slug; //dynamic id
+const fetchProperty = async (id: string) => {
+  const { data } = await client.query({
+    query: gql`
+      query getActiveProperty($id: String!) {
+        getActiveProperty(id: $id) {
+          id
+          title
+          description
+          numberRooms
+          numberBaths
+          size
+          address
+          postCode
+          name
+          rooms {
+            id
+            description
+            name
+            size
+            pricePerNight
+          }
+        }
+      }
+    `,
+    variables: {
+      id: id,
+    },
   });
+  return data;
+};
+const fetchProperties = async () => {
+  const { data } = await client.query({
+    query: gql`
+      query getAllActiveProperties {
+        getAllActiveProperties {
+          id
+          title
+          description
+          numberRooms
+          numberBaths
+          size
+          address
+          postCode
+          name
+          rooms {
+            id
+            description
+            name
+            size
+            pricePerNight
+          }
+        }
+      }
+    `,
+  });
+  return data.getAllActiveProperties;
+};
+
+// export const getStaticProps = ({ params }: GetStaticPropsContext<{ slug: string }>) => {
+//   const properties = PROPERTY_DATA;
+//   const findPropertyById = properties.find((property) => {
+//     return property.id.toString() === params?.slug; //dynamic id
+//   });
+//   return {
+//     props: {
+//       property: findPropertyById ? findPropertyById : [],
+//     },
+//   };
+// };
+
+export const getStaticProps = async ({ params }: GetStaticPropsContext<{ slug: string }>) => {
+  const data = params?.slug ? await fetchProperty(params?.slug) : '';
   return {
     props: {
-      property: findPropertyById ? findPropertyById : [],
+      property: data ? data.getActiveProperty : [],
     },
   };
 };
 
-export const getStaticPaths = () => {
-  const properties = PROPERTY_DATA;
+export const getStaticPaths: GetStaticPaths = async () => {
+  const properties: Property[] = await fetchProperties();
   const paths = properties.map((property) => {
     return {
       params: {
@@ -41,6 +110,7 @@ export const getStaticPaths = () => {
 };
 
 const PropertyDetail = ({ property }: Props) => {
+  console.log(property);
   return (
     <>
       <Head>
@@ -52,10 +122,10 @@ const PropertyDetail = ({ property }: Props) => {
       <Header imageExtend={true} type='solid' position='sticky' />
       <main>
         <div className='row'>
-          <h1 className='heading'>{property.name}</h1>
+          <h1 className='heading'>{property.title}</h1>
           <div className='row-2-1'>
             <div className='property-gallery'>
-              <PropertyImageCarousel imageData={property.images} width='76rem' height='46.4rem' />
+              <PropertyImageCarousel imageData={PROPERTY_DATA[0].images} width='76rem' height='46.4rem' />
             </div>
             <PropertyCalculation property={property} />
           </div>

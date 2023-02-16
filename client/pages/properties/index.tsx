@@ -1,9 +1,50 @@
 import Head from 'next/head';
 import { Header } from '../../components/header/header.component';
 import { PropertyCard } from '../../components/property-card/property-card.component';
+import { gql } from '@apollo/client';
+import client from '../../utils/apollo-client';
+import { Property } from '../../types/property';
+import { GetStaticProps } from 'next';
 
+interface Props {
+  properties: Property[];
+}
 
-export default function Properties() {
+export const getStaticProps: GetStaticProps<Props> = async () => {
+  const { data } = await client.query({
+    query: gql`
+      query getAllActiveProperties {
+        getAllActiveProperties {
+          id
+          title
+          description
+          numberRooms
+          numberBaths
+          size
+          address
+          postCode
+          name
+          rooms {
+            id
+            description
+            name
+            size
+            pricePerNight
+          }
+        }
+      }
+    `,
+  });
+
+  return {
+    props: {
+      properties: data.getAllActiveProperties,
+    },
+  };
+};
+
+export default function Properties({ properties }: Props) {
+  console.log(properties);
   return (
     <>
       <Head>
@@ -18,14 +59,9 @@ export default function Properties() {
           <h2 className='heading'>Our Properties</h2>
 
           <section className='properties-grid'>
-            <PropertyCard />
-            <PropertyCard />
-            <PropertyCard />
-            <PropertyCard />
-            <PropertyCard />
-            <PropertyCard />
-            <PropertyCard />
-            <PropertyCard />
+            {properties.map((property, index) => (
+              <PropertyCard key={index} property={property} index={index}/>
+            ))}
           </section>
         </div>
       </main>

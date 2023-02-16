@@ -4,6 +4,7 @@ import { PropertyImageCarousel } from './property-image-carousel.component';
 import Image from 'next/image';
 import { Action } from '../action/action.component';
 import { PROPERTY_DATA } from '../../mock/property.data';
+import { Property } from '../../types/property';
 
 // export interface ImageData {
 //   id: string;
@@ -61,13 +62,16 @@ import { PROPERTY_DATA } from '../../mock/property.data';
 //   id: '1',
 // };
 
-type Props = {};
-export const PropertyCard = (props: Props) => {
+type Props = {
+  property: Property;
+  index:number
+};
+export const PropertyCard = ({index, property}: Props) => {
   return (
     <div className='property-card'>
       <PropertyImageCarousel imageData={PROPERTY_DATA[0].images} />
       <div className='property-card__content'>
-        <h4 className='heading--bold'>{PROPERTY_DATA[0].title}</h4>
+        <h4 className='heading--bold'>{property.title}</h4>
         <div className='property-card__row'>
           <div className='property-card__icon'>
             <Image src='/icons/star-intersect.svg' width='24' height='24' alt='' />
@@ -77,18 +81,18 @@ export const PropertyCard = (props: Props) => {
         <div className='property-card__row'>
           <div className='property-card__icon'>
             <Image src='/icons/bed.svg' width='32' height='32' alt='' />
-            <span className='paragraph--medium'>{PROPERTY_DATA[0].numberRooms} Bedrooms</span>
+            <span className='paragraph--medium'>{property.numberRooms} Bedrooms</span>
           </div>
           <div className='property-card__icon'>
             <Image src='/icons/bath.svg' width='32' height='32' alt='' />
-            <span className='paragraph--medium'>{PROPERTY_DATA[0].numberBaths} Bathrooms</span>
+            <span className='paragraph--medium'>{property.numberBaths} Bathrooms</span>
           </div>
         </div>
         <div className='property-card__icon'>
           <Image src='/icons/venue/outline.svg' width='24' height='24' alt='' />
-          <span className='paragraph--small'>{PROPERTY_DATA[0].address}</span>
+          <span className='paragraph--small'>{property.address}</span>
         </div>
-        <Action as='link' styleType='primary' className='property-card__btn' href='#!'>
+        <Action as='link' styleType='primary' className='property-card__btn' href={`properties/${property.id}`}>
           Detail
         </Action>
       </div>
