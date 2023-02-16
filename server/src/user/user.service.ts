@@ -19,7 +19,7 @@ export class UserService {
     private jwtService: JwtService,
   ) {}
 
-  private async createUser(createUserInput: CreateUserInput): Promise<User> {
+  private async createUser(createUserInput: Omit<User, 'id'>): Promise<User> {
     const newUser = await this.userRepository.create(createUserInput);
     return this.userRepository.save(newUser);
   }
@@ -87,6 +87,8 @@ export class UserService {
       ...signupUserInput,
       password: hash,
       role: RoleEnum.ADMIN,
+      phone: '123456789',
+      isActive: true,
     });
   }
 
