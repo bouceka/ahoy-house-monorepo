@@ -38,6 +38,10 @@ export class Room {
   size: number;
 
   @Column()
+  @Field()
+  pricePerNight: number;
+
+  @Column()
   @Field(() => ID)
   propertyId: string;
 
