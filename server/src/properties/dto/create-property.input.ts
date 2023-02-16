@@ -1,9 +1,8 @@
 import { Field, InputType } from '@nestjs/graphql';
-import { IsAlpha, IsNumber, MaxLength } from 'class-validator';
+import { IsNumber, MaxLength } from 'class-validator';
 
 @InputType()
 export class CreatePropertyInput {
-  @IsAlpha()
   @Field()
   title: string;
 
@@ -13,7 +12,6 @@ export class CreatePropertyInput {
   @Field()
   numberBaths: number;
 
-  @IsAlpha()
   @Field()
   name: string;
 
