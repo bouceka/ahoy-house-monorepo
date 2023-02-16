@@ -48,6 +48,7 @@ type Room {
   amenities: String!
   description: String!
   size: Float!
+  pricePerNight: Float!
   propertyId: ID!
   property: Property!
   occupiedRooms: [OccupiedRoom!]!
