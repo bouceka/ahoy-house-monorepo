@@ -16,7 +16,7 @@ export const AdminNav = (props: Props) => {
             </Link>
             <ul className='menu__links'>
               <li>
-                <Link className='btn--link' href='/'>
+                <Link className='btn--link' href='/admin/add-property'>
                   Add property
                 </Link>
               </li>

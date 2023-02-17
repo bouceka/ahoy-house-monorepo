@@ -8,7 +8,7 @@ import Head from 'next/head';
 import { PropertyGallery } from '../../components/property-gallery/property-gallery.components';
 import { PropertyImageCarousel } from '../../components/property-card/property-image-carousel.component';
 import { PropertyCalculation } from '../../components/property-calculation/property-calculation.component';
-import client from '../../utils/apollo-client';
+import {apolloClient} from '../../utils/apollo-client';
 import { gql } from '@apollo/client';
 
 type Props = {
@@ -16,24 +16,23 @@ type Props = {
 };
 
 const fetchProperty = async (id: string) => {
-  const { data } = await client.query({
+  const { data } = await apolloClient.query({
     query: gql`
       query getActiveProperty($id: String!) {
         getActiveProperty(id: $id) {
           id
-          title
           description
           numberRooms
           numberBaths
-          size
+          livingArea
           address
-          postCode
+          postalCode
           name
           rooms {
             id
             description
             name
-            size
+            livingArea
             pricePerNight
           }
         }
@@ -46,24 +45,23 @@ const fetchProperty = async (id: string) => {
   return data;
 };
 const fetchProperties = async () => {
-  const { data } = await client.query({
+  const { data } = await apolloClient.query({
     query: gql`
       query getAllActiveProperties {
         getAllActiveProperties {
           id
-          title
           description
           numberRooms
           numberBaths
-          size
+          livingArea
           address
-          postCode
+          postalCode
           name
           rooms {
             id
             description
             name
-            size
+            livingArea
             pricePerNight
           }
         }
@@ -122,7 +120,7 @@ const PropertyDetail = ({ property }: Props) => {
       <Header imageExtend={true} type='solid' position='sticky' />
       <main>
         <div className='row'>
-          <h1 className='heading'>{property.title}</h1>
+          <h1 className='heading'>{property.name}</h1>
           <div className='row-2-1'>
             <div className='property-gallery'>
               <PropertyImageCarousel imageData={PROPERTY_DATA[0].images} width='76rem' height='46.4rem' />

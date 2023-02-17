@@ -71,7 +71,7 @@ export const PropertyCard = ({index, property}: Props) => {
     <div className='property-card'>
       <PropertyImageCarousel imageData={PROPERTY_DATA[0].images} />
       <div className='property-card__content'>
-        <h4 className='heading--bold'>{property.title}</h4>
+        <h4 className='heading--bold'>{property.name}</h4>
         <div className='property-card__row'>
           <div className='property-card__icon'>
             <Image src='/icons/star-intersect.svg' width='24' height='24' alt='' />

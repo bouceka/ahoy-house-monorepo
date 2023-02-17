@@ -2,7 +2,7 @@ import Head from 'next/head';
 import { Header } from '../../components/header/header.component';
 import { PropertyCard } from '../../components/property-card/property-card.component';
 import { gql } from '@apollo/client';
-import client from '../../utils/apollo-client';
+import { apolloClient } from '../../utils/apollo-client';
 import { Property } from '../../types/property';
 import { GetStaticProps } from 'next';
 
@@ -10,30 +10,31 @@ interface Props {
   properties: Property[];
 }
 
-export const getStaticProps: GetStaticProps<Props> = async () => {
-  const { data } = await client.query({
-    query: gql`
-      query getAllActiveProperties {
-        getAllActiveProperties {
-          id
-          title
-          description
-          numberRooms
-          numberBaths
-          size
-          address
-          postCode
-          name
-          rooms {
-            id
-            description
-            name
-            size
-            pricePerNight
-          }
-        }
+const getAllActiveProperties = gql`
+  query getAllActiveProperties {
+    getAllActiveProperties {
+      id
+      description
+      numberRooms
+      numberBaths
+      livingArea
+      address
+      postalCode
+      name
+      rooms {
+        id
+        description
+        name
+        livingArea
+        pricePerNight
       }
-    `,
+    }
+  }
+`;
+
+export const getStaticProps: GetStaticProps<Props> = async () => {
+  const { data } = await apolloClient.query({
+    query: getAllActiveProperties,
   });
 
   return {
@@ -43,8 +44,7 @@ export const getStaticProps: GetStaticProps<Props> = async () => {
   };
 };
 
-export default function Properties({ properties }: Props) {
-  console.log(properties);
+export default function Properties({ properties, ...props }: Props) {
   return (
     <>
       <Head>
