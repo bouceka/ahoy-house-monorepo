@@ -4,9 +4,6 @@ import { IsNumber, MaxLength } from 'class-validator';
 @InputType()
 export class CreatePropertyInput {
   @Field()
-  title: string;
-
-  @Field()
   description: string;
 
   @Field()
@@ -21,11 +18,11 @@ export class CreatePropertyInput {
 
   @IsNumber()
   @Field()
-  size: number;
+  livingArea: number;
 
-  @MaxLength(6)
+  @MaxLength(7)
   @Field()
-  postCode: string;
+  postalCode: string;
 
   @Field()
   address: string;

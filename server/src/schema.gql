@@ -11,11 +11,10 @@ type Amenity {
 
 type Property {
   id: ID!
-  title: String!
   numberRooms: Float!
-  postCode: String!
+  postalCode: String!
   numberBaths: Float!
-  size: Float!
+  livingArea: Float!
   name: String!
   description: String!
   address: String!
@@ -47,7 +46,7 @@ type Room {
   capacity: Float!
   amenities: String!
   description: String!
-  size: Float!
+  livingArea: Float!
   pricePerNight: Float!
   propertyId: ID!
   property: Property!
@@ -152,25 +151,23 @@ type Mutation {
 }
 
 input CreatePropertyInput {
-  title: String!
   description: String!
   numberBaths: Float!
   name: String!
   numberRooms: Float!
-  size: Float!
-  postCode: String!
+  livingArea: Float!
+  postalCode: String!
   address: String!
   isActive: Boolean!
 }
 
 input UpdatePropertyInput {
-  title: String
   description: String
   numberBaths: Float
   name: String
   numberRooms: Float
-  size: Float
-  postCode: String
+  livingArea: Float
+  postalCode: String
   address: String
   isActive: Boolean
   id: ID!

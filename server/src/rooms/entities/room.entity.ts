@@ -35,7 +35,7 @@ export class Room {
 
   @Column()
   @Field()
-  size: number;
+  livingArea: number;
 
   @Column()
   @Field()

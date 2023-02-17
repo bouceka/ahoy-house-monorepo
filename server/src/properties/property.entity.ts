@@ -21,15 +21,11 @@ export class Property {
 
   @Column()
   @Field()
-  title: string;
-
-  @Column()
-  @Field()
   numberRooms: number;
 
   @Column()
   @Field()
-  postCode: string;
+  postalCode: string;
 
   @Column()
   @Field()
@@ -37,7 +33,7 @@ export class Property {
 
   @Column()
   @Field()
-  size: number;
+  livingArea: number;
 
   @Column()
   @Field()
