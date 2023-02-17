@@ -55,8 +55,8 @@ export class PropertiesResolver {
 
   // DONE ?
   @Mutation(() => Property)
-  @UseGuards(JwtAuthGuard, AbilitiesGuard)
-  @CheckAbilities(new CreatePropertyAbility())
+  // @UseGuards(JwtAuthGuard, AbilitiesGuard)
+  // @CheckAbilities(new CreatePropertyAbility())
   createProperty(
     @Args('createPropertyInput') createPropertyInput: CreatePropertyInput,
   ): Promise<Property> {
