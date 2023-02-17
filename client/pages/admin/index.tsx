@@ -16,9 +16,7 @@ const AdminDashboard = (props: Props) => {
       <AdminNav />
       <main className='page '>
         <div className='row'>
-          <div className='row'>
             <h1 className='heading'>Admin Dashboard</h1>
-          </div>
         </div>
       </main>
     </>

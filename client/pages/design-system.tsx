@@ -62,7 +62,6 @@ export default function DesignSystem() {
           <div className='caption--medium'>Caption Text Medium</div>
         </div>
 
-        <Header />
         <div className='card' style={{ margin: '10px', backgroundColor: '#8b8b8b' }}>
           <Action as='button' styleType='primary'>
             Primary
@@ -97,9 +96,6 @@ export default function DesignSystem() {
             alt='Cafe meeting'
           />
         </div>
-      <div className='card' style={{ margin: '10px', display:"flex", gap:"2.4rem" }}>
-        <PropertyCard/>
-      </div>
       </main>
     </>
   );
