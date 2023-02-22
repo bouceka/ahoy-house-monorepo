@@ -5,36 +5,15 @@ import { gql } from '@apollo/client';
 import { apolloClient } from '../../utils/apollo-client';
 import { Property } from '../../types/property';
 import { GetStaticProps } from 'next';
+import { GET_ACTIVE_PROPERTIES } from '../../apollo/property-queries';
 
 interface Props {
   properties: Property[];
 }
 
-const getAllActiveProperties = gql`
-  query getAllActiveProperties {
-    getAllActiveProperties {
-      id
-      description
-      numberRooms
-      numberBaths
-      livingArea
-      address
-      postalCode
-      name
-      rooms {
-        id
-        description
-        name
-        livingArea
-        pricePerNight
-      }
-    }
-  }
-`;
-
 export const getStaticProps: GetStaticProps<Props> = async () => {
   const { data } = await apolloClient.query({
-    query: getAllActiveProperties,
+    query: GET_ACTIVE_PROPERTIES,
   });
 
   return {
