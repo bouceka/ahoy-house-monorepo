@@ -23,19 +23,19 @@ export const Header = ({ position, imageExtend = false, type = 'solid' }: Props)
               </Link>
             </li>
             <li>
-              <Link className='btn--link' href='/'>
+              <Link className='btn--link' href='/properties'>
                 Properties
               </Link>
             </li>
-            <li>
+            {/* <li>
               <Link className='btn--link' href='/'>
                 About
               </Link>
-            </li>
+            </li> */}
           </ul>
           <ul className='menu__login'>
             <li>
-              <Link className='btn--link' href='/'>
+              <Link className='btn--link' href='/login'>
                 Login
               </Link>
             </li>
