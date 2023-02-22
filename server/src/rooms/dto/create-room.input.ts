@@ -15,7 +15,10 @@ export class CreateRoomInput {
   description: string;
 
   @Field()
-  size: number;
+  livingArea: number;
+
+  @Field()
+  pricePerNight: number;
 
   @Field(() => ID)
   propertyId: string;

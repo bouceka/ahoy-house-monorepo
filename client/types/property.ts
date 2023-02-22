@@ -1,28 +1,30 @@
 export interface Property {
   id: string;
   numberRooms: number;
-  postCode: string;
+  postalCode: string;
   numberBaths: number;
-  size: number;
+  livingArea: number;
   name: string;
   description: string;
   address: string;
+  isActive: boolean;
   images: PropertyImage[];
-	rooms:Room[]
+  rooms: Room[];
 }
 
 export interface PropertyImage {
-	id:string,
-	url:string,
-	alt:string
+  id: string;
+  url: string;
+  alt: string;
 }
 
-
 export interface Room {
-	id:string,
-	name:string,
-	capacity:number,
-	description:string,
-	size:number,
-	pricePerNight: number,
+  id: string;
+  name: string;
+  capacity: number;
+  description: string;
+  livingArea: number;
+  pricePerNight: number;
+  propertyId:string
+  amenities:string,
 }
