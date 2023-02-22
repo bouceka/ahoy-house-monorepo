@@ -32,18 +32,32 @@ export const PropertyImageCarousel = ({ imageData, height = '27.2rem', width = '
   return (
     <div>
       <section className='property-carousel' style={{ height, width }}>
-        {images.map((image, index) => (
+        {images.length > 0 ? (
+          images.map((image, index) => (
+            <Image
+              className={`${index === currentItem ? 'slide active wrapper' : 'slide'}`}
+              width={504}
+              height={272}
+              src={image.url}
+              alt='Property photo'
+              key={index}
+            />
+          ))
+        ) : (
           <Image
-            className={`${index === currentItem ? 'slide active wrapper' : 'slide'}`}
+            alt='no photo'
+            className='active slide'
             width={504}
             height={272}
-            src={image.url}
-            alt={image.alt}
-            key={index}
+            src='/static/illustrations/no-photo.jpeg'
           />
-        ))}
-        <CarouselProgressBar currentIndex={currentItem} size={size} />
-        <CarouselButtons prevItem={prevItem} nextItem={nextItem} />
+        )}
+        {images.length > 1 ? (
+          <>
+            <CarouselProgressBar currentIndex={currentItem} size={size} />
+            <CarouselButtons prevItem={prevItem} nextItem={nextItem} />
+          </>
+        ) : null}
       </section>
     </div>
   );
