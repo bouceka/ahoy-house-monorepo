@@ -33,8 +33,8 @@ export class PropertiesResolver {
 
   // DONE
   @Query(() => [Property])
-  @UseGuards(JwtAuthGuard, RolesGuard)
-  @Roles(RoleEnum.SUPER_ADMIN, RoleEnum.ADMIN)
+  // @UseGuards(JwtAuthGuard, RolesGuard)
+  // @Roles(RoleEnum.SUPER_ADMIN, RoleEnum.ADMIN)
   getAllProperties(): Promise<Property[]> {
     return this.propertiesService.findAll();
   }
@@ -68,18 +68,23 @@ export class PropertiesResolver {
   getActiveProperty(@Args('id') id: string): Promise<Property> {
     return this.propertiesService.getActiveProperty(id);
   }
+  // DONE
+  @Query(() => Property)
+  getProperty(@Args('id') id: string): Promise<Property> {
+    return this.propertiesService.getProperty(id);
+  }
 
   // DONE
-  @UseGuards(JwtAuthGuard, RolesGuard)
-  @Roles(RoleEnum.ADMIN)
+  // @UseGuards(JwtAuthGuard, RolesGuard)
+  // @Roles(RoleEnum.ADMIN)
   @Mutation(() => Property)
   deleteProperty(@Args('id') id: string): Promise<Property> {
     return this.propertiesService.deleteProperty(id);
   }
 
   // DONE
-  @UseGuards(JwtAuthGuard, RolesGuard)
-  @Roles(RoleEnum.SUPER_ADMIN, RoleEnum.ADMIN)
+  // @UseGuards(JwtAuthGuard, RolesGuard)
+  // @Roles(RoleEnum.SUPER_ADMIN, RoleEnum.ADMIN)
   @Mutation(() => Property)
   updateProperty(
     @Args('updatePropertyInput') updatePropertyInput: UpdatePropertyInput,
