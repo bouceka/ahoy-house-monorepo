@@ -1,4 +1,5 @@
 import { gql } from '@apollo/client';
+import { apolloClient } from '../utils/apollo-client';
 
 export const CREATE_PROPERTY = gql`
   mutation createProperty(
@@ -190,3 +191,37 @@ mutation deleteProperty(
     }
   }
 `
+
+
+export const fetchActiveProperty = async (id: string) => {
+  const { data } = await apolloClient.query({
+    query: GET_ACTIVE_PROPERTY,
+    variables: {
+      id: id,
+    },
+  });
+  return data;
+};
+
+export const fetchActiveProperties = async () => {
+  const { data } = await apolloClient.query({
+    query: GET_ACTIVE_PROPERTIES,
+  });
+  return data.getAllActiveProperties;
+};
+
+export const fetchProperty = async (id: string) => {
+  const { data } = await apolloClient.query({
+    query: GET_PROPERTY,
+    variables: {
+      id: id,
+    },
+  });
+  return data;
+};
+export const fetchProperties = async () => {
+  const { data } = await apolloClient.query({
+    query: GET_ALL_PROPERTIES,
+  });
+  return data.getAllProperties;
+};

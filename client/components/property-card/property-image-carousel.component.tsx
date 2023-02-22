@@ -4,7 +4,6 @@ import { CarouselButtons } from './carousel-buttons.component';
 import { useRef, useState } from 'react';
 import Image from 'next/image';
 import { CarouselProgressBar } from './carousel-progress-bar.component';
-import { ImageData } from './property-card.component';
 import { PropertyImage } from '../../types/property';
 
 type Props = {

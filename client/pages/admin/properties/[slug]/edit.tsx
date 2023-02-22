@@ -1,17 +1,14 @@
 // @flow
 import { GetStaticPaths, GetStaticPropsContext } from 'next';
 import * as React from 'react';
-import { apolloClient } from '../../../../utils/apollo-client';
 import {
-  GET_ACTIVE_PROPERTIES,
-  GET_ACTIVE_PROPERTY,
-  GET_ALL_PROPERTIES,
-  GET_PROPERTY,
   UPDATE_PROPERTY,
+  fetchProperties,
+  fetchProperty,
 } from '../../../../apollo/property-queries';
 import { Property } from '../../../../types/property';
 import * as yup from 'yup';
-import { useMutation, useQuery } from '@apollo/client';
+import { useMutation } from '@apollo/client';
 import Head from 'next/head';
 import { AdminNav } from '../../../../components/admin-nav/admin-nav.component';
 import { AdminTable } from '../../../../components/admin-table/admin-table.component';
@@ -28,22 +25,6 @@ import { DELETE_IMAGE } from '../../../../apollo/image.quries';
 
 type Props = {
   property: Property;
-};
-
-const fetchProperty = async (id: string) => {
-  const { data } = await apolloClient.query({
-    query: GET_PROPERTY,
-    variables: {
-      id: id,
-    },
-  });
-  return data;
-};
-const fetchProperties = async () => {
-  const { data } = await apolloClient.query({
-    query: GET_ALL_PROPERTIES,
-  });
-  return data.getAllProperties;
 };
 
 export const getStaticProps = async ({ params }: GetStaticPropsContext<{ slug: string }>) => {
@@ -106,8 +87,6 @@ const EditProperty = ({ property }: Props) => {
       },
     });
     if (!errors) {
-      // rerender page to show the changed data
-      // router.reload();
       toast.success('Room deleted');
       setRoomList((rooms) => rooms.filter((room) => id !== room.id));
     }
@@ -119,8 +98,6 @@ const EditProperty = ({ property }: Props) => {
       },
     });
     if (!errors) {
-      // rerender page to show the changed data
-      // router.reload();
       toast.success('Image deleted');
       setImageList((image) => image.filter((image) => id !== image.id));
     }

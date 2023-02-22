@@ -1,4 +1,5 @@
 import { gql } from '@apollo/client';
+import { apolloClient } from '../utils/apollo-client';
 
 export const DELETE_ROOM = gql`
   mutation deleteRoom($id: String!) {
@@ -92,3 +93,20 @@ export const CREATE_ROOM = gql`
     }
   }
 `;
+
+
+export const fetchRoom = async (id: string) => {
+  const { data } = await apolloClient.query({
+    query: GET_ROOM,
+    variables: {
+      id: id,
+    },
+  });
+  return data;
+};
+export const fetchRooms = async () => {
+  const { data } = await apolloClient.query({
+    query: GET_ALL_ROOMS,
+  });
+  return data.getAllRooms;
+};

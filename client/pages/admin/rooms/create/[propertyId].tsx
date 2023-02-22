@@ -10,30 +10,12 @@ import { CREATE_ROOM } from '../../../../apollo/room-queries';
 import { AdminNav } from '../../../../components/admin-nav/admin-nav.component';
 import { Input } from '../../../../components/input/input.component';
 import { Action } from '../../../../components/action/action.component';
-import { apolloClient } from '../../../../utils/apollo-client';
-import { GET_ALL_PROPERTIES, GET_PROPERTY } from '../../../../apollo/property-queries';
+import { fetchProperties, fetchProperty } from '../../../../apollo/property-queries';
 import { GetStaticPaths, GetStaticPropsContext } from 'next';
 import { Property } from '../../../../types/property';
 
 type Props = {
   property: Property
-};
-
-const fetchProperty = async (id: string) => {
-  const { data } = await apolloClient.query({
-    query: GET_PROPERTY,
-    variables: {
-      id: id,
-    },
-  });
-  return data;
-};
-
-const fetchProperties = async () => {
-  const { data } = await apolloClient.query({
-    query: GET_ALL_PROPERTIES,
-  });
-  return data.getAllProperties;
 };
 
 export const getStaticProps = async ({ params }: GetStaticPropsContext<{ propertyId: string }>) => {

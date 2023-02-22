@@ -3,7 +3,6 @@ import { ApolloQueryResult, useMutation, useQuery } from '@apollo/client';
 import * as React from 'react';
 import { UPLOAD_IMAGE } from '../../apollo/image.quries';
 import { apolloClient } from '../../utils/apollo-client';
-import { GET_PROPERTY } from '../../apollo/property-queries';
 import { useRouter } from 'next/router';
 import { toast } from 'react-toastify';
 type Props = {

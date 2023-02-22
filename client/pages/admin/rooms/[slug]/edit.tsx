@@ -6,34 +6,15 @@ import { ToastContainer, toast } from 'react-toastify';
 import { GetStaticPaths, GetStaticPropsContext } from 'next';
 import * as yup from 'yup';
 import { useMutation } from '@apollo/client';
-import { GET_ALL_ROOMS, GET_ROOM, UPDATE_ROOM } from '../../../../apollo/room-queries';
+import {  UPDATE_ROOM, fetchRoom, fetchRooms } from '../../../../apollo/room-queries';
 import { Room } from '../../../../types/property';
-import { apolloClient } from '../../../../utils/apollo-client';
 import { AdminNav } from '../../../../components/admin-nav/admin-nav.component';
 import { Input } from '../../../../components/input/input.component';
 import { Action } from '../../../../components/action/action.component';
 import 'react-toastify/dist/ReactToastify.css';
-import { GET_PROPERTY } from '../../../../apollo/property-queries';
 
 type Props = {
   room: Room;
-};
-
-
-const fetchRoom = async (id: string) => {
-  const { data } = await apolloClient.query({
-    query: GET_ROOM,
-    variables: {
-      id: id,
-    },
-  });
-  return data;
-};
-const fetchRooms = async () => {
-  const { data } = await apolloClient.query({
-    query: GET_ALL_ROOMS,
-  });
-  return data.getAllRooms;
 };
 
 export const getStaticProps = async ({ params }: GetStaticPropsContext<{ slug: string }>) => {

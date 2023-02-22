@@ -12,30 +12,14 @@ import { apolloClient } from '../../utils/apollo-client';
 import { gql } from '@apollo/client';
 import { ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
-import { GET_ACTIVE_PROPERTIES, GET_ACTIVE_PROPERTY } from '../../apollo/property-queries';
+import { fetchActiveProperties, fetchActiveProperty } from '../../apollo/property-queries';
 
 type Props = {
   property: Property;
 };
 
-const fetchProperty = async (id: string) => {
-  const { data } = await apolloClient.query({
-    query: GET_ACTIVE_PROPERTY,
-    variables: {
-      id: id,
-    },
-  });
-  return data;
-};
-const fetchProperties = async () => {
-  const { data } = await apolloClient.query({
-    query: GET_ACTIVE_PROPERTIES,
-  });
-  return data.getAllActiveProperties;
-};
-
 export const getStaticProps = async ({ params }: GetStaticPropsContext<{ slug: string }>) => {
-  const data = params?.slug ? await fetchProperty(params?.slug) : '';
+  const data = params?.slug ? await fetchActiveProperty(params?.slug) : '';
   return {
     props: {
       property: data ? data.getActiveProperty : [],
@@ -44,7 +28,7 @@ export const getStaticProps = async ({ params }: GetStaticPropsContext<{ slug: s
 };
 
 export const getStaticPaths: GetStaticPaths = async () => {
-  const properties: Property[] = await fetchProperties();
+  const properties: Property[] = await fetchActiveProperties();
   const paths = properties.map((property) => {
     return {
       params: {
