@@ -6,7 +6,7 @@ import * as React from 'react';
 type BaseProps = {
   children: React.ReactNode;
   className?: string;
-  styleType: 'primary' | 'secondary' | 'outline';
+  styleType: 'primary' | 'secondary' | 'outline' | 'link';
 };
 
 type ButtonAsButton = BaseProps &
