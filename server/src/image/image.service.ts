@@ -44,12 +44,12 @@ export class ImageService {
     return await this.imageRepository.find();
   }
 
-  getImage(id: string) {
-    const getImage = this.imageRepository.findOne({ where: { id } });
+  async getImage(id: string) {
+    const getImage = await this.imageRepository.findOne({ where: { id } });
     if (!getImage) {
       throw new NotFoundException('Image not found');
     }
-    return `This action returns a #${id} image`;
+    return getImage;
   }
 
   async getAllImagesByPropertyId(propertyId: string) {
@@ -64,7 +64,20 @@ export class ImageService {
   //   return `This action updates a #${id} image`;
   // }
 
-  remove(id: number) {
-    return `This action removes a #${id} image`;
+  async delete(id: string): Promise<Image> {
+    const getImage = await this.imageRepository.findOne({
+      where: { id },
+    });
+    if (!getImage) {
+      throw new NotFoundException('Image not found in DB');
+    }
+
+    const cloudinaryRes = await this.cloudinaryService.deleteImage(
+      getImage.publicId,
+    );
+    if (cloudinaryRes.result !== 'ok') {
+      throw new NotFoundException('Image not found on Cloudinary');
+    }
+    return this.imageRepository.remove(getImage);
   }
 }
