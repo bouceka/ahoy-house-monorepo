@@ -5,6 +5,7 @@ import { Input } from '../input/input.component';
 import { Formik } from 'formik';
 import * as yup from 'yup';
 import { sendEmail } from '../../utils/emailjs.util';
+import { toast } from 'react-toastify';
 
 type Props = {
   open: boolean;
@@ -16,6 +17,7 @@ type Props = {
     checkIn: string;
     checkOut: string;
     price: number;
+    houseName: string;
   };
 };
 
@@ -60,7 +62,9 @@ export const CheckoutModal = ({ open, onClose, primaryAction, secondaryAction, c
                     try {
                       console.log(values);
                       sendEmail({ ...calculation, ...values });
+                      toast.success('Booking sent');
                       actions.resetForm();
+                      onClose();
                     } catch (error) {
                       onClose();
                       console.log(values);
