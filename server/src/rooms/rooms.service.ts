@@ -1,9 +1,10 @@
-import { Injectable } from '@nestjs/common';
+import { Injectable, NotFoundException } from '@nestjs/common';
 import { InjectRepository } from '@nestjs/typeorm';
 import { Property } from 'src/properties/property.entity';
 import { Repository } from 'typeorm';
 import { CreateRoomInput } from './dto/create-room.input';
 import { Room } from './entities/room.entity';
+import { UpdateRoomInput } from './dto/update-room.input';
 
 // TODO: Fix Naming convention
 
@@ -29,12 +30,22 @@ export class RoomsService {
     return this.roomRepository.findOneOrFail({ where: { id } });
   }
 
-  // update(id: number, updateRoomInput: UpdateRoomInput) {
-  //   return `This action updates a #${id} room`;
-  // }
+  async update(id: string, updateRoomInput: UpdateRoomInput) {
+    const room = await this.findOne(id);
+    if (!room) {
+      throw new NotFoundException('Property not found');
+    }
+    Object.assign(room, updateRoomInput);
 
-  remove(id: number) {
-    return `This action removes a #${id} room`;
+    return this.roomRepository.save(room);
+  }
+
+  async remove(id: string) {
+    const room = await this.roomRepository.findOne({ where: { id } });
+    if (!room) {
+      throw new NotFoundException('Did not find the property to delete');
+    }
+    return await this.roomRepository.remove(room);
   }
 
   getProperty(propertyId: string): Promise<Property> {

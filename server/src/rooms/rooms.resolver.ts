@@ -21,6 +21,7 @@ import { OccupiedRoomService } from 'src/occupied-room/occupied-room.service';
 import { OccupiedRoom } from 'src/occupied-room/entities/occupied-room.entity';
 import { ImageService } from 'src/image/image.service';
 import { Image } from 'src/image/entities/image.entity';
+import { UpdateRoomInput } from './dto/update-room.input';
 
 @Resolver(() => Room)
 export class RoomsResolver {
@@ -32,16 +33,16 @@ export class RoomsResolver {
 
   // NOT TESTED
   @Mutation(() => Room)
-  @UseGuards(JwtAuthGuard, RolesGuard)
-  @Roles(RoleEnum.ADMIN, RoleEnum.SUPER_ADMIN)
+  // @UseGuards(JwtAuthGuard, RolesGuard)
+  // @Roles(RoleEnum.ADMIN, RoleEnum.SUPER_ADMIN)
   createRoom(@Args('createRoomInput') createRoomInput: CreateRoomInput) {
     return this.roomsService.create(createRoomInput);
   }
 
   // DONE
   @Query(() => [Room])
-  @UseGuards(JwtAuthGuard, RolesGuard)
-  @Roles(RoleEnum.ADMIN, RoleEnum.SUPER_ADMIN)
+  // @UseGuards(JwtAuthGuard, RolesGuard)
+  // @Roles(RoleEnum.ADMIN, RoleEnum.SUPER_ADMIN)
   getAllRooms() {
     return this.roomsService.findAll();
   }
@@ -55,16 +56,16 @@ export class RoomsResolver {
   // // NOT TESTED
   // @UseGuards(JwtAuthGuard, RolesGuard)
   // @Roles(RoleEnum.ADMIN, RoleEnum.SUPER_ADMIN)
-  // @Mutation(() => Room)
-  // updateRoom(@Args('updateRoomInput') updateRoomInput: UpdateRoomInput) {
-  //   return this.roomsService.update(updateRoomInput.id, updateRoomInput);
-  // }
+  @Mutation(() => Room)
+  updateRoom(@Args('updateRoomInput') updateRoomInput: UpdateRoomInput) {
+    return this.roomsService.update(updateRoomInput.id, updateRoomInput);
+  }
 
   // NOT TESTED
   @Mutation(() => Room)
-  @UseGuards(JwtAuthGuard, RolesGuard)
-  @Roles(RoleEnum.ADMIN, RoleEnum.SUPER_ADMIN)
-  removeRoom(@Args('id', { type: () => Int }) id: number) {
+  // @UseGuards(JwtAuthGuard, RolesGuard)
+  // @Roles(RoleEnum.ADMIN, RoleEnum.SUPER_ADMIN)
+  deleteRoom(@Args('id') id: string) {
     return this.roomsService.remove(id);
   }
 

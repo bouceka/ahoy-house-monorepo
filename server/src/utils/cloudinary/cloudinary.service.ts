@@ -36,6 +36,7 @@ export class CloudinaryService {
   async uploadImage(imagePath: string): Promise<CloudinaryResponse> {
     return await this.cloudinary.uploader.upload(
       imagePath,
+      { folder: 'ahoy_house' },
       function (error, result) {
         // eslint-disable-next-line no-console
         console.log(result, error);
