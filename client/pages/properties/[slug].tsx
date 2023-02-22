@@ -8,8 +8,11 @@ import Head from 'next/head';
 import { PropertyGallery } from '../../components/property-gallery/property-gallery.components';
 import { PropertyImageCarousel } from '../../components/property-card/property-image-carousel.component';
 import { PropertyCalculation } from '../../components/property-calculation/property-calculation.component';
-import {apolloClient} from '../../utils/apollo-client';
+import { apolloClient } from '../../utils/apollo-client';
 import { gql } from '@apollo/client';
+import { ToastContainer } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
+import { GET_ACTIVE_PROPERTIES, GET_ACTIVE_PROPERTY } from '../../apollo/property-queries';
 
 type Props = {
   property: Property;
@@ -17,27 +20,7 @@ type Props = {
 
 const fetchProperty = async (id: string) => {
   const { data } = await apolloClient.query({
-    query: gql`
-      query getActiveProperty($id: String!) {
-        getActiveProperty(id: $id) {
-          id
-          description
-          numberRooms
-          numberBaths
-          livingArea
-          address
-          postalCode
-          name
-          rooms {
-            id
-            description
-            name
-            livingArea
-            pricePerNight
-          }
-        }
-      }
-    `,
+    query: GET_ACTIVE_PROPERTY,
     variables: {
       id: id,
     },
@@ -46,42 +29,10 @@ const fetchProperty = async (id: string) => {
 };
 const fetchProperties = async () => {
   const { data } = await apolloClient.query({
-    query: gql`
-      query getAllActiveProperties {
-        getAllActiveProperties {
-          id
-          description
-          numberRooms
-          numberBaths
-          livingArea
-          address
-          postalCode
-          name
-          rooms {
-            id
-            description
-            name
-            livingArea
-            pricePerNight
-          }
-        }
-      }
-    `,
+    query: GET_ACTIVE_PROPERTIES,
   });
   return data.getAllActiveProperties;
 };
-
-// export const getStaticProps = ({ params }: GetStaticPropsContext<{ slug: string }>) => {
-//   const properties = PROPERTY_DATA;
-//   const findPropertyById = properties.find((property) => {
-//     return property.id.toString() === params?.slug; //dynamic id
-//   });
-//   return {
-//     props: {
-//       property: findPropertyById ? findPropertyById : [],
-//     },
-//   };
-// };
 
 export const getStaticProps = async ({ params }: GetStaticPropsContext<{ slug: string }>) => {
   const data = params?.slug ? await fetchProperty(params?.slug) : '';
@@ -108,7 +59,6 @@ export const getStaticPaths: GetStaticPaths = async () => {
 };
 
 const PropertyDetail = ({ property }: Props) => {
-  console.log(property);
   return (
     <>
       <Head>
@@ -118,12 +68,13 @@ const PropertyDetail = ({ property }: Props) => {
         <link rel='icon' href='/favicon.ico' />
       </Head>
       <Header imageExtend={true} type='solid' position='sticky' />
+      <ToastContainer style={{ fontSize: '1.6rem' }} pauseOnHover hideProgressBar />
       <main>
         <div className='row'>
           <h1 className='heading'>{property.name}</h1>
           <div className='row-2-1'>
             <div className='property-gallery'>
-              <PropertyImageCarousel imageData={PROPERTY_DATA[0].images} width='76rem' height='46.4rem' />
+              <PropertyImageCarousel imageData={property.images} width='76rem' height='46.4rem' />
             </div>
             <PropertyCalculation property={property} />
           </div>
