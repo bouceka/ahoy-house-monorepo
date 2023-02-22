@@ -24,6 +24,7 @@ export const PropertyCalculation = (props: Props) => {
     checkIn: '',
     checkOut: '',
     price: 0,
+    houseName: '',
   });
   const tomorrow = new Date();
   tomorrow.setDate(tomorrow.getDate() + 1);
@@ -58,7 +59,6 @@ export const PropertyCalculation = (props: Props) => {
     return tomorrow.toISOString().split('T')[0];
   };
 
-
   return (
     <>
       <CheckoutModal
@@ -87,7 +87,8 @@ export const PropertyCalculation = (props: Props) => {
                 checkIn: values.checkIn,
                 checkOut: values.checkOut,
                 noGuests: values.noGuests,
-                price: totalPrice
+                price: totalPrice,
+                houseName: props.property.name,
               });
               setOpenModal(true);
               // actions.resetForm();

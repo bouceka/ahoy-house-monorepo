@@ -69,7 +69,7 @@ type Props = {
 export const PropertyCard = ({index, property}: Props) => {
   return (
     <div className='property-card'>
-      <PropertyImageCarousel imageData={PROPERTY_DATA[0].images} />
+      <PropertyImageCarousel imageData={property.images} />
       <div className='property-card__content'>
         <h4 className='heading--bold'>{property.name}</h4>
         <div className='property-card__row'>
