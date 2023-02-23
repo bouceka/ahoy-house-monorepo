@@ -19,7 +19,11 @@
 // TODO: Replace it to make it general
 .row-2-1{
 	display: grid;
-	grid-template-columns: repeat(4, 1fr);
+	grid-template-columns: repeat(3, 1fr);
 	grid-template-rows: 1fr;
 	grid-template-areas: 'gallery gallery calculation';
+}
+
+.page{
+  margin-top: 2.4rem;
 }

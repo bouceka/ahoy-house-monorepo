@@ -34,7 +34,7 @@ export default function Properties({ properties, ...props }: Props) {
       </Head>
       <Header imageExtend={true} type='solid' position='sticky' />
       <main>
-        <div className='row'>
+        <div className='row page'>
           <h2 className='heading'>Our Properties</h2>
 
           <section className='properties-grid'>

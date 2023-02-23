@@ -1,18 +1,16 @@
 // @flow
 import * as React from 'react';
-import { Property } from '../../types/property';
-import { PROPERTY_DATA } from '../../mock/property.data';
-import { GetStaticPaths, GetStaticProps, GetStaticPropsContext } from 'next';
+import { Property, Room } from '../../types/property';
+import { GetStaticPaths, GetStaticPropsContext } from 'next';
 import { Header } from '../../components/header/header.component';
 import Head from 'next/head';
-import { PropertyGallery } from '../../components/property-gallery/property-gallery.components';
 import { PropertyImageCarousel } from '../../components/property-card/property-image-carousel.component';
 import { PropertyCalculation } from '../../components/property-calculation/property-calculation.component';
-import { apolloClient } from '../../utils/apollo-client';
-import { gql } from '@apollo/client';
 import { ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import { fetchActiveProperties, fetchActiveProperty } from '../../apollo/property-queries';
+import { RoomThumbnail } from '../../components/room-thumbnail/room-thumbnail.component';
+import { useState } from 'react';
 
 type Props = {
   property: Property;
@@ -43,6 +41,12 @@ export const getStaticPaths: GetStaticPaths = async () => {
 };
 
 const PropertyDetail = ({ property }: Props) => {
+  const [selectedRoom, setSelectedRoom] = useState(property.rooms[0] ?? null);
+
+  const handleSelectRoom = (room: Room) => {
+    setSelectedRoom(room);
+  };
+
   return (
     <>
       <Head>
@@ -54,13 +58,43 @@ const PropertyDetail = ({ property }: Props) => {
       <Header imageExtend={true} type='solid' position='sticky' />
       <ToastContainer style={{ fontSize: '1.6rem' }} pauseOnHover hideProgressBar />
       <main>
-        <div className='row'>
+        <div className='row page'>
           <h1 className='heading'>{property.name}</h1>
           <div className='row-2-1'>
             <div className='property-gallery'>
               <PropertyImageCarousel imageData={property.images} width='76rem' height='46.4rem' />
             </div>
-            <PropertyCalculation property={property} />
+            <aside className='property-calculation'>
+              {property.rooms.length > 0 ? (
+                <PropertyCalculation property={property} room={selectedRoom} />
+              ) : (
+                <h4 className='heading'>No room available </h4>
+              )}
+            </aside>
+          </div>
+          <div className='row-2-1'>
+            <div className='property-description'>
+              <div className='property-container'>
+                <h3 className='heading'>Description</h3>
+                <p className='paragraph--large'>{property.description}</p>
+              </div>
+              <div className='property-container'>
+                <h3 className='heading'>Property Information</h3>
+                <p className='paragraph--large'>Living area: {property.livingArea} sqft</p>
+                <p className='paragraph--large'>No. Bathrooms: {property.numberBaths}</p>
+                <p className='paragraph--large'>No. Bedroom: {property.numberRooms}</p>
+                <p className='paragraph--large'>Address: {property.address}</p>
+                <p className='paragraph--large'>Postal Code: {property.postalCode}</p>
+              </div>
+            </div>
+            <div className='room-list'>
+              <h3 className='heading'>Room options</h3>
+              {property.rooms.length > 0 ? (
+                <RoomThumbnail selectRoom={handleSelectRoom} selectedRoom={selectedRoom} rooms={property.rooms} />
+              ) : (
+                <h4 className='heading'>No room available </h4>
+              )}
+            </div>
           </div>
         </div>
       </main>

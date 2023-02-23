@@ -4,10 +4,11 @@ import { Input } from '../input/input.component';
 import * as yup from 'yup';
 import { Formik } from 'formik';
 import { Action } from '../action/action.component';
-import { Property } from '../../types/property';
+import { Property, Room } from '../../types/property';
 import { CheckoutModal } from '../modal/checheckout-modal.component';
 import { useState } from 'react';
 type Props = {
+  room: Room;
   property: Property;
 };
 
@@ -17,7 +18,7 @@ export type FormValue = {
   checkOut: string;
 };
 
-export const PropertyCalculation = (props: Props) => {
+export const PropertyCalculation = ({ room, property }: Props) => {
   const [openModal, setOpenModal] = useState(false);
   const [calculation, setCalculation] = useState({
     noGuests: 0,
@@ -68,93 +69,92 @@ export const PropertyCalculation = (props: Props) => {
         secondaryAction={() => setOpenModal(false)}
         calculation={calculation}
       />
-      <aside className='property-calculation'>
-        <Formik
-          initialValues={calculation}
-          validationSchema={validationSchema}
-          onSubmit={async (values, actions) => {
-            // TODO: Refactor -> duplication
-            const roomPrice = handleRoomPriceForPeriod(
-              handleDateDifference(values.checkIn, values.checkOut),
-              props.property.rooms[0].pricePerNight
-            );
 
-            const tax = handleTaxProportion(roomPrice);
-            const totalPrice = tax + roomPrice;
-            try {
-              console.log(values);
-              setCalculation({
-                checkIn: values.checkIn,
-                checkOut: values.checkOut,
-                noGuests: values.noGuests,
-                price: totalPrice,
-                houseName: props.property.name,
-              });
-              setOpenModal(true);
-              // actions.resetForm();
-            } catch (error) {
-              console.log(values);
-              actions.resetForm();
-            }
-          }}
-        >
-          {({ values, handleSubmit, handleChange, isSubmitting, dirty, isValid, errors }) => {
-            const roomPrice = handleRoomPriceForPeriod(
-              handleDateDifference(values.checkIn, values.checkOut),
-              props.property.rooms[0].pricePerNight
-            );
+      <Formik
+        initialValues={calculation}
+        validationSchema={validationSchema}
+        onSubmit={async (values, actions) => {
+          // TODO: Refactor -> duplication
+          const roomPrice = handleRoomPriceForPeriod(
+            handleDateDifference(values.checkIn, values.checkOut),
+            room.pricePerNight
+          );
 
-            const tax = handleTaxProportion(roomPrice);
-            const totalPrice = tax + roomPrice;
-            return (
-              <>
-                <form onSubmit={handleSubmit}>
-                  <Input
-                    min={new Date().toISOString().split('T')[0]}
-                    onChange={handleChange}
-                    value={values.checkIn}
-                    required
-                    name='checkIn'
-                    type='date'
-                    label='Check In'
-                    placeholder='Check In'
-                  />
-                  <Input
-                    disabled={!values.checkIn}
-                    min={values.checkIn ? handleGetTomorrow(values.checkIn) : ''}
-                    onChange={handleChange}
-                    value={values.checkOut}
-                    required
-                    name='checkOut'
-                    type='date'
-                    label='Check Out'
-                    placeholder='Check Out'
-                  />
-                  <Input
-                    min={1}
-                    max={props.property.rooms[0].capacity}
-                    onChange={handleChange}
-                    value={values.noGuests}
-                    required
-                    name='noGuests'
-                    type='number'
-                    label='Guests'
-                    placeholder='Number of guests'
-                  />
-                  <Action disabled={!isValid || !dirty} as='button' type='submit' styleType='primary'>
-                    Submit
-                  </Action>
-                </form>
-                <div className='property-calculation__summary'>
-                  <div className='paragraph--medium'>Room {!isValid || !dirty ? '$0' : `$${roomPrice}`}</div>
-                  <div className='paragraph--medium'>GST/PST (12%) {!isValid || !dirty ? '$0' : `$${tax}`}</div>
-                  <div className='paragraph--medium--bold'>Total {!isValid || !dirty ? '$0' : `$${totalPrice}`}</div>
-                </div>
-              </>
-            );
-          }}
-        </Formik>
-      </aside>
+          const tax = handleTaxProportion(roomPrice);
+          const totalPrice = tax + roomPrice;
+          try {
+            console.log(values);
+            setCalculation({
+              checkIn: values.checkIn,
+              checkOut: values.checkOut,
+              noGuests: values.noGuests,
+              price: totalPrice,
+              houseName: property.name,
+            });
+            setOpenModal(true);
+            // actions.resetForm();
+          } catch (error) {
+            console.log(values);
+            actions.resetForm();
+          }
+        }}
+      >
+        {({ values, handleSubmit, handleChange, isSubmitting, dirty, isValid, errors }) => {
+          const roomPrice = handleRoomPriceForPeriod(
+            handleDateDifference(values.checkIn, values.checkOut),
+            room.pricePerNight
+          );
+
+          const tax = handleTaxProportion(roomPrice);
+          const totalPrice = tax + roomPrice;
+          return (
+            <>
+              <form onSubmit={handleSubmit}>
+                <Input
+                  min={new Date().toISOString().split('T')[0]}
+                  onChange={handleChange}
+                  value={values.checkIn}
+                  required
+                  name='checkIn'
+                  type='date'
+                  label='Check In'
+                  placeholder='Check In'
+                />
+                <Input
+                  disabled={!values.checkIn}
+                  min={values.checkIn ? handleGetTomorrow(values.checkIn) : ''}
+                  onChange={handleChange}
+                  value={values.checkOut}
+                  required
+                  name='checkOut'
+                  type='date'
+                  label='Check Out'
+                  placeholder='Check Out'
+                />
+                <Input
+                  min={1}
+                  max={room.capacity}
+                  onChange={handleChange}
+                  value={values.noGuests}
+                  required
+                  name='noGuests'
+                  type='number'
+                  label='Guests'
+                  placeholder='Number of guests'
+                />
+                <Action disabled={!isValid || !dirty} as='button' type='submit' styleType='primary'>
+                  Submit
+                </Action>
+              </form>
+              <div className='property-calculation__summary'>
+                <div className='paragraph--medium'>Room {!isValid || !dirty ? '$0' : `$${roomPrice}`}</div>
+                <div className='paragraph--medium'>GST/PST (12%) {!isValid || !dirty ? '$0' : `$${tax}`}</div>
+                <div className='paragraph--medium--bold'>Total {!isValid || !dirty ? '$0' : `$${totalPrice}`}</div>
+              </div>
+            </>
+          );
+        }}
+      </Formik>
     </>
   );
 };
