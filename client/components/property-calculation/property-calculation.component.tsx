@@ -109,6 +109,7 @@ export const PropertyCalculation = ({ room, property }: Props) => {
           const totalPrice = tax + roomPrice;
           return (
             <>
+            <h3 className="heading">Rate</h3>
               <form onSubmit={handleSubmit}>
                 <Input
                   min={new Date().toISOString().split('T')[0]}
@@ -142,15 +143,15 @@ export const PropertyCalculation = ({ room, property }: Props) => {
                   label='Guests'
                   placeholder='Number of guests'
                 />
+                <div className='property-calculation__summary'>
+                  <div className='paragraph--medium'>Room {!isValid || !dirty ? '$0' : `$${roomPrice}`}</div>
+                  <div className='paragraph--medium'>GST/PST (12%) {!isValid || !dirty ? '$0' : `$${tax}`}</div>
+                  <div className='paragraph--medium--bold'>Total {!isValid || !dirty ? '$0' : `$${totalPrice}`}</div>
+                </div>
                 <Action disabled={!isValid || !dirty} as='button' type='submit' styleType='primary'>
                   Submit
                 </Action>
               </form>
-              <div className='property-calculation__summary'>
-                <div className='paragraph--medium'>Room {!isValid || !dirty ? '$0' : `$${roomPrice}`}</div>
-                <div className='paragraph--medium'>GST/PST (12%) {!isValid || !dirty ? '$0' : `$${tax}`}</div>
-                <div className='paragraph--medium--bold'>Total {!isValid || !dirty ? '$0' : `$${totalPrice}`}</div>
-              </div>
             </>
           );
         }}

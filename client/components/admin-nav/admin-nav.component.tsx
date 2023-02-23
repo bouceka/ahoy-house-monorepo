@@ -7,7 +7,7 @@ type Props = {};
 export const AdminNav = (props: Props) => {
   return (
     <>
-      <header className='header' style={{ position: 'fixed', top: 0 }}>
+      <header className='header' style={{ position: 'sticky', top: 0 }}>
         <nav className='row container'>
           <h2 className='heading' style={{ color: '#fff' }}>
             Admin
