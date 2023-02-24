@@ -62,7 +62,7 @@ const PropertyDetail = ({ property }: Props) => {
           <h1 className='heading'>{property.name}</h1>
           <div className='row-2-1'>
             <div className='property-gallery'>
-              <PropertyImageCarousel imageData={property.images} width='76rem' height='46.4rem' />
+              <PropertyImageCarousel imageData={property.images} width='100%' height='100%' />
             </div>
             <aside className='property-calculation'>
               {property.rooms.length > 0 ? (

@@ -11,7 +11,7 @@ type Props = {
   width?: string;
   height?: string;
 };
-export const PropertyImageCarousel = ({ imageData, height = '27.2rem', width = '50.4rem' }: Props) => {
+export const PropertyImageCarousel = ({ imageData, height, width }: Props) => {
   const [currentItem, setCurrentItem] = useState(0);
   const [images, setImages] = useState<PropertyImage[]>(imageData);
   const size = images.length - 1;

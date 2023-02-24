@@ -64,15 +64,15 @@ import { Property } from '../../types/property';
 
 type Props = {
   property: Property;
-  index:number
+  index: number;
 };
-export const PropertyCard = ({index, property}: Props) => {
+export const PropertyCard = ({ index, property }: Props) => {
   return (
     <div className='property-card'>
       <PropertyImageCarousel imageData={property.images} />
       <div className='property-card__content'>
-        <h4 className='heading--bold'>{property.name}</h4>
         <div className='property-card__row'>
+          <h4 className='heading--bold'>{property.name}</h4>
           <div className='property-card__icon'>
             <Image src='/icons/star-intersect.svg' width='24' height='24' alt='' />
             <span className='paragraph--large'>{'4.3'}</span>

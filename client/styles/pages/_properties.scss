@@ -1,8 +1,18 @@
+@use '../abstracts' as *;
+
 .properties-grid {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 3.2rem;
   margin: 3.2rem 0;
+  @include respond(tab-land) {
+    justify-items: center;
+    gap: 1.6rem;
+  }
+  @include respond(tab-port) {
+    grid-template-columns: 1fr;
+    gap: 2.4rem;
+  }
 }
 
 .property-grid {
@@ -15,7 +25,21 @@
   margin: 1.6rem 0;
   gap: 1.6rem;
   grid-area: 1 / 1 / span 1 / span 2;
+
+  @include respond(phone) {
+    grid-column-start: 1;
+    grid-column-end: 4;
+    grid-row: 2/3;
+  }
 }
 
-.property-container {
+.property-gallery {
+  grid-column-start: 1;
+  grid-column-end: 3;
+  display: grid;
+  @include respond(phone) {
+    grid-column-start: 1;
+    grid-column-end: 4;
+    grid-row: 1/2;
+  }
 }
