@@ -4,25 +4,25 @@
 .header {
   background-color: var(--color-primary-800);
   width: 100%;
-  padding: 1.6rem 0;
 
   &__image {
-    position: relative;
     height: 24rem;
     width: 100%;
     border-bottom: 4px solid var(--color-primary-100);
-    background: linear-gradient(0deg,rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('/static/illustrations/satellite.jpg');
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+      url('/static/illustrations/satellite.jpg');
     background-size: cover;
     & img {
       object-fit: cover;
     }
   }
 
-  & > .container {
+  &  .container {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+    padding: 1.6rem 0;
   }
 
   ul {
@@ -33,6 +33,93 @@
       @extend .paragraph--large;
       list-style: none;
       color: var(--text-white-primary);
+    }
+  }
+
+  // inspired by https://codepen.io/mutedblues/pen/MmPNPG
+  & .menu {
+    /* menu icon */
+
+    &__icon {
+      cursor: pointer;
+      display: none;
+      float: right;
+      padding: 28px 20px;
+      position: relative;
+      user-select: none;
+      &:hover {
+        background-color: rgba(255, 255, 255, 0.04);
+      }
+    }
+
+    &__icon .icon {
+      background: #ffffff;
+      display: block;
+      height: 2px;
+      position: relative;
+      transition: background 0.2s ease-out;
+      width: 24px;
+    }
+
+    &__icon .icon:before,
+    &__icon .icon:after {
+      background: #ffffff;
+      content: '';
+      display: block;
+      height: 100%;
+      position: absolute;
+      transition: all 0.2s ease-out;
+      width: 100%;
+    }
+
+    &__icon .icon:before {
+      top: 6px;
+    }
+
+    &__icon .icon:after {
+      top: -6px;
+    }
+
+    &__btn {
+      display: none;
+
+      &:checked ~ .menu__links {
+        left: 0;
+        transition: all 0.2s ease-out;
+      }
+    }
+
+    &__btn:checked ~ .menu__icon .icon {
+      background: transparent;
+    }
+
+    &__btn:checked ~ .menu__icon .icon:before {
+      transform: rotate(-45deg);
+    }
+
+    &__btn:checked ~ .menu__icon .icon:after {
+      transform: rotate(45deg);
+    }
+
+    &__btn:checked ~ .menu__icon:not(.steps) .icon:before,
+    &__btn:checked ~ .menu__icon:not(.steps) .icon:after {
+      top: 0;
+    }
+  }
+
+  @include respond(tab-port) {
+    .menu__links {
+      position: absolute;
+      top: 11rem;
+      left: -200rem;
+      width: 100%;
+      background-color: var(--color-primary-800);
+      flex-direction: column;
+      padding: 2.4rem;
+      border-top: 4px solid var(--color-primary-100);
+    }
+    .menu__icon {
+      display: inline-block;
     }
   }
 }

@@ -1,6 +1,48 @@
+@use '../abstracts' as *;
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%;
+
+  @include respond(desktop) {
+    font-size: 56.25%; //1 rem = 9px, 9/16 = 50%
+  }
+
+  @include respond(tab-port) {
+    font-size: 50%; //1 rem = 8px, 8/16 = 50%
+  }
+  overflow-x: hidden;
+
+  // @include respond(big-desktop) {
+  //     font-size: 75%; //1 rem = 12px, 12/16 = 75%
+  // }
+}
+
+body {
+  box-sizing: border-box;
+  font-family: 'Switzer', sans-serif;
+  font-weight: 400;
+  font-size: 1.6rem;
+  // line-height: 1.7;
+  color: var(--text-black-primary);
+  background-color: var(--background-color-secondary);
+}
+
 .row {
-  max-width: 115.2rem;
+  max-width: var(--grid-width);
   margin: 0 auto;
+
+  @include respond(tab-land) {
+    padding-right: 3%;
+    padding-left: 3%;
+  }
 }
 
 .card {
@@ -17,14 +59,19 @@
 }
 
 // TODO: Replace it to make it general
-.row-2-1{
-	display: grid;
-	grid-template-columns: repeat(3, 1fr);
-	grid-template-rows: 1fr;
-	grid-template-areas: 'gallery gallery calculation';
-  gap: .8rem;
+.row-2-1 {
+  display: grid;
+  grid-auto-columns: minmax(0, 1fr);
+  grid-auto-flow: column;
+  grid-template-rows: 1fr;
+  grid-template-areas: 'gallery gallery calculation';
+  gap: 0.8rem;
+  @include respond(phone) {
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr;
+  }
 }
 
-.page{
+.page {
   margin-top: 2.4rem;
 }
