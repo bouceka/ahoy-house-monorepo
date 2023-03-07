@@ -50,10 +50,12 @@ export const CheckoutModal = ({ open, onClose, primaryAction, secondaryAction, c
                 X
               </button>
               <div className='modal__content'>
-                <h2 className='heading'>Checkout</h2>
-                <p className='paragraph--medium'>
-                  To complete your order, please leave your contact information. Our team will contact you shortly{' '}
-                </p>
+                <div className='modal__text'>
+                  <h2 className='heading'>Checkout</h2>
+                  <p className='paragraph--medium'>
+                    To complete your order, please leave your contact information. Our team will contact you shortly{' '}
+                  </p>
+                </div>
                 <Formik
                   initialValues={initialValue}
                   validationSchema={validationSchema}
