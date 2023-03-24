@@ -3,7 +3,6 @@ import * as React from 'react';
 import { PropertyImageCarousel } from './property-image-carousel.component';
 import Image from 'next/image';
 import { Action } from '../action/action.component';
-import { PROPERTY_DATA } from '../../mock/property.data';
 import { Property } from '../../types/property';
 
 // export interface ImageData {

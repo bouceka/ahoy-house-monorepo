@@ -40,7 +40,7 @@ export const Header = ({ position, imageExtend = false, type = 'solid' }: Props)
                 </Link>
               </li>
               <li>
-                <Action as='button' styleType='secondary'>
+                <Action as='link' href='login' styleType='secondary'>
                   Sign Up
                 </Action>
               </li>

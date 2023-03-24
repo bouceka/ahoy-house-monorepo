@@ -1,0 +1,1904 @@
+{
+  ".eslintrc.json": {
+    "mt": "Thu Jan 12 2023 14:28:51 GMT-0800 (Pacific Standard Time)",
+    "exists": true,
+    "state": 1,
+    "path": "C:\\Users\\adamm\\OneDrive\\Plocha\\WWW\\ahoy-house-monorepo\\client\\.eslintrc.json"
+  },
+  ".gitignore": {
+    "mt": "Thu Jan 12 2023 14:28:51 GMT-0800 (Pacific Standard Time)",
+    "exists": true,
+    "state": 1,
+    "path": "C:\\Users\\adamm\\OneDrive\\Plocha\\WWW\\ahoy-house-monorepo\\client\\.gitignore"
+  },
+  ".next/build-manifest.json": {
+    "mt": "Sun Mar 12 2023 17:13:01 GMT-0700 (Pacific Daylight Saving Time)",
+    "exists": true,
+    "state": 1,
+    "path": "C:\\Users\\adamm\\OneDrive\\Plocha\\WWW\\ahoy-house-monorepo\\client\\.next\\build-manifest.json"
+  },
+  ".next/cache/.tsbuildinfo": {
+    "mt": "Sun Mar 12 2023 16:38:48 GMT-0700 (Pacific Daylight Saving Time)",
+    "exists": true,
+    "state": 1,
+    "path": "C:\\Users\\adamm\\OneDrive\\Plocha\\WWW\\ahoy-house-monorepo\\client\\.next\\cache\\.tsbuildinfo"
+  },
+  ".next/cache/eslint/.cache_13sw5oi": {
+    "mt": "Sun Mar 12 2023 16:38:48 GMT-0700 (Pacific Daylight Saving Time)",
+    "exists": true,
+    "state": 1,
+    "path": "C:\\Users\\adamm\\OneDrive\\Plocha\\WWW\\ahoy-house-monorepo\\client\\.next\\cache\\eslint\\.cache_13sw5oi"
+  },
+  ".next/cache/images/+7GHzcv2T8FuhXPnfMKWMVUa819AZPeIczbCHjVD6oA=/60.1675833870904.bwOuR9357MPy8NpWUr6u0KSznsuZ0m2v0eA3qm2s6Cw=.webp": {
+    "mt": "Tue Feb 07 2023 21:23:30 GMT-0800 (Pacific Standard Time)",
+    "exists": true,
+    "state": 1,
+    "path": "C:\\Users\\adamm\\OneDrive\\Plocha\\WWW\\ahoy-house-monorepo\\client\\.next\\cache\\images\\+7GHzcv2T8FuhXPnfMKWMVUa819AZPeIczbCHjVD6oA=\\60.1675833870904.bwOuR9357MPy8NpWUr6u0KSznsuZ0m2v0eA3qm2s6Cw=.webp"
+  },
+  ".next/cache/images/-y8foVf2LAZdY68Gu6ZEcBGu0SPyPTFwzj7GDbDPcgQ=/60.1677190308937.MjT-nwEL-f9VllBxjHOiRLeNRw99PrfDHoXTGIokVf8=.webp": {
+    "mt": "Thu Feb 23 2023 14:10:48 GMT-0800 (Pacific Standard Time)",
+    "exists": true,
+    "state": 1,
+    "path": "C:\\Users\\adamm\\OneDrive\\Plocha\\WWW\\ahoy-house-monorepo\\client\\.next\\cache\\images\\-y8foVf2LAZdY68Gu6ZEcBGu0SPyPTFwzj7GDbDPcgQ=\\60.1677190308937.MjT-nwEL-f9VllBxjHOiRLeNRw99PrfDHoXTGIokVf8=.webp"
+  },
+  ".next/cache/images/0hD1WikcEzq5UDMvgiu6r10T6SOelAKzYgfZndPzzXM=/2592000.1679700674359.JsBR0oqx4KwucDgcaX-rgk6mywZjNVE4Tfi-AVdqqkM=.webp": {
+    "mt": "Wed Feb 22 2023 15:31:14 GMT-0800 (Pacific Standard Time)",
+    "exists": true,
+    "state": 1,
+    "path": "C:\\Users\\adamm\\OneDrive\\Plocha\\WWW\\ahoy-house-monorepo\\client\\.next\\cache\\images\\0hD1WikcEzq5UDMvgiu6r10T6SOelAKzYgfZndPzzXM=\\2592000.1679700674359.JsBR0oqx4KwucDgcaX-rgk6mywZjNVE4Tfi-AVdqqkM=.webp"
+  },
+  ".next/cache/images/1LsmLeY8Nlbb78wjZEV-OQZEwLI0V+0LzacWbe8NKD4=/60.1676666626614.yf89UzdVrsT4fN8oz1T+9JjDmJ2vJEOan2p11BgTGzQ=.webp": {
+    "mt": "Fri Feb 17 2023 12:42:46 GMT-0800 (Pacific Standard Time)",
+    "exists": true,
+    "state": 1,
+    "path": "C:\\Users\\adamm\\OneDrive\\Plocha\\WWW\\ahoy-house-monorepo\\client\\.next\\cache\\images\\1LsmLeY8Nlbb78wjZEV-OQZEwLI0V+0LzacWbe8NKD4=\\60.1676666626614.yf89UzdVrsT4fN8oz1T+9JjDmJ2vJEOan2p11BgTGzQ=.webp"
+  },
+  ".next/cache/images/3WBu+A4eeCQQtj4rbCF7kNs-yDWIGD-Ks0oase3q5kw=/2592000.1679683377401.YBHxYED14TKpc0EOtBzmLDBgpnDA6AmgNX2xtnAv5AQ=.webp": {
+    "mt": "Wed Feb 22 2023 10:42:57 GMT-0800 (Pacific Standard Time)",
+    "exists": true,
+    "state": 1,
+    "path": "C:\\Users\\adamm\\OneDrive\\Plocha\\WWW\\ahoy-house-monorepo\\client\\.next\\cache\\images\\3WBu+A4eeCQQtj4rbCF7kNs-yDWIGD-Ks0oase3q5kw=\\2592000.1679683377401.YBHxYED14TKpc0EOtBzmLDBgpnDA6AmgNX2xtnAv5AQ=.webp"
+  },
+  ".next/cache/images/6v00LX2aDW9OZrCttcchFiaXtIzrXpdmDiS3oz4y9FA=/60.1675834602084.RVDcDXKtbO3aHDTy8Tlw5uTKBwKkmlQIf+hVUY7A9tc=.webp": {
+    "mt": "Tue Feb 07 2023 21:35:42 GMT-0800 (Pacific Standard Time)",
+    "exists": true,
+    "state": 1,
+    "path": "C:\\Users\\adamm\\OneDrive\\Plocha\\WWW\\ahoy-house-monorepo\\client\\.next\\cache\\images\\6v00LX2aDW9OZrCttcchFiaXtIzrXpdmDiS3oz4y9FA=\\60.1675834602084.RVDcDXKtbO3aHDTy8Tlw5uTKBwKkmlQIf+hVUY7A9tc=.webp"
+  },
+  ".next/cache/images/8PR8MiMZbPWNB0p3+xxk-le-LMjAMF1hlASACBY9Y8s=/60.1675835575105.LFVmGofTMRNKrQiN0xbj7xeHWmexAtGZ5MD2gjOBmH8=.webp": {
+    "mt": "Tue Feb 07 2023 21:51:55 GMT-0800 (Pacific Standard Time)",
+    "exists": true,
+    "state": 1,
+    "path": "C:\\Users\\adamm\\OneDrive\\Plocha\\WWW\\ahoy-house-monorepo\\client\\.next\\cache\\images\\8PR8MiMZbPWNB0p3+xxk-le-LMjAMF1hlASACBY9Y8s=\\60.1675835575105.LFVmGofTMRNKrQiN0xbj7xeHWmexAtGZ5MD2gjOBmH8=.webp"
+  },
+  ".next/cache/images/9oIyd4CwDg8-YKFHwZl-DQfx5o65GBTGQvCNV26K7ts=/60.1678665616666.GYQrcKlxp3XtALCpzks9yyCkCE6I98Y98DJ4pKevXsg=.webp": {
+    "mt": "Sun Mar 12 2023 16:59:16 GMT-0700 (Pacific Daylight Saving Time)",
+    "exists": true,
+    "state": 1,
+    "path": "C:\\Users\\adamm\\OneDrive\\Plocha\\WWW\\ahoy-house-monorepo\\client\\.next\\cache\\images\\9oIyd4CwDg8-YKFHwZl-DQfx5o65GBTGQvCNV26K7ts=\\60.1678665616666.GYQrcKlxp3XtALCpzks9yyCkCE6I98Y98DJ4pKevXsg=.webp"
+  },
+  ".next/cache/images/cAVA3JQdMw2ph17cpLCp8q3RB5K6qjRnDEmNN7ZRTnI=/60.1677092005040.bVI-CK7S1jfqJYXCr-a-gRFlS+UexiefuLtgQqZptX8=.webp": {
+    "mt": "Wed Feb 22 2023 10:52:25 GMT-0800 (Pacific Standard Time)",
+    "exists": true,
+    "state": 1,
+    "path": "C:\\Users\\adamm\\OneDrive\\Plocha\\WWW\\ahoy-house-monorepo\\client\\.next\\cache\\images\\cAVA3JQdMw2ph17cpLCp8q3RB5K6qjRnDEmNN7ZRTnI=\\60.1677092005040.bVI-CK7S1jfqJYXCr-a-gRFlS+UexiefuLtgQqZptX8=.webp"
+  },
+  ".next/cache/images/ctXr3gcvFgFds2-gp07GlQA4KOET0UjOrw6RiDVb+Ys=/2592000.1679683377854.YBHxYED14TKpc0EOtBzmLDBgpnDA6AmgNX2xtnAv5AQ=.webp": {
+    "mt": "Wed Feb 22 2023 10:42:57 GMT-0800 (Pacific Standard Time)",
+    "exists": true,
+    "state": 1,
+    "path": "C:\\Users\\adamm\\OneDrive\\Plocha\\WWW\\ahoy-house-monorepo\\client\\.next\\cache\\images\\ctXr3gcvFgFds2-gp07GlQA4KOET0UjOrw6RiDVb+Ys=\\2592000.1679683377854.YBHxYED14TKpc0EOtBzmLDBgpnDA6AmgNX2xtnAv5AQ=.webp"
+  },
+  ".next/cache/images/dZKG2-5-wVOwjOzz9MJmvW5s75JuNIIYqOjcA15odJI=/2592000.1679686681467.gX7zvr2pjlC63JuaUB+TzBGXjGTxz27cIWHsj31ZNaE=.webp": {
+    "mt": "Wed Feb 22 2023 11:38:01 GMT-0800 (Pacific Standard Time)",
+    "exists": true,
+    "state": 1,
+    "path": "C:\\Users\\adamm\\OneDrive\\Plocha\\WWW\\ahoy-house-monorepo\\client\\.next\\cache\\images\\dZKG2-5-wVOwjOzz9MJmvW5s75JuNIIYqOjcA15odJI=\\2592000.1679686681467.gX7zvr2pjlC63JuaUB+TzBGXjGTxz27cIWHsj31ZNaE=.webp"
+  },
+  ".next/cache/images/F9JDGkyMmHkDW-2oHMaE+NLVmzCofX4YHT9JHakJlVI=/60.1675836213743.QZq8bFyzed9sZ5u+DCQtirBJbjSmMT1yvodGIGFZBzo=.webp": {
+    "mt": "Tue Feb 07 2023 22:02:33 GMT-0800 (Pacific Standard Time)",
+    "exists": true,
+    "state": 1,
+    "path": "C:\\Users\\adamm\\OneDrive\\Plocha\\WWW\\ahoy-house-monorepo\\client\\.next\\cache\\images\\F9JDGkyMmHkDW-2oHMaE+NLVmzCofX4YHT9JHakJlVI=\\60.1675836213743.QZq8bFyzed9sZ5u+DCQtirBJbjSmMT1yvodGIGFZBzo=.webp"
+  },
+  ".next/cache/images/fqzOMAucKq9zva2ZYJ3BLRGxMeuZo7Ic52hxM8O0Gn8=/60.1676666626933.P0gWlCOodIcPGDhv9zscJZEBEDcZQSmn75gVuPmdcmk=.webp": {
+    "mt": "Fri Feb 17 2023 12:42:46 GMT-0800 (Pacific Standard Time)",
+    "exists": true,
+    "state": 1,
+    "path": "C:\\Users\\adamm\\OneDrive\\Plocha\\WWW\\ahoy-house-monorepo\\client\\.next\\cache\\images\\fqzOMAucKq9zva2ZYJ3BLRGxMeuZo7Ic52hxM8O0Gn8=\\60.1676666626933.P0gWlCOodIcPGDhv9zscJZEBEDcZQSmn75gVuPmdcmk=.webp"
+  },
+  ".next/cache/images/h-aeuFcB8bbsWf2NgZIcvjeI5v1BR2IULJxfthdbxhQ=/60.1678665616556.DckIftpxazEowMnySvdImjFofi1CbQX29O5Pg0SW-XE=.webp": {
+    "mt": "Sun Mar 12 2023 16:59:16 GMT-0700 (Pacific Daylight Saving Time)",
+    "exists": true,
+    "state": 1,
+    "path": "C:\\Users\\adamm\\OneDrive\\Plocha\\WWW\\ahoy-house-monorepo\\client\\.next\\cache\\images\\h-aeuFcB8bbsWf2NgZIcvjeI5v1BR2IULJxfthdbxhQ=\\60.1678665616556.DckIftpxazEowMnySvdImjFofi1CbQX29O5Pg0SW-XE=.webp"
+  },
+  ".next/cache/images/I3LXu-25h9DUMQ840j9MFdVPhhNniydbvnzurV3fOv0=/60.1675836213415.z4EsWS80pLTAFatt41JFt+VsszgsmXPz+QPIDUVCuYs=.webp": {
+    "mt": "Tue Feb 07 2023 22:02:33 GMT-0800 (Pacific Standard Time)",
+    "exists": true,
+    "state": 1,
+    "path": "C:\\Users\\adamm\\OneDrive\\Plocha\\WWW\\ahoy-house-monorepo\\client\\.next\\cache\\images\\I3LXu-25h9DUMQ840j9MFdVPhhNniydbvnzurV3fOv0=\\60.1675836213415.z4EsWS80pLTAFatt41JFt+VsszgsmXPz+QPIDUVCuYs=.webp"
+  },
+  ".next/cache/images/jdqYrztjIptYBJjWXxOIeFCx0HiZrw708b-8OD-H4xQ=/60.1677092004256.Ub3x+hd+OyQ00mnD0VZqNj1pf77mf9z3Y9MxwEz3Rhs=.webp": {
+    "mt": "Wed Feb 22 2023 10:52:24 GMT-0800 (Pacific Standard Time)",
+    "exists": true,
+    "state": 1,
+    "path": "C:\\Users\\adamm\\OneDrive\\Plocha\\WWW\\ahoy-house-monorepo\\client\\.next\\cache\\images\\jdqYrztjIptYBJjWXxOIeFCx0HiZrw708b-8OD-H4xQ=\\60.1677092004256.Ub3x+hd+OyQ00mnD0VZqNj1pf77mf9z3Y9MxwEz3Rhs=.webp"
+  },
+  ".next/cache/images/L4umh3gc-6-Cy9UoTs3K75nLPkdbrFzdHBVcaslTycQ=/60.1678665614462.M0nCq83MWaqj5P2kApdBUQjJxeELGAZSFlELrAGIy7I=.webp": {
+    "mt": "Sun Mar 12 2023 16:59:14 GMT-0700 (Pacific Daylight Saving Time)",
+    "exists": true,
+    "state": 1,
+    "path": "C:\\Users\\adamm\\OneDrive\\Plocha\\WWW\\ahoy-house-monorepo\\client\\.next\\cache\\images\\L4umh3gc-6-Cy9UoTs3K75nLPkdbrFzdHBVcaslTycQ=\\60.1678665614462.M0nCq83MWaqj5P2kApdBUQjJxeELGAZSFlELrAGIy7I=.webp"
+  },
+  ".next/cache/images/odagvychWFllxaQDAzT1Se-QQFHSeEmRrnD9KUh-LMU=/2592000.1679686041486.7Fe7SRIS7y2TH4T6YXYTPzXIKKoZu8LAub1NjDAZghA=.webp": {
+    "mt": "Wed Feb 22 2023 11:27:21 GMT-0800 (Pacific Standard Time)",
+    "exists": true,
+    "state": 1,
+    "path": "C:\\Users\\adamm\\OneDrive\\Plocha\\WWW\\ahoy-house-monorepo\\client\\.next\\cache\\images\\odagvychWFllxaQDAzT1Se-QQFHSeEmRrnD9KUh-LMU=\\2592000.1679686041486.7Fe7SRIS7y2TH4T6YXYTPzXIKKoZu8LAub1NjDAZghA=.webp"
+  },
+  ".next/cache/images/Og625HlKFpuQ-WURaR7c5b0rfFwbIVCpwANrIJ-SHXU=/60.1677092005663.OYXzY3PPGfAcbkBcPYfrJTREkRdcxqMkx9LGZ9Q1bp4=.webp": {
+    "mt": "Wed Feb 22 2023 10:52:25 GMT-0800 (Pacific Standard Time)",
+    "exists": true,
+    "state": 1,
+    "path": "C:\\Users\\adamm\\OneDrive\\Plocha\\WWW\\ahoy-house-monorepo\\client\\.next\\cache\\images\\Og625HlKFpuQ-WURaR7c5b0rfFwbIVCpwANrIJ-SHXU=\\60.1677092005663.OYXzY3PPGfAcbkBcPYfrJTREkRdcxqMkx9LGZ9Q1bp4=.webp"
+  },
+  ".next/cache/images/PvqQcjuMfpJ93DiBoPg44PPg73sb7pM52nUDkXmDL5o=/60.1676666626764.auBkmmYYY9Lp0tkQZR4NeMqK3FxiwI5V7bNaOgdkFNk=.webp": {
+    "mt": "Fri Feb 17 2023 12:42:46 GMT-0800 (Pacific Standard Time)",
+    "exists": true,
+    "state": 1,
+    "path": "C:\\Users\\adamm\\OneDrive\\Plocha\\WWW\\ahoy-house-monorepo\\client\\.next\\cache\\images\\PvqQcjuMfpJ93DiBoPg44PPg73sb7pM52nUDkXmDL5o=\\60.1676666626764.auBkmmYYY9Lp0tkQZR4NeMqK3FxiwI5V7bNaOgdkFNk=.webp"
+  },
+  ".next/cache/images/Rs6aoWDgkiYekV5E8xST7RJNL-82jyK8OHCePwkjn4M=/60.1675836214413.UzOm2qqgvuaJ1c0xDOA0AwoJos009imAU4eqbeM6h00=.webp": {
+    "mt": "Tue Feb 07 2023 22:02:34 GMT-0800 (Pacific Standard Time)",
+    "exists": true,
+    "state": 1,
+    "path": "C:\\Users\\adamm\\OneDrive\\Plocha\\WWW\\ahoy-house-monorepo\\client\\.next\\cache\\images\\Rs6aoWDgkiYekV5E8xST7RJNL-82jyK8OHCePwkjn4M=\\60.1675836214413.UzOm2qqgvuaJ1c0xDOA0AwoJos009imAU4eqbeM6h00=.webp"
+  },
+  ".next/cache/images/rSKUdJ+kRHmPEejxXT1THz2ZgAOwcMdrFUAetlIZWQg=/60.1675836214080.VYqvm9eRw6GTBHxikahdD1eqDOP4A9yHl6JGfCbtTFw=.webp": {
+    "mt": "Tue Feb 07 2023 22:02:34 GMT-0800 (Pacific Standard Time)",
+    "exists": true,
+    "state": 1,
+    "path": "C:\\Users\\adamm\\OneDrive\\Plocha\\WWW\\ahoy-house-monorepo\\client\\.next\\cache\\images\\rSKUdJ+kRHmPEejxXT1THz2ZgAOwcMdrFUAetlIZWQg=\\60.1675836214080.VYqvm9eRw6GTBHxikahdD1eqDOP4A9yHl6JGfCbtTFw=.webp"
+  },
+  ".next/cache/images/SUeXrMyqpjYTCUVg4Hgrpjz8s2yBeMaaNZcqEyjRRFY=/60.1673834314407.K0GgeMGRj9xnphIsCMzLi8IehPulzjsGZoUogChiKL8=.webp": {
+    "mt": "Sun Jan 15 2023 17:57:34 GMT-0800 (Pacific Standard Time)",
+    "exists": true,
+    "state": 1,
+    "path": "C:\\Users\\adamm\\OneDrive\\Plocha\\WWW\\ahoy-house-monorepo\\client\\.next\\cache\\images\\SUeXrMyqpjYTCUVg4Hgrpjz8s2yBeMaaNZcqEyjRRFY=\\60.1673834314407.K0GgeMGRj9xnphIsCMzLi8IehPulzjsGZoUogChiKL8=.webp"
+  },
+  ".next/cache/images/Tll3HDkTdr6lGUtfmOY6zqIpQeEOrTCT-C2Sm+E1hqo=/2592000.1680906209851.7Fe7SRIS7y2TH4T6YXYTPzXIKKoZu8LAub1NjDAZghA=.webp": {
+    "mt": "Wed Mar 08 2023 14:23:29 GMT-0800 (Pacific Standard Time)",
+    "exists": true,
+    "state": 1,
+    "path": "C:\\Users\\adamm\\OneDrive\\Plocha\\WWW\\ahoy-house-monorepo\\client\\.next\\cache\\images\\Tll3HDkTdr6lGUtfmOY6zqIpQeEOrTCT-C2Sm+E1hqo=\\2592000.1680906209851.7Fe7SRIS7y2TH4T6YXYTPzXIKKoZu8LAub1NjDAZghA=.webp"
+  },
+  ".next/cache/images/vTlpSmG+HItLk7FUk1wUToVNx5dZwMgOrVxwj59zQj0=/60.1677092004604.IUFAFshSSfaDgOoUnlAi5CLnXfRiYFBLQDGi3oNfi1M=.webp": {
+    "mt": "Wed Feb 22 2023 10:52:24 GMT-0800 (Pacific Standard Time)",
+    "exists": true,
+    "state": 1,
+    "path": "C:\\Users\\adamm\\OneDrive\\Plocha\\WWW\\ahoy-house-monorepo\\client\\.next\\cache\\images\\vTlpSmG+HItLk7FUk1wUToVNx5dZwMgOrVxwj59zQj0=\\60.1677092004604.IUFAFshSSfaDgOoUnlAi5CLnXfRiYFBLQDGi3oNfi1M=.webp"
+  },
+  ".next/cache/images/XlCZxSgYm2oQNIkOGfT52nqdm0K-8JFMMaavXID0utE=/60.1675834229621.rqYuiwShxJgKEYPbUKv6eEC5bO1tN67Vln7DStYt+88=.webp": {
+    "mt": "Tue Feb 07 2023 21:29:29 GMT-0800 (Pacific Standard Time)",
+    "exists": true,
+    "state": 1,
+    "path": "C:\\Users\\adamm\\OneDrive\\Plocha\\WWW\\ahoy-house-monorepo\\client\\.next\\cache\\images\\XlCZxSgYm2oQNIkOGfT52nqdm0K-8JFMMaavXID0utE=\\60.1675834229621.rqYuiwShxJgKEYPbUKv6eEC5bO1tN67Vln7DStYt+88=.webp"
+  },
+  ".next/cache/images/YoqzNBhKZvKYM7PGHu2RFnhy3SJy4A2jw8LhDRKJet0=/60.1677092005371.XIi3cQaUHE+2XEAnpkTo6RejQQblVX9x6yiEUaAYRKI=.webp": {
+    "mt": "Wed Feb 22 2023 10:52:25 GMT-0800 (Pacific Standard Time)",
+    "exists": true,
+    "state": 1,
+    "path": "C:\\Users\\adamm\\OneDrive\\Plocha\\WWW\\ahoy-house-monorepo\\client\\.next\\cache\\images\\YoqzNBhKZvKYM7PGHu2RFnhy3SJy4A2jw8LhDRKJet0=\\60.1677092005371.XIi3cQaUHE+2XEAnpkTo6RejQQblVX9x6yiEUaAYRKI=.webp"
+  },
+  ".next/cache/next-server.js.nft.json": {
+    "mt": "Sun Mar 12 2023 16:39:00 GMT-0700 (Pacific Daylight Saving Time)",
+    "exists": true,
+    "state": 1,
+    "path": "C:\\Users\\adamm\\OneDrive\\Plocha\\WWW\\ahoy-house-monorepo\\client\\.next\\cache\\next-server.js.nft.json"
+  },
+  ".next/cache/swc/plugins/v4": {
+    "exists": true,
+    "is_dir": true,
+    "state": 1,
+    "path": "C:\\Users\\adamm\\OneDrive\\Plocha\\WWW\\ahoy-house-monorepo\\client\\.next\\cache\\swc\\plugins\\v4"
+  },
+  ".next/cache/webpack/client-development/0.pack": {
+    "mt": "Sun Mar 12 2023 17:00:19 GMT-0700 (Pacific Daylight Saving Time)",
+    "exists": true,
+    "state": 1,
+    "path": "C:\\Users\\adamm\\OneDrive\\Plocha\\WWW\\ahoy-house-monorepo\\client\\.next\\cache\\webpack\\client-development\\0.pack"
+  },
+  ".next/cache/webpack/client-development/1.pack": {
+    "mt": "Sun Mar 12 2023 17:00:19 GMT-0700 (Pacific Daylight Saving Time)",
+    "exists": true,
+    "state": 1,
+    "path": "C:\\Users\\adamm\\OneDrive\\Plocha\\WWW\\ahoy-house-monorepo\\client\\.next\\cache\\webpack\\client-development\\1.pack"
+  },
+  ".next/cache/webpack/client-development/10.pack": {
+    "mt": "Sun Mar 12 2023 16:58:55 GMT-0700 (Pacific Daylight Saving Time)",
+    "exists": true,
+    "state": 1,
+    "path": "C:\\Users\\adamm\\OneDrive\\Plocha\\WWW\\ahoy-house-monorepo\\client\\.next\\cache\\webpack\\client-development\\10.pack"
+  },
+  ".next/cache/webpack/client-development/11.pack": {
+    "mt": "Sun Mar 12 2023 16:51:04 GMT-0700 (Pacific Daylight Saving Time)",
+    "exists": true,
+    "state": 1,
+    "path": "C:\\Users\\adamm\\OneDrive\\Plocha\\WWW\\ahoy-house-monorepo\\client\\.next\\cache\\webpack\\client-development\\11.pack"
+  },
+  ".next/cache/webpack/client-development/12.pack": {
+    "mt": "Sun Mar 12 2023 16:58:55 GMT-0700 (Pacific Daylight Saving Time)",
+    "exists": true,
+    "state": 1,
+    "path": "C:\\Users\\adamm\\OneDrive\\Plocha\\WWW\\ahoy-house-monorepo\\client\\.next\\cache\\webpack\\client-development\\12.pack"
+  },
+  ".next/cache/webpack/client-development/13.pack": {
+    "mt": "Sun Mar 12 2023 16:51:04 GMT-0700 (Pacific Daylight Saving Time)",
+    "exists": true,
+    "state": 1,
+    "path": "C:\\Users\\adamm\\OneDrive\\Plocha\\WWW\\ahoy-house-monorepo\\client\\.next\\cache\\webpack\\client-development\\13.pack"
+  },
+  ".next/cache/webpack/client-development/14.pack": {
+    "mt": "Sun Mar 12 2023 16:53:19 GMT-0700 (Pacific Daylight Saving Time)",
+    "exists": true,
+    "state": 1,
+    "path": "C:\\Users\\adamm\\OneDrive\\Plocha\\WWW\\ahoy-house-monorepo\\client\\.next\\cache\\webpack\\client-development\\14.pack"
+  },
+  ".next/cache/webpack/client-development/15.pack": {
+    "mt": "Sun Mar 12 2023 16:58:55 GMT-0700 (Pacific Daylight Saving Time)",
+    "exists": true,
+    "state": 1,
+    "path": "C:\\Users\\adamm\\OneDrive\\Plocha\\WWW\\ahoy-house-monorepo\\client\\.next\\cache\\webpack\\client-development\\15.pack"
+  },
+  ".next/cache/webpack/client-development/16.pack": {
+    "mt": "Sun Mar 12 2023 16:53:19 GMT-0700 (Pacific Daylight Saving Time)",
+    "exists": true,
+    "state": 1,
+    "path": "C:\\Users\\adamm\\OneDrive\\Plocha\\WWW\\ahoy-house-monorepo\\client\\.next\\cache\\webpack\\client-development\\16.pack"
+  },
+  ".next/cache/webpack/client-development/17.pack": {
+    "mt": "Sun Mar 12 2023 16:54:48 GMT-0700 (Pacific Daylight Saving Time)",
+    "exists": true,
+    "state": 1,
+    "path": "C:\\Users\\adamm\\OneDrive\\Plocha\\WWW\\ahoy-house-monorepo\\client\\.next\\cache\\webpack\\client-development\\17.pack"
+  },
+  ".next/cache/webpack/client-development/18.pack": {
+    "mt": "Sun Mar 12 2023 16:53:19 GMT-0700 (Pacific Daylight Saving Time)",
+    "exists": true,
+    "state": 1,
+    "path": "C:\\Users\\adamm\\OneDrive\\Plocha\\WWW\\ahoy-house-monorepo\\client\\.next\\cache\\webpack\\client-development\\18.pack"
+  },
+  ".next/cache/webpack/client-development/19.pack": {
+    "mt": "Sun Mar 12 2023 16:58:55 GMT-0700 (Pacific Daylight Saving Time)",
+    "exists": true,
+    "state": 1,
+    "path": "C:\\Users\\adamm\\OneDrive\\Plocha\\WWW\\ahoy-house-monorepo\\client\\.next\\cache\\webpack\\client-development\\19.pack"
+  },
+  ".next/cache/webpack/client-development/2.pack": {
+    "mt": "Wed Mar 08 2023 14:22:59 GMT-0800 (Pacific Standard Time)",
+    "exists": true,
+    "state": 1,
+    "path": "C:\\Users\\adamm\\OneDrive\\Plocha\\WWW\\ahoy-house-monorepo\\client\\.next\\cache\\webpack\\client-development\\2.pack"
+  },
+  ".next/cache/webpack/client-development/20.pack": {
+    "mt": "Wed Mar 08 2023 14:21:43 GMT-0800 (Pacific Standard Time)",
+    "exists": true,
+    "state": 1,
+    "path": "C:\\Users\\adamm\\OneDrive\\Plocha\\WWW\\ahoy-house-monorepo\\client\\.next\\cache\\webpack\\client-development\\20.pack"
+  },
+  ".next/cache/webpack/client-development/21.pack": {
+    "mt": "Sun Mar 12 2023 16:58:55 GMT-0700 (Pacific Daylight Saving Time)",
+    "exists": true,
+    "state": 1,
+    "path": "C:\\Users\\adamm\\OneDrive\\Plocha\\WWW\\ahoy-house-monorepo\\client\\.next\\cache\\webpack\\client-development\\21.pack"
+  },
+  ".next/cache/webpack/client-development/22.pack": {
+    "mt": "Tue Mar 07 2023 14:44:53 GMT-0800 (Pacific Standard Time)",
+    "exists": true,
+    "state": 1,
+    "path": "C:\\Users\\adamm\\OneDrive\\Plocha\\WWW\\ahoy-house-monorepo\\client\\.next\\cache\\webpack\\client-development\\22.pack"
+  },
+  ".next/cache/webpack/client-development/23.pack": {
+    "mt": "Wed Feb 22 2023 18:12:59 GMT-0800 (Pacific Standard Time)",
+    "exists": true,
+    "state": 1,
+    "path": "C:\\Users\\adamm\\OneDrive\\Plocha\\WWW\\ahoy-house-monorepo\\client\\.next\\cache\\webpack\\client-development\\23.pack"
+  },
+  ".next/cache/webpack/client-development/24.pack": {
+    "mt": "Tue Mar 07 2023 14:46:06 GMT-0800 (Pacific Standard Time)",
+    "exists": true,
+    "state": 1,
+    "path": "C:\\Users\\adamm\\OneDrive\\Plocha\\WWW\\ahoy-house-monorepo\\client\\.next\\cache\\webpack\\client-development\\24.pack"
+  },
+  ".next/cache/webpack/client-development/3.pack": {
+    "mt": "Sun Mar 12 2023 16:58:55 GMT-0700 (Pacific Daylight Saving Time)",
+    "exists": true,
+    "state": 1,
+    "path": "C:\\Users\\adamm\\OneDrive\\Plocha\\WWW\\ahoy-house-monorepo\\client\\.next\\cache\\webpack\\client-development\\3.pack"
+  },
+  ".next/cache/webpack/client-development/4.pack": {
+    "mt": "Sun Mar 12 2023 16:51:04 GMT-0700 (Pacific Daylight Saving Time)",
+    "exists": true,
+    "state": 1,
+    "path": "C:\\Users\\adamm\\OneDrive\\Plocha\\WWW\\ahoy-house-monorepo\\client\\.next\\cache\\webpack\\client-development\\4.pack"
+  },
+  ".next/cache/webpack/client-development/5.pack": {
+    "mt": "Sun Mar 12 2023 16:58:55 GMT-0700 (Pacific Daylight Saving Time)",
+    "exists": true,
+    "state": 1,
+    "path": "C:\\Users\\adamm\\OneDrive\\Plocha\\WWW\\ahoy-house-monorepo\\client\\.next\\cache\\webpack\\client-development\\5.pack"
+  },
+  ".next/cache/webpack/client-development/6.pack": {
+    "mt": "Sun Mar 12 2023 17:00:19 GMT-0700 (Pacific Daylight Saving Time)",
+    "exists": true,
+    "state": 1,
+    "path": "C:\\Users\\adamm\\OneDrive\\Plocha\\WWW\\ahoy-house-monorepo\\client\\.next\\cache\\webpack\\client-development\\6.pack"
+  },
+  ".next/cache/webpack/client-development/7.pack": {
+    "mt": "Sun Mar 12 2023 16:53:19 GMT-0700 (Pacific Daylight Saving Time)",
+    "exists": true,
+    "state": 1,
+    "path": "C:\\Users\\adamm\\OneDrive\\Plocha\\WWW\\ahoy-house-monorepo\\client\\.next\\cache\\webpack\\client-development\\7.pack"
+  },
+  ".next/cache/webpack/client-development/8.pack": {
+    "mt": "Sun Mar 12 2023 16:51:04 GMT-0700 (Pacific Daylight Saving Time)",
+    "exists": true,
+    "state": 1,
+    "path": "C:\\Users\\adamm\\OneDrive\\Plocha\\WWW\\ahoy-house-monorepo\\client\\.next\\cache\\webpack\\client-development\\8.pack"
+  },
+  ".next/cache/webpack/client-development/9.pack": {
+    "mt": "Sun Mar 12 2023 16:54:48 GMT-0700 (Pacific Daylight Saving Time)",
+    "exists": true,
+    "state": 1,
+    "path": "C:\\Users\\adamm\\OneDrive\\Plocha\\WWW\\ahoy-house-monorepo\\client\\.next\\cache\\webpack\\client-development\\9.pack"
+  },
+  ".next/cache/webpack/client-development/index.pack": {
+    "mt": "Sun Mar 12 2023 17:00:19 GMT-0700 (Pacific Daylight Saving Time)",
+    "exists": true,
+    "state": 1,
+    "path": "C:\\Users\\adamm\\OneDrive\\Plocha\\WWW\\ahoy-house-monorepo\\client\\.next\\cache\\webpack\\client-development\\index.pack"
+  },
+  ".next/cache/webpack/client-development/index.pack.old": {
+    "mt": "Sun Mar 12 2023 16:58:55 GMT-0700 (Pacific Daylight Saving Time)",
+    "exists": true,
+    "state": 1,
+    "path": "C:\\Users\\adamm\\OneDrive\\Plocha\\WWW\\ahoy-house-monorepo\\client\\.next\\cache\\webpack\\client-development\\index.pack.old"
+  },
+  ".next/cache/webpack/client-development-fallback/0.pack": {
+    "mt": "Tue Feb 21 2023 18:47:07 GMT-0800 (Pacific Standard Time)",
+    "exists": true,
+    "state": 1,
+    "path": "C:\\Users\\adamm\\OneDrive\\Plocha\\WWW\\ahoy-house-monorepo\\client\\.next\\cache\\webpack\\client-development-fallback\\0.pack"
+  },
+  ".next/cache/webpack/client-development-fallback/1.pack": {
+    "mt": "Tue Feb 21 2023 18:47:06 GMT-0800 (Pacific Standard Time)",
+    "exists": true,
+    "state": 1,
+    "path": "C:\\Users\\adamm\\OneDrive\\Plocha\\WWW\\ahoy-house-monorepo\\client\\.next\\cache\\webpack\\client-development-fallback\\1.pack"
+  },
+  ".next/cache/webpack/client-development-fallback/index.pack": {
+    "mt": "Tue Feb 21 2023 18:47:07 GMT-0800 (Pacific Standard Time)",
+    "exists": true,
+    "state": 1,
+    "path": "C:\\Users\\adamm\\OneDrive\\Plocha\\WWW\\ahoy-house-monorepo\\client\\.next\\cache\\webpack\\client-development-fallback\\index.pack"
+  },
+  ".next/cache/webpack/client-development-fallback/index.pack.old": {
+    "mt": "Tue Feb 21 2023 12:40:16 GMT-0800 (Pacific Standard Time)",
+    "exists": true,
+    "state": 1,
+    "path": "C:\\Users\\adamm\\OneDrive\\Plocha\\WWW\\ahoy-house-monorepo\\client\\.next\\cache\\webpack\\client-development-fallback\\index.pack.old"
+  },
+  ".next/cache/webpack/client-production/0.pack": {
+    "mt": "Sun Mar 12 2023 16:38:55 GMT-0700 (Pacific Daylight Saving Time)",
+    "exists": true,
+    "state": 1,
+    "path": "C:\\Users\\adamm\\OneDrive\\Plocha\\WWW\\ahoy-house-monorepo\\client\\.next\\cache\\webpack\\client-production\\0.pack"
+  },
+  ".next/cache/webpack/client-production/1.pack": {
+    "mt": "Sun Mar 12 2023 16:38:55 GMT-0700 (Pacific Daylight Saving Time)",
+    "exists": true,
+    "state": 1,
+    "path": "C:\\Users\\adamm\\OneDrive\\Plocha\\WWW\\ahoy-house-monorepo\\client\\.next\\cache\\webpack\\client-production\\1.pack"
+  },
+  ".next/cache/webpack/client-production/2.pack": {
+    "mt": "Sun Mar 12 2023 16:38:55 GMT-0700 (Pacific Daylight Saving Time)",
+    "exists": true,
+    "state": 1,
+    "path": "C:\\Users\\adamm\\OneDrive\\Plocha\\WWW\\ahoy-house-monorepo\\client\\.next\\cache\\webpack\\client-production\\2.pack"
+  },
+  ".next/cache/webpack/client-production/3.pack": {
+    "mt": "Sun Mar 12 2023 16:38:55 GMT-0700 (Pacific Daylight Saving Time)",
+    "exists": true,
+    "state": 1,
+    "path": "C:\\Users\\adamm\\OneDrive\\Plocha\\WWW\\ahoy-house-monorepo\\client\\.next\\cache\\webpack\\client-production\\3.pack"
+  },
+  ".next/cache/webpack/client-production/4.pack": {
+    "mt": "Sun Mar 12 2023 16:38:55 GMT-0700 (Pacific Daylight Saving Time)",
+    "exists": true,
+    "state": 1,
+    "path": "C:\\Users\\adamm\\OneDrive\\Plocha\\WWW\\ahoy-house-monorepo\\client\\.next\\cache\\webpack\\client-production\\4.pack"
+  },
+  ".next/cache/webpack/client-production/index.pack": {
+    "mt": "Sun Mar 12 2023 16:38:55 GMT-0700 (Pacific Daylight Saving Time)",
+    "exists": true,
+    "state": 1,
+    "path": "C:\\Users\\adamm\\OneDrive\\Plocha\\WWW\\ahoy-house-monorepo\\client\\.next\\cache\\webpack\\client-production\\index.pack"
+  },
+  ".next/cache/webpack/client-production/index.pack.old": {
+    "mt": "Wed Mar 08 2023 10:36:01 GMT-0800 (Pacific Standard Time)",
+    "exists": true,
+    "state": 1,
+    "path": "C:\\Users\\adamm\\OneDrive\\Plocha\\WWW\\ahoy-house-monorepo\\client\\.next\\cache\\webpack\\client-production\\index.pack.old"
+  },
+  ".next/cache/webpack/server-development/0.pack": {
+    "mt": "Sun Mar 12 2023 16:54:48 GMT-0700 (Pacific Daylight Saving Time)",
+    "exists": true,
+    "state": 1,
+    "path": "C:\\Users\\adamm\\OneDrive\\Plocha\\WWW\\ahoy-house-monorepo\\client\\.next\\cache\\webpack\\server-development\\0.pack"
+  },
+  ".next/cache/webpack/server-development/1.pack": {
+    "mt": "Sun Mar 12 2023 16:52:20 GMT-0700 (Pacific Daylight Saving Time)",
+    "exists": true,
+    "state": 1,
+    "path": "C:\\Users\\adamm\\OneDrive\\Plocha\\WWW\\ahoy-house-monorepo\\client\\.next\\cache\\webpack\\server-development\\1.pack"
+  },
+  ".next/cache/webpack/server-development/10.pack": {
+    "mt": "Sun Mar 12 2023 13:35:30 GMT-0700 (Pacific Daylight Saving Time)",
+    "exists": true,
+    "state": 1,
+    "path": "C:\\Users\\adamm\\OneDrive\\Plocha\\WWW\\ahoy-house-monorepo\\client\\.next\\cache\\webpack\\server-development\\10.pack"
+  },
+  ".next/cache/webpack/server-development/11.pack": {
+    "mt": "Sun Mar 12 2023 13:35:55 GMT-0700 (Pacific Daylight Saving Time)",
+    "exists": true,
+    "state": 1,
+    "path": "C:\\Users\\adamm\\OneDrive\\Plocha\\WWW\\ahoy-house-monorepo\\client\\.next\\cache\\webpack\\server-development\\11.pack"
+  },
+  ".next/cache/webpack/server-development/12.pack": {
+    "mt": "Sun Mar 12 2023 16:54:48 GMT-0700 (Pacific Daylight Saving Time)",
+    "exists": true,
+    "state": 1,
+    "path": "C:\\Users\\adamm\\OneDrive\\Plocha\\WWW\\ahoy-house-monorepo\\client\\.next\\cache\\webpack\\server-development\\12.pack"
+  },
+  ".next/cache/webpack/server-development/13.pack": {
+    "mt": "Sun Mar 12 2023 16:57:54 GMT-0700 (Pacific Daylight Saving Time)",
+    "exists": true,
+    "state": 1,
+    "path": "C:\\Users\\adamm\\OneDrive\\Plocha\\WWW\\ahoy-house-monorepo\\client\\.next\\cache\\webpack\\server-development\\13.pack"
+  },
+  ".next/cache/webpack/server-development/14.pack": {
+    "mt": "Tue Mar 07 2023 15:01:03 GMT-0800 (Pacific Standard Time)",
+    "exists": true,
+    "state": 1,
+    "path": "C:\\Users\\adamm\\OneDrive\\Plocha\\WWW\\ahoy-house-monorepo\\client\\.next\\cache\\webpack\\server-development\\14.pack"
+  },
+  ".next/cache/webpack/server-development/15.pack": {
+    "mt": "Sun Mar 12 2023 16:57:54 GMT-0700 (Pacific Daylight Saving Time)",
+    "exists": true,
+    "state": 1,
+    "path": "C:\\Users\\adamm\\OneDrive\\Plocha\\WWW\\ahoy-house-monorepo\\client\\.next\\cache\\webpack\\server-development\\15.pack"
+  },
+  ".next/cache/webpack/server-development/16.pack": {
+    "mt": "Sun Mar 12 2023 13:35:30 GMT-0700 (Pacific Daylight Saving Time)",
+    "exists": true,
+    "state": 1,
+    "path": "C:\\Users\\adamm\\OneDrive\\Plocha\\WWW\\ahoy-house-monorepo\\client\\.next\\cache\\webpack\\server-development\\16.pack"
+  },
+  ".next/cache/webpack/server-development/17.pack": {
+    "mt": "Sun Mar 12 2023 13:35:55 GMT-0700 (Pacific Daylight Saving Time)",
+    "exists": true,
+    "state": 1,
+    "path": "C:\\Users\\adamm\\OneDrive\\Plocha\\WWW\\ahoy-house-monorepo\\client\\.next\\cache\\webpack\\server-development\\17.pack"
+  },
+  ".next/cache/webpack/server-development/18.pack": {
+    "mt": "Sun Mar 12 2023 16:51:04 GMT-0700 (Pacific Daylight Saving Time)",
+    "exists": true,
+    "state": 1,
+    "path": "C:\\Users\\adamm\\OneDrive\\Plocha\\WWW\\ahoy-house-monorepo\\client\\.next\\cache\\webpack\\server-development\\18.pack"
+  },
+  ".next/cache/webpack/server-development/19.pack": {
+    "mt": "Sun Mar 12 2023 16:51:04 GMT-0700 (Pacific Daylight Saving Time)",
+    "exists": true,
+    "state": 1,
+    "path": "C:\\Users\\adamm\\OneDrive\\Plocha\\WWW\\ahoy-house-monorepo\\client\\.next\\cache\\webpack\\server-development\\19.pack"
+  },
+  ".next/cache/webpack/server-development/2.pack": {
+    "mt": "Sun Mar 12 2023 16:51:04 GMT-0700 (Pacific Daylight Saving Time)",
+    "exists": true,
+    "state": 1,
+    "path": "C:\\Users\\adamm\\OneDrive\\Plocha\\WWW\\ahoy-house-monorepo\\client\\.next\\cache\\webpack\\server-development\\2.pack"
+  },
+  ".next/cache/webpack/server-development/20.pack": {
+    "mt": "Sun Mar 12 2023 16:58:55 GMT-0700 (Pacific Daylight Saving Time)",
+    "exists": true,
+    "state": 1,
+    "path": "C:\\Users\\adamm\\OneDrive\\Plocha\\WWW\\ahoy-house-monorepo\\client\\.next\\cache\\webpack\\server-development\\20.pack"
+  },
+  ".next/cache/webpack/server-development/21.pack": {
+    "mt": "Tue Mar 07 2023 15:07:52 GMT-0800 (Pacific Standard Time)",
+    "exists": true,
+    "state": 1,
+    "path": "C:\\Users\\adamm\\OneDrive\\Plocha\\WWW\\ahoy-house-monorepo\\client\\.next\\cache\\webpack\\server-development\\21.pack"
+  },
+  ".next/cache/webpack/server-development/22.pack": {
+    "mt": "Tue Feb 21 2023 23:07:06 GMT-0800 (Pacific Standard Time)",
+    "exists": true,
+    "state": 1,
+    "path": "C:\\Users\\adamm\\OneDrive\\Plocha\\WWW\\ahoy-house-monorepo\\client\\.next\\cache\\webpack\\server-development\\22.pack"
+  },
+  ".next/cache/webpack/server-development/23.pack": {
+    "mt": "Tue Feb 21 2023 23:12:27 GMT-0800 (Pacific Standard Time)",
+    "exists": true,
+    "state": 1,
+    "path": "C:\\Users\\adamm\\OneDrive\\Plocha\\WWW\\ahoy-house-monorepo\\client\\.next\\cache\\webpack\\server-development\\23.pack"
+  },
+  ".next/cache/webpack/server-development/3.pack": {
+    "mt": "Tue Mar 07 2023 17:56:44 GMT-0800 (Pacific Standard Time)",
+    "exists": true,
+    "state": 1,
+    "path": "C:\\Users\\adamm\\OneDrive\\Plocha\\WWW\\ahoy-house-monorepo\\client\\.next\\cache\\webpack\\server-development\\3.pack"
+  },
+  ".next/cache/webpack/server-development/4.pack": {
+    "mt": "Sun Mar 12 2023 16:52:20 GMT-0700 (Pacific Daylight Saving Time)",
+    "exists": true,
+    "state": 1,
+    "path": "C:\\Users\\adamm\\OneDrive\\Plocha\\WWW\\ahoy-house-monorepo\\client\\.next\\cache\\webpack\\server-development\\4.pack"
+  },
+  ".next/cache/webpack/server-development/5.pack": {
+    "mt": "Sun Mar 12 2023 16:54:48 GMT-0700 (Pacific Daylight Saving Time)",
+    "exists": true,
+    "state": 1,
+    "path": "C:\\Users\\adamm\\OneDrive\\Plocha\\WWW\\ahoy-house-monorepo\\client\\.next\\cache\\webpack\\server-development\\5.pack"
+  },
+  ".next/cache/webpack/server-development/6.pack": {
+    "mt": "Sun Mar 12 2023 16:52:20 GMT-0700 (Pacific Daylight Saving Time)",
+    "exists": true,
+    "state": 1,
+    "path": "C:\\Users\\adamm\\OneDrive\\Plocha\\WWW\\ahoy-house-monorepo\\client\\.next\\cache\\webpack\\server-development\\6.pack"
+  },
+  ".next/cache/webpack/server-development/7.pack": {
+    "mt": "Sun Mar 12 2023 16:57:54 GMT-0700 (Pacific Daylight Saving Time)",
+    "exists": true,
+    "state": 1,
+    "path": "C:\\Users\\adamm\\OneDrive\\Plocha\\WWW\\ahoy-house-monorepo\\client\\.next\\cache\\webpack\\server-development\\7.pack"
+  },
+  ".next/cache/webpack/server-development/8.pack": {
+    "mt": "Wed Feb 22 2023 18:12:59 GMT-0800 (Pacific Standard Time)",
+    "exists": true,
+    "state": 1,
+    "path": "C:\\Users\\adamm\\OneDrive\\Plocha\\WWW\\ahoy-house-monorepo\\client\\.next\\cache\\webpack\\server-development\\8.pack"
+  },
+  ".next/cache/webpack/server-development/9.pack": {
+    "mt": "Sun Mar 12 2023 16:58:55 GMT-0700 (Pacific Daylight Saving Time)",
+    "exists": true,
+    "state": 1,
+    "path": "C:\\Users\\adamm\\OneDrive\\Plocha\\WWW\\ahoy-house-monorepo\\client\\.next\\cache\\webpack\\server-development\\9.pack"
+  },
+  ".next/cache/webpack/server-development/index.pack": {
+    "mt": "Sun Mar 12 2023 16:58:55 GMT-0700 (Pacific Daylight Saving Time)",
+    "exists": true,
+    "state": 1,
+    "path": "C:\\Users\\adamm\\OneDrive\\Plocha\\WWW\\ahoy-house-monorepo\\client\\.next\\cache\\webpack\\server-development\\index.pack"
+  },
+  ".next/cache/webpack/server-development/index.pack.old": {
+    "mt": "Sun Mar 12 2023 16:57:54 GMT-0700 (Pacific Daylight Saving Time)",
+    "exists": true,
+    "state": 1,
+    "path": "C:\\Users\\adamm\\OneDrive\\Plocha\\WWW\\ahoy-house-monorepo\\client\\.next\\cache\\webpack\\server-development\\index.pack.old"
+  },
+  ".next/cache/webpack/server-production/0.pack": {
+    "mt": "Sun Mar 12 2023 16:38:52 GMT-0700 (Pacific Daylight Saving Time)",
+    "exists": true,
+    "state": 1,
+    "path": "C:\\Users\\adamm\\OneDrive\\Plocha\\WWW\\ahoy-house-monorepo\\client\\.next\\cache\\webpack\\server-production\\0.pack"
+  },
+  ".next/cache/webpack/server-production/1.pack": {
+    "mt": "Sun Mar 12 2023 16:38:52 GMT-0700 (Pacific Daylight Saving Time)",
+    "exists": true,
+    "state": 1,
+    "path": "C:\\Users\\adamm\\OneDrive\\Plocha\\WWW\\ahoy-house-monorepo\\client\\.next\\cache\\webpack\\server-production\\1.pack"
+  },
+  ".next/cache/webpack/server-production/2.pack": {
+    "mt": "Wed Mar 08 2023 10:36:01 GMT-0800 (Pacific Standard Time)",
+    "exists": true,
+    "state": 1,
+    "path": "C:\\Users\\adamm\\OneDrive\\Plocha\\WWW\\ahoy-house-monorepo\\client\\.next\\cache\\webpack\\server-production\\2.pack"
+  },
+  ".next/cache/webpack/server-production/3.pack": {
+    "mt": "Sun Mar 12 2023 16:38:52 GMT-0700 (Pacific Daylight Saving Time)",
+    "exists": true,
+    "state": 1,
+    "path": "C:\\Users\\adamm\\OneDrive\\Plocha\\WWW\\ahoy-house-monorepo\\client\\.next\\cache\\webpack\\server-production\\3.pack"
+  },
+  ".next/cache/webpack/server-production/index.pack": {
+    "mt": "Sun Mar 12 2023 16:38:52 GMT-0700 (Pacific Daylight Saving Time)",
+    "exists": true,
+    "state": 1,
+    "path": "C:\\Users\\adamm\\OneDrive\\Plocha\\WWW\\ahoy-house-monorepo\\client\\.next\\cache\\webpack\\server-production\\index.pack"
+  },
+  ".next/cache/webpack/server-production/index.pack.old": {
+    "mt": "Wed Mar 08 2023 10:36:01 GMT-0800 (Pacific Standard Time)",
+    "exists": true,
+    "state": 1,
+    "path": "C:\\Users\\adamm\\OneDrive\\Plocha\\WWW\\ahoy-house-monorepo\\client\\.next\\cache\\webpack\\server-production\\index.pack.old"
+  },
+  ".next/package.json": {
+    "mt": "Sun Mar 12 2023 16:51:01 GMT-0700 (Pacific Daylight Saving Time)",
+    "exists": true,
+    "state": 1,
+    "path": "C:\\Users\\adamm\\OneDrive\\Plocha\\WWW\\ahoy-house-monorepo\\client\\.next\\package.json"
+  },
+  ".next/react-loadable-manifest.json": {
+    "mt": "Sun Mar 12 2023 17:13:01 GMT-0700 (Pacific Daylight Saving Time)",
+    "exists": true,
+    "state": 1,
+    "path": "C:\\Users\\adamm\\OneDrive\\Plocha\\WWW\\ahoy-house-monorepo\\client\\.next\\react-loadable-manifest.json"
+  },
+  ".next/server/font-loader-manifest.js": {
+    "mt": "Sun Mar 12 2023 17:13:01 GMT-0700 (Pacific Daylight Saving Time)",
+    "exists": true,
+    "state": 1,
+    "path": "C:\\Users\\adamm\\OneDrive\\Plocha\\WWW\\ahoy-house-monorepo\\client\\.next\\server\\font-loader-manifest.js"
+  },
+  ".next/server/font-loader-manifest.json": {
+    "mt": "Sun Mar 12 2023 17:13:01 GMT-0700 (Pacific Daylight Saving Time)",
+    "exists": true,
+    "state": 1,
+    "path": "C:\\Users\\adamm\\OneDrive\\Plocha\\WWW\\ahoy-house-monorepo\\client\\.next\\server\\font-loader-manifest.json"
+  },
+  ".next/server/middleware-build-manifest.js": {
+    "mt": "Sun Mar 12 2023 17:13:01 GMT-0700 (Pacific Daylight Saving Time)",
+    "exists": true,
+    "state": 1,
+    "path": "C:\\Users\\adamm\\OneDrive\\Plocha\\WWW\\ahoy-house-monorepo\\client\\.next\\server\\middleware-build-manifest.js"
+  },
+  ".next/server/middleware-manifest.json": {
+    "mt": "Sun Mar 12 2023 16:51:03 GMT-0700 (Pacific Daylight Saving Time)",
+    "exists": true,
+    "state": 1,
+    "path": "C:\\Users\\adamm\\OneDrive\\Plocha\\WWW\\ahoy-house-monorepo\\client\\.next\\server\\middleware-manifest.json"
+  },
+  ".next/server/middleware-react-loadable-manifest.js": {
+    "mt": "Sun Mar 12 2023 17:13:01 GMT-0700 (Pacific Daylight Saving Time)",
+    "exists": true,
+    "state": 1,
+    "path": "C:\\Users\\adamm\\OneDrive\\Plocha\\WWW\\ahoy-house-monorepo\\client\\.next\\server\\middleware-react-loadable-manifest.js"
+  },
+  ".next/server/pages/admin/properties/[slug]/edit.js": {
+    "mt": "Sun Mar 12 2023 16:57:53 GMT-0700 (Pacific Daylight Saving Time)",
+    "exists": true,
+    "state": 1,
+    "path": "C:\\Users\\adamm\\OneDrive\\Plocha\\WWW\\ahoy-house-monorepo\\client\\.next\\server\\pages\\admin\\properties\\[slug]\\edit.js"
+  },
+  ".next/server/pages/admin/properties.js": {
+    "mt": "Sun Mar 12 2023 16:57:51 GMT-0700 (Pacific Daylight Saving Time)",
+    "exists": true,
+    "state": 1,
+    "path": "C:\\Users\\adamm\\OneDrive\\Plocha\\WWW\\ahoy-house-monorepo\\client\\.next\\server\\pages\\admin\\properties.js"
+  },
+  ".next/server/pages/admin.js": {
+    "mt": "Sun Mar 12 2023 16:57:49 GMT-0700 (Pacific Daylight Saving Time)",
+    "exists": true,
+    "state": 1,
+    "path": "C:\\Users\\adamm\\OneDrive\\Plocha\\WWW\\ahoy-house-monorepo\\client\\.next\\server\\pages\\admin.js"
+  },
+  ".next/server/pages/index.js": {
+    "mt": "Sun Mar 12 2023 16:53:48 GMT-0700 (Pacific Daylight Saving Time)",
+    "exists": true,
+    "state": 1,
+    "path": "C:\\Users\\adamm\\OneDrive\\Plocha\\WWW\\ahoy-house-monorepo\\client\\.next\\server\\pages\\index.js"
+  },
+  ".next/server/pages/properties/[slug].js": {
+    "mt": "Sun Mar 12 2023 16:52:19 GMT-0700 (Pacific Daylight Saving Time)",
+    "exists": true,
+    "state": 1,
+    "path": "C:\\Users\\adamm\\OneDrive\\Plocha\\WWW\\ahoy-house-monorepo\\client\\.next\\server\\pages\\properties\\[slug].js"
+  },
+  ".next/server/pages/properties.js": {
+    "mt": "Sun Mar 12 2023 16:53:29 GMT-0700 (Pacific Daylight Saving Time)",
+    "exists": true,
+    "state": 1,
+    "path": "C:\\Users\\adamm\\OneDrive\\Plocha\\WWW\\ahoy-house-monorepo\\client\\.next\\server\\pages\\properties.js"
+  },
+  ".next/server/pages/_app.js": {
+    "mt": "Sun Mar 12 2023 16:51:03 GMT-0700 (Pacific Daylight Saving Time)",
+    "exists": true,
+    "state": 1,
+    "path": "C:\\Users\\adamm\\OneDrive\\Plocha\\WWW\\ahoy-house-monorepo\\client\\.next\\server\\pages\\_app.js"
+  },
+  ".next/server/pages/_document.js": {
+    "mt": "Sun Mar 12 2023 16:51:03 GMT-0700 (Pacific Daylight Saving Time)",
+    "exists": true,
+    "state": 1,
+    "path": "C:\\Users\\adamm\\OneDrive\\Plocha\\WWW\\ahoy-house-monorepo\\client\\.next\\server\\pages\\_document.js"
+  },
+  ".next/server/pages/_error.js": {
+    "mt": "Sun Mar 12 2023 16:51:03 GMT-0700 (Pacific Daylight Saving Time)",
+    "exists": true,
+    "state": 1,
+    "path": "C:\\Users\\adamm\\OneDrive\\Plocha\\WWW\\ahoy-house-monorepo\\client\\.next\\server\\pages\\_error.js"
+  },
+  ".next/server/pages-manifest.json": {
+    "mt": "Sun Mar 12 2023 17:13:01 GMT-0700 (Pacific Daylight Saving Time)",
+    "exists": true,
+    "state": 1,
+    "path": "C:\\Users\\adamm\\OneDrive\\Plocha\\WWW\\ahoy-house-monorepo\\client\\.next\\server\\pages-manifest.json"
+  },
+  ".next/server/webpack-runtime.js": {
+    "mt": "Sun Mar 12 2023 16:51:03 GMT-0700 (Pacific Daylight Saving Time)",
+    "exists": true,
+    "state": 1,
+    "path": "C:\\Users\\adamm\\OneDrive\\Plocha\\WWW\\ahoy-house-monorepo\\client\\.next\\server\\webpack-runtime.js"
+  },
+  ".next/server/_error.js": {
+    "mt": "Sun Mar 12 2023 16:57:55 GMT-0700 (Pacific Daylight Saving Time)",
+    "exists": true,
+    "state": 1,
+    "path": "C:\\Users\\adamm\\OneDrive\\Plocha\\WWW\\ahoy-house-monorepo\\client\\.next\\server\\_error.js"
+  },
+  ".next/static/chunks/amp.js": {
+    "mt": "Sun Mar 12 2023 16:51:03 GMT-0700 (Pacific Daylight Saving Time)",
+    "exists": true,
+    "state": 1,
+    "path": "C:\\Users\\adamm\\OneDrive\\Plocha\\WWW\\ahoy-house-monorepo\\client\\.next\\static\\chunks\\amp.js"
+  },
+  ".next/static/chunks/main.js": {
+    "mt": "Sun Mar 12 2023 16:51:03 GMT-0700 (Pacific Daylight Saving Time)",
+    "exists": true,
+    "state": 1,
+    "path": "C:\\Users\\adamm\\OneDrive\\Plocha\\WWW\\ahoy-house-monorepo\\client\\.next\\static\\chunks\\main.js"
+  },
+  ".next/static/chunks/pages/admin/properties/[slug]/edit.js": {
+    "mt": "Sun Mar 12 2023 16:57:53 GMT-0700 (Pacific Daylight Saving Time)",
+    "exists": true,
+    "state": 1,
+    "path": "C:\\Users\\adamm\\OneDrive\\Plocha\\WWW\\ahoy-house-monorepo\\client\\.next\\static\\chunks\\pages\\admin\\properties\\[slug]\\edit.js"
+  },
+  ".next/static/chunks/pages/admin/properties.js": {
+    "mt": "Sun Mar 12 2023 16:57:51 GMT-0700 (Pacific Daylight Saving Time)",
+    "exists": true,
+    "state": 1,
+    "path": "C:\\Users\\adamm\\OneDrive\\Plocha\\WWW\\ahoy-house-monorepo\\client\\.next\\static\\chunks\\pages\\admin\\properties.js"
+  },
+  ".next/static/chunks/pages/admin.js": {
+    "mt": "Sun Mar 12 2023 16:57:49 GMT-0700 (Pacific Daylight Saving Time)",
+    "exists": true,
+    "state": 1,
+    "path": "C:\\Users\\adamm\\OneDrive\\Plocha\\WWW\\ahoy-house-monorepo\\client\\.next\\static\\chunks\\pages\\admin.js"
+  },
+  ".next/static/chunks/pages/index.js": {
+    "mt": "Sun Mar 12 2023 16:53:48 GMT-0700 (Pacific Daylight Saving Time)",
+    "exists": true,
+    "state": 1,
+    "path": "C:\\Users\\adamm\\OneDrive\\Plocha\\WWW\\ahoy-house-monorepo\\client\\.next\\static\\chunks\\pages\\index.js"
+  },
+  ".next/static/chunks/pages/properties/[slug].js": {
+    "mt": "Sun Mar 12 2023 16:52:19 GMT-0700 (Pacific Daylight Saving Time)",
+    "exists": true,
+    "state": 1,
+    "path": "C:\\Users\\adamm\\OneDrive\\Plocha\\WWW\\ahoy-house-monorepo\\client\\.next\\static\\chunks\\pages\\properties\\[slug].js"
+  },
+  ".next/static/chunks/pages/properties.js": {
+    "mt": "Sun Mar 12 2023 16:53:29 GMT-0700 (Pacific Daylight Saving Time)",
+    "exists": true,
+    "state": 1,
+    "path": "C:\\Users\\adamm\\OneDrive\\Plocha\\WWW\\ahoy-house-monorepo\\client\\.next\\static\\chunks\\pages\\properties.js"
+  },
+  ".next/static/chunks/pages/_app.js": {
+    "mt": "Sun Mar 12 2023 16:51:03 GMT-0700 (Pacific Daylight Saving Time)",
+    "exists": true,
+    "state": 1,
+    "path": "C:\\Users\\adamm\\OneDrive\\Plocha\\WWW\\ahoy-house-monorepo\\client\\.next\\static\\chunks\\pages\\_app.js"
+  },
+  ".next/static/chunks/pages/_error.js": {
+    "mt": "Sun Mar 12 2023 16:51:03 GMT-0700 (Pacific Daylight Saving Time)",
+    "exists": true,
+    "state": 1,
+    "path": "C:\\Users\\adamm\\OneDrive\\Plocha\\WWW\\ahoy-house-monorepo\\client\\.next\\static\\chunks\\pages\\_error.js"
+  },
+  ".next/static/chunks/polyfills.js": {
+    "mt": "Sun Mar 12 2023 16:51:03 GMT-0700 (Pacific Daylight Saving Time)",
+    "exists": true,
+    "state": 1,
+    "path": "C:\\Users\\adamm\\OneDrive\\Plocha\\WWW\\ahoy-house-monorepo\\client\\.next\\static\\chunks\\polyfills.js"
+  },
+  ".next/static/chunks/react-refresh.js": {
+    "mt": "Sun Mar 12 2023 16:51:03 GMT-0700 (Pacific Daylight Saving Time)",
+    "exists": true,
+    "state": 1,
+    "path": "C:\\Users\\adamm\\OneDrive\\Plocha\\WWW\\ahoy-house-monorepo\\client\\.next\\static\\chunks\\react-refresh.js"
+  },
+  ".next/static/chunks/webpack.js": {
+    "mt": "Sun Mar 12 2023 17:13:01 GMT-0700 (Pacific Daylight Saving Time)",
+    "exists": true,
+    "state": 1,
+    "path": "C:\\Users\\adamm\\OneDrive\\Plocha\\WWW\\ahoy-house-monorepo\\client\\.next\\static\\chunks\\webpack.js"
+  },
+  ".next/static/chunks/_error.js": {
+    "mt": "Sun Mar 12 2023 16:57:55 GMT-0700 (Pacific Daylight Saving Time)",
+    "exists": true,
+    "state": 1,
+    "path": "C:\\Users\\adamm\\OneDrive\\Plocha\\WWW\\ahoy-house-monorepo\\client\\.next\\static\\chunks\\_error.js"
+  },
+  ".next/static/development/_buildManifest.js": {
+    "mt": "Sun Mar 12 2023 17:13:01 GMT-0700 (Pacific Daylight Saving Time)",
+    "exists": true,
+    "state": 1,
+    "path": "C:\\Users\\adamm\\OneDrive\\Plocha\\WWW\\ahoy-house-monorepo\\client\\.next\\static\\development\\_buildManifest.js"
+  },
+  ".next/static/development/_ssgManifest.js": {
+    "mt": "Sun Mar 12 2023 17:13:01 GMT-0700 (Pacific Daylight Saving Time)",
+    "exists": true,
+    "state": 1,
+    "path": "C:\\Users\\adamm\\OneDrive\\Plocha\\WWW\\ahoy-house-monorepo\\client\\.next\\static\\development\\_ssgManifest.js"
+  },
+  ".next/static/media/2aaf0723e720e8b9.p.woff2": {
+    "mt": "Sun Mar 12 2023 16:53:48 GMT-0700 (Pacific Daylight Saving Time)",
+    "exists": true,
+    "state": 1,
+    "path": "C:\\Users\\adamm\\OneDrive\\Plocha\\WWW\\ahoy-house-monorepo\\client\\.next\\static\\media\\2aaf0723e720e8b9.p.woff2"
+  },
+  ".next/static/media/9c4f34569c9b36ca.woff2": {
+    "mt": "Sun Mar 12 2023 16:53:48 GMT-0700 (Pacific Daylight Saving Time)",
+    "exists": true,
+    "state": 1,
+    "path": "C:\\Users\\adamm\\OneDrive\\Plocha\\WWW\\ahoy-house-monorepo\\client\\.next\\static\\media\\9c4f34569c9b36ca.woff2"
+  },
+  ".next/static/media/ae9ae6716d4f8bf8.woff2": {
+    "mt": "Sun Mar 12 2023 16:53:48 GMT-0700 (Pacific Daylight Saving Time)",
+    "exists": true,
+    "state": 1,
+    "path": "C:\\Users\\adamm\\OneDrive\\Plocha\\WWW\\ahoy-house-monorepo\\client\\.next\\static\\media\\ae9ae6716d4f8bf8.woff2"
+  },
+  ".next/static/media/b1db3e28af9ef94a.woff2": {
+    "mt": "Sun Mar 12 2023 16:53:48 GMT-0700 (Pacific Daylight Saving Time)",
+    "exists": true,
+    "state": 1,
+    "path": "C:\\Users\\adamm\\OneDrive\\Plocha\\WWW\\ahoy-house-monorepo\\client\\.next\\static\\media\\b1db3e28af9ef94a.woff2"
+  },
+  ".next/static/media/b967158bc7d7a9fb.woff2": {
+    "mt": "Sun Mar 12 2023 16:53:48 GMT-0700 (Pacific Daylight Saving Time)",
+    "exists": true,
+    "state": 1,
+    "path": "C:\\Users\\adamm\\OneDrive\\Plocha\\WWW\\ahoy-house-monorepo\\client\\.next\\static\\media\\b967158bc7d7a9fb.woff2"
+  },
+  ".next/static/media/c0f5ec5bbf5913b7.woff2": {
+    "mt": "Sun Mar 12 2023 16:53:48 GMT-0700 (Pacific Daylight Saving Time)",
+    "exists": true,
+    "state": 1,
+    "path": "C:\\Users\\adamm\\OneDrive\\Plocha\\WWW\\ahoy-house-monorepo\\client\\.next\\static\\media\\c0f5ec5bbf5913b7.woff2"
+  },
+  ".next/static/media/d1d9458b69004127.woff2": {
+    "mt": "Sun Mar 12 2023 16:53:48 GMT-0700 (Pacific Daylight Saving Time)",
+    "exists": true,
+    "state": 1,
+    "path": "C:\\Users\\adamm\\OneDrive\\Plocha\\WWW\\ahoy-house-monorepo\\client\\.next\\static\\media\\d1d9458b69004127.woff2"
+  },
+  ".next/static/webpack/143ef0200a6143b1.webpack.hot-update.json": {
+    "mt": "Sun Mar 12 2023 16:57:49 GMT-0700 (Pacific Daylight Saving Time)",
+    "exists": true,
+    "state": 1,
+    "path": "C:\\Users\\adamm\\OneDrive\\Plocha\\WWW\\ahoy-house-monorepo\\client\\.next\\static\\webpack\\143ef0200a6143b1.webpack.hot-update.json"
+  },
+  ".next/static/webpack/35f0592c3cb211c7.webpack.hot-update.json": {
+    "mt": "Sun Mar 12 2023 17:13:01 GMT-0700 (Pacific Daylight Saving Time)",
+    "exists": true,
+    "state": 1,
+    "path": "C:\\Users\\adamm\\OneDrive\\Plocha\\WWW\\ahoy-house-monorepo\\client\\.next\\static\\webpack\\35f0592c3cb211c7.webpack.hot-update.json"
+  },
+  ".next/static/webpack/3b50988ec80e618e.webpack.hot-update.json": {
+    "mt": "Sun Mar 12 2023 16:53:48 GMT-0700 (Pacific Daylight Saving Time)",
+    "exists": true,
+    "state": 1,
+    "path": "C:\\Users\\adamm\\OneDrive\\Plocha\\WWW\\ahoy-house-monorepo\\client\\.next\\static\\webpack\\3b50988ec80e618e.webpack.hot-update.json"
+  },
+  ".next/static/webpack/42f1719f6cc74ee5.webpack.hot-update.json": {
+    "mt": "Sun Mar 12 2023 16:57:53 GMT-0700 (Pacific Daylight Saving Time)",
+    "exists": true,
+    "state": 1,
+    "path": "C:\\Users\\adamm\\OneDrive\\Plocha\\WWW\\ahoy-house-monorepo\\client\\.next\\static\\webpack\\42f1719f6cc74ee5.webpack.hot-update.json"
+  },
+  ".next/static/webpack/57ebfea5b1e8cede.webpack.hot-update.json": {
+    "mt": "Sun Mar 12 2023 16:52:19 GMT-0700 (Pacific Daylight Saving Time)",
+    "exists": true,
+    "state": 1,
+    "path": "C:\\Users\\adamm\\OneDrive\\Plocha\\WWW\\ahoy-house-monorepo\\client\\.next\\static\\webpack\\57ebfea5b1e8cede.webpack.hot-update.json"
+  },
+  ".next/static/webpack/77637b9d4e49dab4.webpack.hot-update.json": {
+    "mt": "Sun Mar 12 2023 16:59:15 GMT-0700 (Pacific Daylight Saving Time)",
+    "exists": true,
+    "state": 1,
+    "path": "C:\\Users\\adamm\\OneDrive\\Plocha\\WWW\\ahoy-house-monorepo\\client\\.next\\static\\webpack\\77637b9d4e49dab4.webpack.hot-update.json"
+  },
+  ".next/static/webpack/8468ea0990d6fe62.webpack.hot-update.json": {
+    "mt": "Sun Mar 12 2023 16:59:19 GMT-0700 (Pacific Daylight Saving Time)",
+    "exists": true,
+    "state": 1,
+    "path": "C:\\Users\\adamm\\OneDrive\\Plocha\\WWW\\ahoy-house-monorepo\\client\\.next\\static\\webpack\\8468ea0990d6fe62.webpack.hot-update.json"
+  },
+  ".next/static/webpack/8e4cf50d97a7049f.webpack.hot-update.json": {
+    "mt": "Sun Mar 12 2023 16:53:29 GMT-0700 (Pacific Daylight Saving Time)",
+    "exists": true,
+    "state": 1,
+    "path": "C:\\Users\\adamm\\OneDrive\\Plocha\\WWW\\ahoy-house-monorepo\\client\\.next\\static\\webpack\\8e4cf50d97a7049f.webpack.hot-update.json"
+  },
+  ".next/static/webpack/a1aab4fa1741a004.webpack.hot-update.json": {
+    "mt": "Sun Mar 12 2023 16:57:51 GMT-0700 (Pacific Daylight Saving Time)",
+    "exists": true,
+    "state": 1,
+    "path": "C:\\Users\\adamm\\OneDrive\\Plocha\\WWW\\ahoy-house-monorepo\\client\\.next\\static\\webpack\\a1aab4fa1741a004.webpack.hot-update.json"
+  },
+  ".next/static/webpack/a8f4d7510e07c1e4.webpack.hot-update.json": {
+    "mt": "Sun Mar 12 2023 16:59:14 GMT-0700 (Pacific Daylight Saving Time)",
+    "exists": true,
+    "state": 1,
+    "path": "C:\\Users\\adamm\\OneDrive\\Plocha\\WWW\\ahoy-house-monorepo\\client\\.next\\static\\webpack\\a8f4d7510e07c1e4.webpack.hot-update.json"
+  },
+  ".next/static/webpack/d5fc73a8632f555e.webpack.hot-update.json": {
+    "mt": "Sun Mar 12 2023 16:57:55 GMT-0700 (Pacific Daylight Saving Time)",
+    "exists": true,
+    "state": 1,
+    "path": "C:\\Users\\adamm\\OneDrive\\Plocha\\WWW\\ahoy-house-monorepo\\client\\.next\\static\\webpack\\d5fc73a8632f555e.webpack.hot-update.json"
+  },
+  ".next/static/webpack/webpack.143ef0200a6143b1.hot-update.js": {
+    "mt": "Sun Mar 12 2023 16:57:49 GMT-0700 (Pacific Daylight Saving Time)",
+    "exists": true,
+    "state": 1,
+    "path": "C:\\Users\\adamm\\OneDrive\\Plocha\\WWW\\ahoy-house-monorepo\\client\\.next\\static\\webpack\\webpack.143ef0200a6143b1.hot-update.js"
+  },
+  ".next/static/webpack/webpack.35f0592c3cb211c7.hot-update.js": {
+    "mt": "Sun Mar 12 2023 17:13:01 GMT-0700 (Pacific Daylight Saving Time)",
+    "exists": true,
+    "state": 1,
+    "path": "C:\\Users\\adamm\\OneDrive\\Plocha\\WWW\\ahoy-house-monorepo\\client\\.next\\static\\webpack\\webpack.35f0592c3cb211c7.hot-update.js"
+  },
+  ".next/static/webpack/webpack.3b50988ec80e618e.hot-update.js": {
+    "mt": "Sun Mar 12 2023 16:53:48 GMT-0700 (Pacific Daylight Saving Time)",
+    "exists": true,
+    "state": 1,
+    "path": "C:\\Users\\adamm\\OneDrive\\Plocha\\WWW\\ahoy-house-monorepo\\client\\.next\\static\\webpack\\webpack.3b50988ec80e618e.hot-update.js"
+  },
+  ".next/static/webpack/webpack.42f1719f6cc74ee5.hot-update.js": {
+    "mt": "Sun Mar 12 2023 16:57:53 GMT-0700 (Pacific Daylight Saving Time)",
+    "exists": true,
+    "state": 1,
+    "path": "C:\\Users\\adamm\\OneDrive\\Plocha\\WWW\\ahoy-house-monorepo\\client\\.next\\static\\webpack\\webpack.42f1719f6cc74ee5.hot-update.js"
+  },
+  ".next/static/webpack/webpack.57ebfea5b1e8cede.hot-update.js": {
+    "mt": "Sun Mar 12 2023 16:52:19 GMT-0700 (Pacific Daylight Saving Time)",
+    "exists": true,
+    "state": 1,
+    "path": "C:\\Users\\adamm\\OneDrive\\Plocha\\WWW\\ahoy-house-monorepo\\client\\.next\\static\\webpack\\webpack.57ebfea5b1e8cede.hot-update.js"
+  },
+  ".next/static/webpack/webpack.77637b9d4e49dab4.hot-update.js": {
+    "mt": "Sun Mar 12 2023 16:59:15 GMT-0700 (Pacific Daylight Saving Time)",
+    "exists": true,
+    "state": 1,
+    "path": "C:\\Users\\adamm\\OneDrive\\Plocha\\WWW\\ahoy-house-monorepo\\client\\.next\\static\\webpack\\webpack.77637b9d4e49dab4.hot-update.js"
+  },
+  ".next/static/webpack/webpack.8468ea0990d6fe62.hot-update.js": {
+    "mt": "Sun Mar 12 2023 16:59:19 GMT-0700 (Pacific Daylight Saving Time)",
+    "exists": true,
+    "state": 1,
+    "path": "C:\\Users\\adamm\\OneDrive\\Plocha\\WWW\\ahoy-house-monorepo\\client\\.next\\static\\webpack\\webpack.8468ea0990d6fe62.hot-update.js"
+  },
+  ".next/static/webpack/webpack.8e4cf50d97a7049f.hot-update.js": {
+    "mt": "Sun Mar 12 2023 16:53:29 GMT-0700 (Pacific Daylight Saving Time)",
+    "exists": true,
+    "state": 1,
+    "path": "C:\\Users\\adamm\\OneDrive\\Plocha\\WWW\\ahoy-house-monorepo\\client\\.next\\static\\webpack\\webpack.8e4cf50d97a7049f.hot-update.js"
+  },
+  ".next/static/webpack/webpack.a1aab4fa1741a004.hot-update.js": {
+    "mt": "Sun Mar 12 2023 16:57:51 GMT-0700 (Pacific Daylight Saving Time)",
+    "exists": true,
+    "state": 1,
+    "path": "C:\\Users\\adamm\\OneDrive\\Plocha\\WWW\\ahoy-house-monorepo\\client\\.next\\static\\webpack\\webpack.a1aab4fa1741a004.hot-update.js"
+  },
+  ".next/static/webpack/webpack.a8f4d7510e07c1e4.hot-update.js": {
+    "mt": "Sun Mar 12 2023 16:59:14 GMT-0700 (Pacific Daylight Saving Time)",
+    "exists": true,
+    "state": 1,
+    "path": "C:\\Users\\adamm\\OneDrive\\Plocha\\WWW\\ahoy-house-monorepo\\client\\.next\\static\\webpack\\webpack.a8f4d7510e07c1e4.hot-update.js"
+  },
+  ".next/static/webpack/webpack.d5fc73a8632f555e.hot-update.js": {
+    "mt": "Sun Mar 12 2023 16:57:55 GMT-0700 (Pacific Daylight Saving Time)",
+    "exists": true,
+    "state": 1,
+    "path": "C:\\Users\\adamm\\OneDrive\\Plocha\\WWW\\ahoy-house-monorepo\\client\\.next\\static\\webpack\\webpack.d5fc73a8632f555e.hot-update.js"
+  },
+  ".next/trace": {
+    "mt": "Sun Mar 12 2023 17:13:01 GMT-0700 (Pacific Daylight Saving Time)",
+    "exists": true,
+    "state": 1,
+    "path": "C:\\Users\\adamm\\OneDrive\\Plocha\\WWW\\ahoy-house-monorepo\\client\\.next\\trace"
+  },
+  "apollo/image.quries.ts": {
+    "mt": "Tue Feb 21 2023 23:18:16 GMT-0800 (Pacific Standard Time)",
+    "exists": true,
+    "state": 1,
+    "path": "C:\\Users\\adamm\\OneDrive\\Plocha\\WWW\\ahoy-house-monorepo\\client\\apollo\\image.quries.ts"
+  },
+  "apollo/property-queries.ts": {
+    "mt": "Wed Feb 22 2023 15:18:45 GMT-0800 (Pacific Standard Time)",
+    "exists": true,
+    "state": 1,
+    "path": "C:\\Users\\adamm\\OneDrive\\Plocha\\WWW\\ahoy-house-monorepo\\client\\apollo\\property-queries.ts"
+  },
+  "apollo/room-queries.ts": {
+    "mt": "Wed Feb 22 2023 15:19:53 GMT-0800 (Pacific Standard Time)",
+    "exists": true,
+    "state": 1,
+    "path": "C:\\Users\\adamm\\OneDrive\\Plocha\\WWW\\ahoy-house-monorepo\\client\\apollo\\room-queries.ts"
+  },
+  "components/accordian": {
+    "exists": true,
+    "is_dir": true,
+    "state": 1,
+    "path": "C:\\Users\\adamm\\OneDrive\\Plocha\\WWW\\ahoy-house-monorepo\\client\\components\\accordian"
+  },
+  "components/action/action.component.tsx": {
+    "mt": "Tue Feb 21 2023 22:23:11 GMT-0800 (Pacific Standard Time)",
+    "exists": true,
+    "state": 1,
+    "path": "C:\\Users\\adamm\\OneDrive\\Plocha\\WWW\\ahoy-house-monorepo\\client\\components\\action\\action.component.tsx"
+  },
+  "components/admin-nav/admin-nav.component.tsx": {
+    "mt": "Wed Feb 22 2023 18:10:26 GMT-0800 (Pacific Standard Time)",
+    "exists": true,
+    "state": 1,
+    "path": "C:\\Users\\adamm\\OneDrive\\Plocha\\WWW\\ahoy-house-monorepo\\client\\components\\admin-nav\\admin-nav.component.tsx"
+  },
+  "components/admin-table/admin-table.component.tsx": {
+    "mt": "Wed Mar 08 2023 10:35:32 GMT-0800 (Pacific Standard Time)",
+    "exists": true,
+    "state": 1,
+    "path": "C:\\Users\\adamm\\OneDrive\\Plocha\\WWW\\ahoy-house-monorepo\\client\\components\\admin-table\\admin-table.component.tsx"
+  },
+  "components/feature-card/feature-card.component.tsx": {
+    "mt": "Sun Jan 15 2023 18:04:13 GMT-0800 (Pacific Standard Time)",
+    "exists": true,
+    "state": 1,
+    "path": "C:\\Users\\adamm\\OneDrive\\Plocha\\WWW\\ahoy-house-monorepo\\client\\components\\feature-card\\feature-card.component.tsx"
+  },
+  "components/footer": {
+    "exists": true,
+    "is_dir": true,
+    "state": 1,
+    "path": "C:\\Users\\adamm\\OneDrive\\Plocha\\WWW\\ahoy-house-monorepo\\client\\components\\footer"
+  },
+  "components/header/header.component.tsx": {
+    "mt": "Tue Mar 07 2023 15:20:42 GMT-0800 (Pacific Standard Time)",
+    "exists": true,
+    "state": 1,
+    "path": "C:\\Users\\adamm\\OneDrive\\Plocha\\WWW\\ahoy-house-monorepo\\client\\components\\header\\header.component.tsx"
+  },
+  "components/hero/hero.component.tsx": {
+    "mt": "Thu Feb 23 2023 14:34:25 GMT-0800 (Pacific Standard Time)",
+    "exists": true,
+    "state": 1,
+    "path": "C:\\Users\\adamm\\OneDrive\\Plocha\\WWW\\ahoy-house-monorepo\\client\\components\\hero\\hero.component.tsx"
+  },
+  "components/input/input.component.tsx": {
+    "mt": "Tue Feb 14 2023 23:07:40 GMT-0800 (Pacific Standard Time)",
+    "exists": true,
+    "state": 1,
+    "path": "C:\\Users\\adamm\\OneDrive\\Plocha\\WWW\\ahoy-house-monorepo\\client\\components\\input\\input.component.tsx"
+  },
+  "components/modal/checheckout-modal.component.tsx": {
+    "mt": "Tue Mar 07 2023 15:06:52 GMT-0800 (Pacific Standard Time)",
+    "exists": true,
+    "state": 1,
+    "path": "C:\\Users\\adamm\\OneDrive\\Plocha\\WWW\\ahoy-house-monorepo\\client\\components\\modal\\checheckout-modal.component.tsx"
+  },
+  "components/price-table": {
+    "exists": true,
+    "is_dir": true,
+    "state": 1,
+    "path": "C:\\Users\\adamm\\OneDrive\\Plocha\\WWW\\ahoy-house-monorepo\\client\\components\\price-table"
+  },
+  "components/property-calculation/property-calculation.component.tsx": {
+    "mt": "Tue Mar 07 2023 15:02:28 GMT-0800 (Pacific Standard Time)",
+    "exists": true,
+    "state": 1,
+    "path": "C:\\Users\\adamm\\OneDrive\\Plocha\\WWW\\ahoy-house-monorepo\\client\\components\\property-calculation\\property-calculation.component.tsx"
+  },
+  "components/property-card/carousel-buttons.component.tsx": {
+    "mt": "Sun Jan 15 2023 19:16:31 GMT-0800 (Pacific Standard Time)",
+    "exists": true,
+    "state": 1,
+    "path": "C:\\Users\\adamm\\OneDrive\\Plocha\\WWW\\ahoy-house-monorepo\\client\\components\\property-card\\carousel-buttons.component.tsx"
+  },
+  "components/property-card/carousel-progress-bar.component.tsx": {
+    "mt": "Mon Jan 16 2023 20:03:46 GMT-0800 (Pacific Standard Time)",
+    "exists": true,
+    "state": 1,
+    "path": "C:\\Users\\adamm\\OneDrive\\Plocha\\WWW\\ahoy-house-monorepo\\client\\components\\property-card\\carousel-progress-bar.component.tsx"
+  },
+  "components/property-card/property-card.component.tsx": {
+    "mt": "Wed Mar 08 2023 10:34:23 GMT-0800 (Pacific Standard Time)",
+    "exists": true,
+    "state": 1,
+    "path": "C:\\Users\\adamm\\OneDrive\\Plocha\\WWW\\ahoy-house-monorepo\\client\\components\\property-card\\property-card.component.tsx"
+  },
+  "components/property-card/property-image-carousel.component.tsx": {
+    "mt": "Thu Feb 23 2023 14:03:07 GMT-0800 (Pacific Standard Time)",
+    "exists": true,
+    "state": 1,
+    "path": "C:\\Users\\adamm\\OneDrive\\Plocha\\WWW\\ahoy-house-monorepo\\client\\components\\property-card\\property-image-carousel.component.tsx"
+  },
+  "components/property-gallery/property-gallery.components.tsx": {
+    "mt": "Tue Feb 14 2023 22:24:16 GMT-0800 (Pacific Standard Time)",
+    "exists": true,
+    "state": 1,
+    "path": "C:\\Users\\adamm\\OneDrive\\Plocha\\WWW\\ahoy-house-monorepo\\client\\components\\property-gallery\\property-gallery.components.tsx"
+  },
+  "components/room-thumbnail/room-thumbnail.component.tsx": {
+    "mt": "Wed Feb 22 2023 16:55:07 GMT-0800 (Pacific Standard Time)",
+    "exists": true,
+    "state": 1,
+    "path": "C:\\Users\\adamm\\OneDrive\\Plocha\\WWW\\ahoy-house-monorepo\\client\\components\\room-thumbnail\\room-thumbnail.component.tsx"
+  },
+  "components/search-box": {
+    "exists": true,
+    "is_dir": true,
+    "state": 1,
+    "path": "C:\\Users\\adamm\\OneDrive\\Plocha\\WWW\\ahoy-house-monorepo\\client\\components\\search-box"
+  },
+  "components/toast/toast.component.tsx": {
+    "mt": "Thu Feb 16 2023 17:04:04 GMT-0800 (Pacific Standard Time)",
+    "exists": true,
+    "state": 1,
+    "path": "C:\\Users\\adamm\\OneDrive\\Plocha\\WWW\\ahoy-house-monorepo\\client\\components\\toast\\toast.component.tsx"
+  },
+  "components/upload-image/upload-image.component.tsx": {
+    "mt": "Wed Feb 22 2023 15:15:59 GMT-0800 (Pacific Standard Time)",
+    "exists": true,
+    "state": 1,
+    "path": "C:\\Users\\adamm\\OneDrive\\Plocha\\WWW\\ahoy-house-monorepo\\client\\components\\upload-image\\upload-image.component.tsx"
+  },
+  "hooks/window-dimension.ts": {
+    "mt": "Thu Feb 23 2023 14:30:49 GMT-0800 (Pacific Standard Time)",
+    "exists": true,
+    "state": 1,
+    "path": "C:\\Users\\adamm\\OneDrive\\Plocha\\WWW\\ahoy-house-monorepo\\client\\hooks\\window-dimension.ts"
+  },
+  "mock/property.data.ts": {
+    "mt": "Wed Mar 08 2023 10:34:10 GMT-0800 (Pacific Standard Time)",
+    "exists": true,
+    "state": 1,
+    "path": "C:\\Users\\adamm\\OneDrive\\Plocha\\WWW\\ahoy-house-monorepo\\client\\mock\\property.data.ts"
+  },
+  "next-env.d.ts": {
+    "mt": "Thu Jan 12 2023 14:28:51 GMT-0800 (Pacific Standard Time)",
+    "exists": true,
+    "state": 1,
+    "path": "C:\\Users\\adamm\\OneDrive\\Plocha\\WWW\\ahoy-house-monorepo\\client\\next-env.d.ts"
+  },
+  "next.config.js": {
+    "mt": "Wed Feb 22 2023 10:42:28 GMT-0800 (Pacific Standard Time)",
+    "exists": true,
+    "state": 1,
+    "path": "C:\\Users\\adamm\\OneDrive\\Plocha\\WWW\\ahoy-house-monorepo\\client\\next.config.js"
+  },
+  "package-lock.json": {
+    "mt": "Sun Mar 12 2023 16:38:33 GMT-0700 (Pacific Daylight Saving Time)",
+    "exists": true,
+    "state": 1,
+    "path": "C:\\Users\\adamm\\OneDrive\\Plocha\\WWW\\ahoy-house-monorepo\\client\\package-lock.json"
+  },
+  "package.json": {
+    "mt": "Sun Mar 12 2023 16:38:33 GMT-0700 (Pacific Daylight Saving Time)",
+    "exists": true,
+    "state": 1,
+    "path": "C:\\Users\\adamm\\OneDrive\\Plocha\\WWW\\ahoy-house-monorepo\\client\\package.json"
+  },
+  "pages/admin/index.tsx": {
+    "mt": "Wed Feb 22 2023 11:17:15 GMT-0800 (Pacific Standard Time)",
+    "exists": true,
+    "state": 1,
+    "path": "C:\\Users\\adamm\\OneDrive\\Plocha\\WWW\\ahoy-house-monorepo\\client\\pages\\admin\\index.tsx"
+  },
+  "pages/admin/properties/create/index.tsx": {
+    "mt": "Fri Feb 17 2023 09:42:34 GMT-0800 (Pacific Standard Time)",
+    "exists": true,
+    "state": 1,
+    "path": "C:\\Users\\adamm\\OneDrive\\Plocha\\WWW\\ahoy-house-monorepo\\client\\pages\\admin\\properties\\create\\index.tsx"
+  },
+  "pages/admin/properties/index.tsx": {
+    "mt": "Tue Feb 21 2023 16:14:27 GMT-0800 (Pacific Standard Time)",
+    "exists": true,
+    "state": 1,
+    "path": "C:\\Users\\adamm\\OneDrive\\Plocha\\WWW\\ahoy-house-monorepo\\client\\pages\\admin\\properties\\index.tsx"
+  },
+  "pages/admin/properties/[slug]/edit.tsx": {
+    "mt": "Wed Feb 22 2023 15:29:40 GMT-0800 (Pacific Standard Time)",
+    "exists": true,
+    "state": 1,
+    "path": "C:\\Users\\adamm\\OneDrive\\Plocha\\WWW\\ahoy-house-monorepo\\client\\pages\\admin\\properties\\[slug]\\edit.tsx"
+  },
+  "pages/admin/rooms/create/[propertyId].tsx": {
+    "mt": "Wed Feb 22 2023 15:29:15 GMT-0800 (Pacific Standard Time)",
+    "exists": true,
+    "state": 1,
+    "path": "C:\\Users\\adamm\\OneDrive\\Plocha\\WWW\\ahoy-house-monorepo\\client\\pages\\admin\\rooms\\create\\[propertyId].tsx"
+  },
+  "pages/admin/rooms/[slug]/edit.tsx": {
+    "mt": "Wed Feb 22 2023 15:29:24 GMT-0800 (Pacific Standard Time)",
+    "exists": true,
+    "state": 1,
+    "path": "C:\\Users\\adamm\\OneDrive\\Plocha\\WWW\\ahoy-house-monorepo\\client\\pages\\admin\\rooms\\[slug]\\edit.tsx"
+  },
+  "pages/api/hello.ts": {
+    "mt": "Thu Jan 12 2023 14:28:51 GMT-0800 (Pacific Standard Time)",
+    "exists": true,
+    "state": 1,
+    "path": "C:\\Users\\adamm\\OneDrive\\Plocha\\WWW\\ahoy-house-monorepo\\client\\pages\\api\\hello.ts"
+  },
+  "pages/design-system.tsx": {
+    "mt": "Thu Feb 16 2023 15:43:13 GMT-0800 (Pacific Standard Time)",
+    "exists": true,
+    "state": 1,
+    "path": "C:\\Users\\adamm\\OneDrive\\Plocha\\WWW\\ahoy-house-monorepo\\client\\pages\\design-system.tsx"
+  },
+  "pages/index.tsx": {
+    "mt": "Tue Feb 14 2023 22:24:16 GMT-0800 (Pacific Standard Time)",
+    "exists": true,
+    "state": 1,
+    "path": "C:\\Users\\adamm\\OneDrive\\Plocha\\WWW\\ahoy-house-monorepo\\client\\pages\\index.tsx"
+  },
+  "pages/login/index.tsx": {
+    "mt": "Wed Feb 22 2023 17:39:46 GMT-0800 (Pacific Standard Time)",
+    "exists": true,
+    "state": 1,
+    "path": "C:\\Users\\adamm\\OneDrive\\Plocha\\WWW\\ahoy-house-monorepo\\client\\pages\\login\\index.tsx"
+  },
+  "pages/properties/index.tsx": {
+    "mt": "Sun Mar 12 2023 17:13:01 GMT-0700 (Pacific Daylight Saving Time)",
+    "exists": true,
+    "state": 1,
+    "path": "C:\\Users\\adamm\\OneDrive\\Plocha\\WWW\\ahoy-house-monorepo\\client\\pages\\properties\\index.tsx"
+  },
+  "pages/properties/[slug].tsx": {
+    "mt": "Tue Mar 07 2023 15:03:31 GMT-0800 (Pacific Standard Time)",
+    "exists": true,
+    "state": 1,
+    "path": "C:\\Users\\adamm\\OneDrive\\Plocha\\WWW\\ahoy-house-monorepo\\client\\pages\\properties\\[slug].tsx"
+  },
+  "pages/_app.tsx": {
+    "mt": "Thu Feb 16 2023 21:30:46 GMT-0800 (Pacific Standard Time)",
+    "exists": true,
+    "state": 1,
+    "path": "C:\\Users\\adamm\\OneDrive\\Plocha\\WWW\\ahoy-house-monorepo\\client\\pages\\_app.tsx"
+  },
+  "pages/_document.tsx": {
+    "mt": "Thu Jan 12 2023 14:28:51 GMT-0800 (Pacific Standard Time)",
+    "exists": true,
+    "state": 1,
+    "path": "C:\\Users\\adamm\\OneDrive\\Plocha\\WWW\\ahoy-house-monorepo\\client\\pages\\_document.tsx"
+  },
+  "public/favicon.ico": {
+    "mt": "Thu Jan 12 2023 14:28:51 GMT-0800 (Pacific Standard Time)",
+    "exists": true,
+    "state": 1,
+    "path": "C:\\Users\\adamm\\OneDrive\\Plocha\\WWW\\ahoy-house-monorepo\\client\\public\\favicon.ico"
+  },
+  "public/fonts/Avenir-Black.ttf": {
+    "mt": "Sat Jan 14 2023 19:32:13 GMT-0800 (Pacific Standard Time)",
+    "exists": true,
+    "state": 1,
+    "path": "C:\\Users\\adamm\\OneDrive\\Plocha\\WWW\\ahoy-house-monorepo\\client\\public\\fonts\\Avenir-Black.ttf"
+  },
+  "public/fonts/Avenir-Medium.ttf": {
+    "mt": "Sat Jan 14 2023 19:32:13 GMT-0800 (Pacific Standard Time)",
+    "exists": true,
+    "state": 1,
+    "path": "C:\\Users\\adamm\\OneDrive\\Plocha\\WWW\\ahoy-house-monorepo\\client\\public\\fonts\\Avenir-Medium.ttf"
+  },
+  "public/fonts/Avenir-Oblique.ttf": {
+    "mt": "Sat Jan 14 2023 19:32:13 GMT-0800 (Pacific Standard Time)",
+    "exists": true,
+    "state": 1,
+    "path": "C:\\Users\\adamm\\OneDrive\\Plocha\\WWW\\ahoy-house-monorepo\\client\\public\\fonts\\Avenir-Oblique.ttf"
+  },
+  "public/fonts/Avenir-Roman.ttf": {
+    "mt": "Sat Jan 14 2023 19:32:13 GMT-0800 (Pacific Standard Time)",
+    "exists": true,
+    "state": 1,
+    "path": "C:\\Users\\adamm\\OneDrive\\Plocha\\WWW\\ahoy-house-monorepo\\client\\public\\fonts\\Avenir-Roman.ttf"
+  },
+  "public/fonts/Halant-Bold.ttf": {
+    "mt": "Sat Jan 14 2023 17:55:51 GMT-0800 (Pacific Standard Time)",
+    "exists": true,
+    "state": 1,
+    "path": "C:\\Users\\adamm\\OneDrive\\Plocha\\WWW\\ahoy-house-monorepo\\client\\public\\fonts\\Halant-Bold.ttf"
+  },
+  "public/fonts/Halant-Medium.ttf": {
+    "mt": "Sat Jan 14 2023 17:55:51 GMT-0800 (Pacific Standard Time)",
+    "exists": true,
+    "state": 1,
+    "path": "C:\\Users\\adamm\\OneDrive\\Plocha\\WWW\\ahoy-house-monorepo\\client\\public\\fonts\\Halant-Medium.ttf"
+  },
+  "public/fonts/Halant-SemiBold.ttf": {
+    "mt": "Sat Jan 14 2023 17:55:51 GMT-0800 (Pacific Standard Time)",
+    "exists": true,
+    "state": 1,
+    "path": "C:\\Users\\adamm\\OneDrive\\Plocha\\WWW\\ahoy-house-monorepo\\client\\public\\fonts\\Halant-SemiBold.ttf"
+  },
+  "public/icons/bath.svg": {
+    "mt": "Sun Jan 15 2023 18:23:26 GMT-0800 (Pacific Standard Time)",
+    "exists": true,
+    "state": 1,
+    "path": "C:\\Users\\adamm\\OneDrive\\Plocha\\WWW\\ahoy-house-monorepo\\client\\public\\icons\\bath.svg"
+  },
+  "public/icons/bed.svg": {
+    "mt": "Sun Jan 15 2023 18:23:26 GMT-0800 (Pacific Standard Time)",
+    "exists": true,
+    "state": 1,
+    "path": "C:\\Users\\adamm\\OneDrive\\Plocha\\WWW\\ahoy-house-monorepo\\client\\public\\icons\\bed.svg"
+  },
+  "public/icons/checkmark.svg": {
+    "mt": "Sun Jan 15 2023 18:23:26 GMT-0800 (Pacific Standard Time)",
+    "exists": true,
+    "state": 1,
+    "path": "C:\\Users\\adamm\\OneDrive\\Plocha\\WWW\\ahoy-house-monorepo\\client\\public\\icons\\checkmark.svg"
+  },
+  "public/icons/chevron/Down, Size=24.svg": {
+    "mt": "Sun Jan 15 2023 18:23:26 GMT-0800 (Pacific Standard Time)",
+    "exists": true,
+    "state": 1,
+    "path": "C:\\Users\\adamm\\OneDrive\\Plocha\\WWW\\ahoy-house-monorepo\\client\\public\\icons\\chevron\\Down, Size=24.svg"
+  },
+  "public/icons/chevron/left.svg": {
+    "mt": "Sun Jan 15 2023 18:23:26 GMT-0800 (Pacific Standard Time)",
+    "exists": true,
+    "state": 1,
+    "path": "C:\\Users\\adamm\\OneDrive\\Plocha\\WWW\\ahoy-house-monorepo\\client\\public\\icons\\chevron\\left.svg"
+  },
+  "public/icons/chevron/right.svg": {
+    "mt": "Sun Jan 15 2023 18:23:26 GMT-0800 (Pacific Standard Time)",
+    "exists": true,
+    "state": 1,
+    "path": "C:\\Users\\adamm\\OneDrive\\Plocha\\WWW\\ahoy-house-monorepo\\client\\public\\icons\\chevron\\right.svg"
+  },
+  "public/icons/chevron/Up, Size=24.svg": {
+    "mt": "Sun Jan 15 2023 18:23:26 GMT-0800 (Pacific Standard Time)",
+    "exists": true,
+    "state": 1,
+    "path": "C:\\Users\\adamm\\OneDrive\\Plocha\\WWW\\ahoy-house-monorepo\\client\\public\\icons\\chevron\\Up, Size=24.svg"
+  },
+  "public/icons/pencil.svg": {
+    "mt": "Sat Feb 18 2023 11:36:55 GMT-0800 (Pacific Standard Time)",
+    "exists": true,
+    "state": 1,
+    "path": "C:\\Users\\adamm\\OneDrive\\Plocha\\WWW\\ahoy-house-monorepo\\client\\public\\icons\\pencil.svg"
+  },
+  "public/icons/star-intersect.svg": {
+    "mt": "Sun Jan 15 2023 18:23:58 GMT-0800 (Pacific Standard Time)",
+    "exists": true,
+    "state": 1,
+    "path": "C:\\Users\\adamm\\OneDrive\\Plocha\\WWW\\ahoy-house-monorepo\\client\\public\\icons\\star-intersect.svg"
+  },
+  "public/icons/trash.svg": {
+    "mt": "Sat Feb 18 2023 11:37:49 GMT-0800 (Pacific Standard Time)",
+    "exists": true,
+    "state": 1,
+    "path": "C:\\Users\\adamm\\OneDrive\\Plocha\\WWW\\ahoy-house-monorepo\\client\\public\\icons\\trash.svg"
+  },
+  "public/icons/Variant=Apps, Size=24.svg": {
+    "mt": "Sun Jan 15 2023 18:23:26 GMT-0800 (Pacific Standard Time)",
+    "exists": true,
+    "state": 1,
+    "path": "C:\\Users\\adamm\\OneDrive\\Plocha\\WWW\\ahoy-house-monorepo\\client\\public\\icons\\Variant=Apps, Size=24.svg"
+  },
+  "public/icons/Variant=Calendar, Size=24.svg": {
+    "mt": "Sun Jan 15 2023 18:23:26 GMT-0800 (Pacific Standard Time)",
+    "exists": true,
+    "state": 1,
+    "path": "C:\\Users\\adamm\\OneDrive\\Plocha\\WWW\\ahoy-house-monorepo\\client\\public\\icons\\Variant=Calendar, Size=24.svg"
+  },
+  "public/icons/Variant=Car, Size=24.svg": {
+    "mt": "Sun Jan 15 2023 18:23:26 GMT-0800 (Pacific Standard Time)",
+    "exists": true,
+    "state": 1,
+    "path": "C:\\Users\\adamm\\OneDrive\\Plocha\\WWW\\ahoy-house-monorepo\\client\\public\\icons\\Variant=Car, Size=24.svg"
+  },
+  "public/icons/Variant=Close, Size=24.svg": {
+    "mt": "Sun Jan 15 2023 18:23:26 GMT-0800 (Pacific Standard Time)",
+    "exists": true,
+    "state": 1,
+    "path": "C:\\Users\\adamm\\OneDrive\\Plocha\\WWW\\ahoy-house-monorepo\\client\\public\\icons\\Variant=Close, Size=24.svg"
+  },
+  "public/icons/Variant=Fridge, Size=24.svg": {
+    "mt": "Sun Jan 15 2023 18:23:26 GMT-0800 (Pacific Standard Time)",
+    "exists": true,
+    "state": 1,
+    "path": "C:\\Users\\adamm\\OneDrive\\Plocha\\WWW\\ahoy-house-monorepo\\client\\public\\icons\\Variant=Fridge, Size=24.svg"
+  },
+  "public/icons/Variant=Fullscreen, Size=24.svg": {
+    "mt": "Sun Jan 15 2023 18:23:26 GMT-0800 (Pacific Standard Time)",
+    "exists": true,
+    "state": 1,
+    "path": "C:\\Users\\adamm\\OneDrive\\Plocha\\WWW\\ahoy-house-monorepo\\client\\public\\icons\\Variant=Fullscreen, Size=24.svg"
+  },
+  "public/icons/Variant=Globe, Size=24.svg": {
+    "mt": "Sun Jan 15 2023 18:23:26 GMT-0800 (Pacific Standard Time)",
+    "exists": true,
+    "state": 1,
+    "path": "C:\\Users\\adamm\\OneDrive\\Plocha\\WWW\\ahoy-house-monorepo\\client\\public\\icons\\Variant=Globe, Size=24.svg"
+  },
+  "public/icons/Variant=Grid, Size=24.svg": {
+    "mt": "Sun Jan 15 2023 18:23:26 GMT-0800 (Pacific Standard Time)",
+    "exists": true,
+    "state": 1,
+    "path": "C:\\Users\\adamm\\OneDrive\\Plocha\\WWW\\ahoy-house-monorepo\\client\\public\\icons\\Variant=Grid, Size=24.svg"
+  },
+  "public/icons/Variant=Heart, Size=24.svg": {
+    "mt": "Sun Jan 15 2023 18:23:26 GMT-0800 (Pacific Standard Time)",
+    "exists": true,
+    "state": 1,
+    "path": "C:\\Users\\adamm\\OneDrive\\Plocha\\WWW\\ahoy-house-monorepo\\client\\public\\icons\\Variant=Heart, Size=24.svg"
+  },
+  "public/icons/Variant=Home/Outline, Size=24.svg": {
+    "mt": "Sun Jan 15 2023 18:23:26 GMT-0800 (Pacific Standard Time)",
+    "exists": true,
+    "state": 1,
+    "path": "C:\\Users\\adamm\\OneDrive\\Plocha\\WWW\\ahoy-house-monorepo\\client\\public\\icons\\Variant=Home\\Outline, Size=24.svg"
+  },
+  "public/icons/Variant=Key, Size=24.svg": {
+    "mt": "Sun Jan 15 2023 18:23:26 GMT-0800 (Pacific Standard Time)",
+    "exists": true,
+    "state": 1,
+    "path": "C:\\Users\\adamm\\OneDrive\\Plocha\\WWW\\ahoy-house-monorepo\\client\\public\\icons\\Variant=Key, Size=24.svg"
+  },
+  "public/icons/Variant=Lockbox, Size=24.svg": {
+    "mt": "Sun Jan 15 2023 18:23:26 GMT-0800 (Pacific Standard Time)",
+    "exists": true,
+    "state": 1,
+    "path": "C:\\Users\\adamm\\OneDrive\\Plocha\\WWW\\ahoy-house-monorepo\\client\\public\\icons\\Variant=Lockbox, Size=24.svg"
+  },
+  "public/icons/Variant=Menu, Size=24.svg": {
+    "mt": "Sun Jan 15 2023 18:23:26 GMT-0800 (Pacific Standard Time)",
+    "exists": true,
+    "state": 1,
+    "path": "C:\\Users\\adamm\\OneDrive\\Plocha\\WWW\\ahoy-house-monorepo\\client\\public\\icons\\Variant=Menu, Size=24.svg"
+  },
+  "public/icons/Variant=Plus, Size=24.svg": {
+    "mt": "Sun Jan 15 2023 18:23:26 GMT-0800 (Pacific Standard Time)",
+    "exists": true,
+    "state": 1,
+    "path": "C:\\Users\\adamm\\OneDrive\\Plocha\\WWW\\ahoy-house-monorepo\\client\\public\\icons\\Variant=Plus, Size=24.svg"
+  },
+  "public/icons/Variant=Print, Size=24.svg": {
+    "mt": "Sun Jan 15 2023 18:23:26 GMT-0800 (Pacific Standard Time)",
+    "exists": true,
+    "state": 1,
+    "path": "C:\\Users\\adamm\\OneDrive\\Plocha\\WWW\\ahoy-house-monorepo\\client\\public\\icons\\Variant=Print, Size=24.svg"
+  },
+  "public/icons/Variant=Remove, Size=24.svg": {
+    "mt": "Sun Jan 15 2023 18:23:26 GMT-0800 (Pacific Standard Time)",
+    "exists": true,
+    "state": 1,
+    "path": "C:\\Users\\adamm\\OneDrive\\Plocha\\WWW\\ahoy-house-monorepo\\client\\public\\icons\\Variant=Remove, Size=24.svg"
+  },
+  "public/icons/Variant=Search, Size=24.svg": {
+    "mt": "Sun Jan 15 2023 18:23:26 GMT-0800 (Pacific Standard Time)",
+    "exists": true,
+    "state": 1,
+    "path": "C:\\Users\\adamm\\OneDrive\\Plocha\\WWW\\ahoy-house-monorepo\\client\\public\\icons\\Variant=Search, Size=24.svg"
+  },
+  "public/icons/Variant=Share, Size=24.svg": {
+    "mt": "Sun Jan 15 2023 18:23:26 GMT-0800 (Pacific Standard Time)",
+    "exists": true,
+    "state": 1,
+    "path": "C:\\Users\\adamm\\OneDrive\\Plocha\\WWW\\ahoy-house-monorepo\\client\\public\\icons\\Variant=Share, Size=24.svg"
+  },
+  "public/icons/Variant=Snowflake, Size=24.svg": {
+    "mt": "Sun Jan 15 2023 18:23:26 GMT-0800 (Pacific Standard Time)",
+    "exists": true,
+    "state": 1,
+    "path": "C:\\Users\\adamm\\OneDrive\\Plocha\\WWW\\ahoy-house-monorepo\\client\\public\\icons\\Variant=Snowflake, Size=24.svg"
+  },
+  "public/icons/Variant=Square Feet, Size=24.svg": {
+    "mt": "Sun Jan 15 2023 18:23:26 GMT-0800 (Pacific Standard Time)",
+    "exists": true,
+    "state": 1,
+    "path": "C:\\Users\\adamm\\OneDrive\\Plocha\\WWW\\ahoy-house-monorepo\\client\\public\\icons\\Variant=Square Feet, Size=24.svg"
+  },
+  "public/icons/Variant=Toaster, Size=24.svg": {
+    "mt": "Sun Jan 15 2023 18:23:26 GMT-0800 (Pacific Standard Time)",
+    "exists": true,
+    "state": 1,
+    "path": "C:\\Users\\adamm\\OneDrive\\Plocha\\WWW\\ahoy-house-monorepo\\client\\public\\icons\\Variant=Toaster, Size=24.svg"
+  },
+  "public/icons/Variant=TV, Size=24.svg": {
+    "mt": "Sun Jan 15 2023 18:23:26 GMT-0800 (Pacific Standard Time)",
+    "exists": true,
+    "state": 1,
+    "path": "C:\\Users\\adamm\\OneDrive\\Plocha\\WWW\\ahoy-house-monorepo\\client\\public\\icons\\Variant=TV, Size=24.svg"
+  },
+  "public/icons/Variant=Users, Size=24.svg": {
+    "mt": "Sun Jan 15 2023 18:23:26 GMT-0800 (Pacific Standard Time)",
+    "exists": true,
+    "state": 1,
+    "path": "C:\\Users\\adamm\\OneDrive\\Plocha\\WWW\\ahoy-house-monorepo\\client\\public\\icons\\Variant=Users, Size=24.svg"
+  },
+  "public/icons/Variant=Wifi, Size=24.svg": {
+    "mt": "Sun Jan 15 2023 18:23:26 GMT-0800 (Pacific Standard Time)",
+    "exists": true,
+    "state": 1,
+    "path": "C:\\Users\\adamm\\OneDrive\\Plocha\\WWW\\ahoy-house-monorepo\\client\\public\\icons\\Variant=Wifi, Size=24.svg"
+  },
+  "public/icons/venue/Fill, Size=24.svg": {
+    "mt": "Sun Jan 15 2023 18:23:26 GMT-0800 (Pacific Standard Time)",
+    "exists": true,
+    "state": 1,
+    "path": "C:\\Users\\adamm\\OneDrive\\Plocha\\WWW\\ahoy-house-monorepo\\client\\public\\icons\\venue\\Fill, Size=24.svg"
+  },
+  "public/icons/venue/outline.svg": {
+    "mt": "Sun Jan 15 2023 18:23:26 GMT-0800 (Pacific Standard Time)",
+    "exists": true,
+    "state": 1,
+    "path": "C:\\Users\\adamm\\OneDrive\\Plocha\\WWW\\ahoy-house-monorepo\\client\\public\\icons\\venue\\outline.svg"
+  },
+  "public/next.svg": {
+    "mt": "Thu Jan 12 2023 14:28:51 GMT-0800 (Pacific Standard Time)",
+    "exists": true,
+    "state": 1,
+    "path": "C:\\Users\\adamm\\OneDrive\\Plocha\\WWW\\ahoy-house-monorepo\\client\\public\\next.svg"
+  },
+  "public/static/illustrations/balcony.jpg": {
+    "mt": "Wed Feb 22 2023 11:23:57 GMT-0800 (Pacific Standard Time)",
+    "exists": true,
+    "state": 1,
+    "path": "C:\\Users\\adamm\\OneDrive\\Plocha\\WWW\\ahoy-house-monorepo\\client\\public\\static\\illustrations\\balcony.jpg"
+  },
+  "public/static/illustrations/bed.jpg": {
+    "mt": "Wed Feb 22 2023 11:24:21 GMT-0800 (Pacific Standard Time)",
+    "exists": true,
+    "state": 1,
+    "path": "C:\\Users\\adamm\\OneDrive\\Plocha\\WWW\\ahoy-house-monorepo\\client\\public\\static\\illustrations\\bed.jpg"
+  },
+  "public/static/illustrations/bedroom.jpg": {
+    "mt": "Wed Feb 22 2023 11:24:28 GMT-0800 (Pacific Standard Time)",
+    "exists": true,
+    "state": 1,
+    "path": "C:\\Users\\adamm\\OneDrive\\Plocha\\WWW\\ahoy-house-monorepo\\client\\public\\static\\illustrations\\bedroom.jpg"
+  },
+  "public/static/illustrations/bedroom_2.jpg": {
+    "mt": "Wed Feb 22 2023 11:24:35 GMT-0800 (Pacific Standard Time)",
+    "exists": true,
+    "state": 1,
+    "path": "C:\\Users\\adamm\\OneDrive\\Plocha\\WWW\\ahoy-house-monorepo\\client\\public\\static\\illustrations\\bedroom_2.jpg"
+  },
+  "public/static/illustrations/bedroom_3.jpg": {
+    "mt": "Wed Feb 22 2023 11:24:43 GMT-0800 (Pacific Standard Time)",
+    "exists": true,
+    "state": 1,
+    "path": "C:\\Users\\adamm\\OneDrive\\Plocha\\WWW\\ahoy-house-monorepo\\client\\public\\static\\illustrations\\bedroom_3.jpg"
+  },
+  "public/static/illustrations/bedroom_5.jpg": {
+    "mt": "Wed Feb 22 2023 11:24:49 GMT-0800 (Pacific Standard Time)",
+    "exists": true,
+    "state": 1,
+    "path": "C:\\Users\\adamm\\OneDrive\\Plocha\\WWW\\ahoy-house-monorepo\\client\\public\\static\\illustrations\\bedroom_5.jpg"
+  },
+  "public/static/illustrations/bedroom_6.jpg": {
+    "mt": "Wed Feb 22 2023 11:25:00 GMT-0800 (Pacific Standard Time)",
+    "exists": true,
+    "state": 1,
+    "path": "C:\\Users\\adamm\\OneDrive\\Plocha\\WWW\\ahoy-house-monorepo\\client\\public\\static\\illustrations\\bedroom_6.jpg"
+  },
+  "public/static/illustrations/bedroom_7.jpg": {
+    "mt": "Wed Feb 22 2023 11:25:07 GMT-0800 (Pacific Standard Time)",
+    "exists": true,
+    "state": 1,
+    "path": "C:\\Users\\adamm\\OneDrive\\Plocha\\WWW\\ahoy-house-monorepo\\client\\public\\static\\illustrations\\bedroom_7.jpg"
+  },
+  "public/static/illustrations/cafe.jpg": {
+    "mt": "Wed Feb 22 2023 11:25:23 GMT-0800 (Pacific Standard Time)",
+    "exists": true,
+    "state": 1,
+    "path": "C:\\Users\\adamm\\OneDrive\\Plocha\\WWW\\ahoy-house-monorepo\\client\\public\\static\\illustrations\\cafe.jpg"
+  },
+  "public/static/illustrations/house.jpg": {
+    "mt": "Tue Feb 21 2023 18:34:34 GMT-0800 (Pacific Standard Time)",
+    "exists": true,
+    "state": 1,
+    "path": "C:\\Users\\adamm\\OneDrive\\Plocha\\WWW\\ahoy-house-monorepo\\client\\public\\static\\illustrations\\house.jpg"
+  },
+  "public/static/illustrations/house_2.jpg": {
+    "mt": "Wed Feb 22 2023 11:23:33 GMT-0800 (Pacific Standard Time)",
+    "exists": true,
+    "state": 1,
+    "path": "C:\\Users\\adamm\\OneDrive\\Plocha\\WWW\\ahoy-house-monorepo\\client\\public\\static\\illustrations\\house_2.jpg"
+  },
+  "public/static/illustrations/kitchen.jpg": {
+    "mt": "Wed Feb 22 2023 11:23:50 GMT-0800 (Pacific Standard Time)",
+    "exists": true,
+    "state": 1,
+    "path": "C:\\Users\\adamm\\OneDrive\\Plocha\\WWW\\ahoy-house-monorepo\\client\\public\\static\\illustrations\\kitchen.jpg"
+  },
+  "public/static/illustrations/kitchen_vertical.jpg": {
+    "mt": "Wed Feb 22 2023 11:25:15 GMT-0800 (Pacific Standard Time)",
+    "exists": true,
+    "state": 1,
+    "path": "C:\\Users\\adamm\\OneDrive\\Plocha\\WWW\\ahoy-house-monorepo\\client\\public\\static\\illustrations\\kitchen_vertical.jpg"
+  },
+  "public/static/illustrations/livingroom.jpg": {
+    "mt": "Wed Feb 22 2023 11:25:29 GMT-0800 (Pacific Standard Time)",
+    "exists": true,
+    "state": 1,
+    "path": "C:\\Users\\adamm\\OneDrive\\Plocha\\WWW\\ahoy-house-monorepo\\client\\public\\static\\illustrations\\livingroom.jpg"
+  },
+  "public/static/illustrations/livingroom_2.jpg": {
+    "mt": "Wed Feb 22 2023 11:25:35 GMT-0800 (Pacific Standard Time)",
+    "exists": true,
+    "state": 1,
+    "path": "C:\\Users\\adamm\\OneDrive\\Plocha\\WWW\\ahoy-house-monorepo\\client\\public\\static\\illustrations\\livingroom_2.jpg"
+  },
+  "public/static/illustrations/livingroom_3.jpg": {
+    "mt": "Wed Feb 22 2023 11:25:42 GMT-0800 (Pacific Standard Time)",
+    "exists": true,
+    "state": 1,
+    "path": "C:\\Users\\adamm\\OneDrive\\Plocha\\WWW\\ahoy-house-monorepo\\client\\public\\static\\illustrations\\livingroom_3.jpg"
+  },
+  "public/static/illustrations/livingroom_4.jpg": {
+    "mt": "Wed Feb 22 2023 11:23:43 GMT-0800 (Pacific Standard Time)",
+    "exists": true,
+    "state": 1,
+    "path": "C:\\Users\\adamm\\OneDrive\\Plocha\\WWW\\ahoy-house-monorepo\\client\\public\\static\\illustrations\\livingroom_4.jpg"
+  },
+  "public/static/illustrations/meeting-room.jpg": {
+    "mt": "Wed Feb 22 2023 11:25:56 GMT-0800 (Pacific Standard Time)",
+    "exists": true,
+    "state": 1,
+    "path": "C:\\Users\\adamm\\OneDrive\\Plocha\\WWW\\ahoy-house-monorepo\\client\\public\\static\\illustrations\\meeting-room.jpg"
+  },
+  "public/static/illustrations/meeting_room.jpg": {
+    "mt": "Wed Feb 22 2023 11:25:50 GMT-0800 (Pacific Standard Time)",
+    "exists": true,
+    "state": 1,
+    "path": "C:\\Users\\adamm\\OneDrive\\Plocha\\WWW\\ahoy-house-monorepo\\client\\public\\static\\illustrations\\meeting_room.jpg"
+  },
+  "public/static/illustrations/no-photo.jpeg": {
+    "mt": "Wed Feb 22 2023 10:34:37 GMT-0800 (Pacific Standard Time)",
+    "exists": true,
+    "state": 1,
+    "path": "C:\\Users\\adamm\\OneDrive\\Plocha\\WWW\\ahoy-house-monorepo\\client\\public\\static\\illustrations\\no-photo.jpeg"
+  },
+  "public/static/illustrations/satellite.jpg": {
+    "mt": "Wed Feb 22 2023 11:26:11 GMT-0800 (Pacific Standard Time)",
+    "exists": true,
+    "state": 1,
+    "path": "C:\\Users\\adamm\\OneDrive\\Plocha\\WWW\\ahoy-house-monorepo\\client\\public\\static\\illustrations\\satellite.jpg"
+  },
+  "public/static/illustrations/stairs_vertical.jpg": {
+    "mt": "Wed Feb 22 2023 11:26:18 GMT-0800 (Pacific Standard Time)",
+    "exists": true,
+    "state": 1,
+    "path": "C:\\Users\\adamm\\OneDrive\\Plocha\\WWW\\ahoy-house-monorepo\\client\\public\\static\\illustrations\\stairs_vertical.jpg"
+  },
+  "public/static/illustrations/students.jpg": {
+    "mt": "Wed Feb 22 2023 11:26:24 GMT-0800 (Pacific Standard Time)",
+    "exists": true,
+    "state": 1,
+    "path": "C:\\Users\\adamm\\OneDrive\\Plocha\\WWW\\ahoy-house-monorepo\\client\\public\\static\\illustrations\\students.jpg"
+  },
+  "public/static/illustrations/students_2.jpg": {
+    "mt": "Wed Feb 22 2023 11:26:30 GMT-0800 (Pacific Standard Time)",
+    "exists": true,
+    "state": 1,
+    "path": "C:\\Users\\adamm\\OneDrive\\Plocha\\WWW\\ahoy-house-monorepo\\client\\public\\static\\illustrations\\students_2.jpg"
+  },
+  "public/static/illustrations/students_3.jpg": {
+    "mt": "Wed Feb 22 2023 11:26:37 GMT-0800 (Pacific Standard Time)",
+    "exists": true,
+    "state": 1,
+    "path": "C:\\Users\\adamm\\OneDrive\\Plocha\\WWW\\ahoy-house-monorepo\\client\\public\\static\\illustrations\\students_3.jpg"
+  },
+  "public/static/illustrations/students_4.jpg": {
+    "mt": "Wed Feb 22 2023 11:26:45 GMT-0800 (Pacific Standard Time)",
+    "exists": true,
+    "state": 1,
+    "path": "C:\\Users\\adamm\\OneDrive\\Plocha\\WWW\\ahoy-house-monorepo\\client\\public\\static\\illustrations\\students_4.jpg"
+  },
+  "public/static/logos/ahoy-logo-black.png": {
+    "mt": "Sun Jan 15 2023 13:26:01 GMT-0800 (Pacific Standard Time)",
+    "exists": true,
+    "state": 1,
+    "path": "C:\\Users\\adamm\\OneDrive\\Plocha\\WWW\\ahoy-house-monorepo\\client\\public\\static\\logos\\ahoy-logo-black.png"
+  },
+  "public/static/logos/ahoy-logo-small.png": {
+    "mt": "Thu Feb 23 2023 14:08:43 GMT-0800 (Pacific Standard Time)",
+    "exists": true,
+    "state": 1,
+    "path": "C:\\Users\\adamm\\OneDrive\\Plocha\\WWW\\ahoy-house-monorepo\\client\\public\\static\\logos\\ahoy-logo-small.png"
+  },
+  "public/static/logos/ahoy-logo-white.png": {
+    "mt": "Sun Jan 15 2023 13:29:32 GMT-0800 (Pacific Standard Time)",
+    "exists": true,
+    "state": 1,
+    "path": "C:\\Users\\adamm\\OneDrive\\Plocha\\WWW\\ahoy-house-monorepo\\client\\public\\static\\logos\\ahoy-logo-white.png"
+  },
+  "public/thirteen.svg": {
+    "mt": "Thu Jan 12 2023 14:28:51 GMT-0800 (Pacific Standard Time)",
+    "exists": true,
+    "state": 1,
+    "path": "C:\\Users\\adamm\\OneDrive\\Plocha\\WWW\\ahoy-house-monorepo\\client\\public\\thirteen.svg"
+  },
+  "public/vercel.svg": {
+    "mt": "Thu Jan 12 2023 14:28:51 GMT-0800 (Pacific Standard Time)",
+    "exists": true,
+    "state": 1,
+    "path": "C:\\Users\\adamm\\OneDrive\\Plocha\\WWW\\ahoy-house-monorepo\\client\\public\\vercel.svg"
+  },
+  "README.md": {
+    "mt": "Thu Jan 12 2023 14:28:51 GMT-0800 (Pacific Standard Time)",
+    "exists": true,
+    "state": 1,
+    "path": "C:\\Users\\adamm\\OneDrive\\Plocha\\WWW\\ahoy-house-monorepo\\client\\README.md"
+  },
+  "styles/abstracts/_index.scss": {
+    "mt": "Sat Jan 14 2023 20:06:53 GMT-0800 (Pacific Standard Time)",
+    "exists": true,
+    "state": 1,
+    "path": "C:\\Users\\adamm\\OneDrive\\Plocha\\WWW\\ahoy-house-monorepo\\client\\styles\\abstracts\\_index.scss"
+  },
+  "styles/abstracts/_mixins.scss": {
+    "mt": "Thu Feb 23 2023 17:33:38 GMT-0800 (Pacific Standard Time)",
+    "exists": true,
+    "state": 1,
+    "path": "C:\\Users\\adamm\\OneDrive\\Plocha\\WWW\\ahoy-house-monorepo\\client\\styles\\abstracts\\_mixins.scss"
+  },
+  "styles/abstracts/_variables.scss": {
+    "mt": "Tue Feb 14 2023 23:20:35 GMT-0800 (Pacific Standard Time)",
+    "exists": true,
+    "state": 1,
+    "path": "C:\\Users\\adamm\\OneDrive\\Plocha\\WWW\\ahoy-house-monorepo\\client\\styles\\abstracts\\_variables.scss"
+  },
+  "styles/base/_base.scss": {
+    "mt": "Wed Mar 08 2023 14:31:11 GMT-0800 (Pacific Standard Time)",
+    "exists": true,
+    "state": 1,
+    "path": "C:\\Users\\adamm\\OneDrive\\Plocha\\WWW\\ahoy-house-monorepo\\client\\styles\\base\\_base.scss"
+  },
+  "styles/base/_index.scss": {
+    "mt": "Sat Jan 14 2023 20:07:16 GMT-0800 (Pacific Standard Time)",
+    "exists": true,
+    "state": 1,
+    "path": "C:\\Users\\adamm\\OneDrive\\Plocha\\WWW\\ahoy-house-monorepo\\client\\styles\\base\\_index.scss"
+  },
+  "styles/base/_typeface.scss": {
+    "mt": "Sun Jan 15 2023 13:57:33 GMT-0800 (Pacific Standard Time)",
+    "exists": true,
+    "state": 1,
+    "path": "C:\\Users\\adamm\\OneDrive\\Plocha\\WWW\\ahoy-house-monorepo\\client\\styles\\base\\_typeface.scss"
+  },
+  "styles/base/_typography.scss": {
+    "mt": "Sat Jan 14 2023 20:09:21 GMT-0800 (Pacific Standard Time)",
+    "exists": true,
+    "state": 1,
+    "path": "C:\\Users\\adamm\\OneDrive\\Plocha\\WWW\\ahoy-house-monorepo\\client\\styles\\base\\_typography.scss"
+  },
+  "styles/components/_admin.scss": {
+    "mt": "Sat Feb 18 2023 12:02:59 GMT-0800 (Pacific Standard Time)",
+    "exists": true,
+    "state": 1,
+    "path": "C:\\Users\\adamm\\OneDrive\\Plocha\\WWW\\ahoy-house-monorepo\\client\\styles\\components\\_admin.scss"
+  },
+  "styles/components/_buttons.scss": {
+    "mt": "Tue Feb 07 2023 16:56:16 GMT-0800 (Pacific Standard Time)",
+    "exists": true,
+    "state": 1,
+    "path": "C:\\Users\\adamm\\OneDrive\\Plocha\\WWW\\ahoy-house-monorepo\\client\\styles\\components\\_buttons.scss"
+  },
+  "styles/components/_feature-card.scss": {
+    "mt": "Sun Jan 15 2023 18:10:22 GMT-0800 (Pacific Standard Time)",
+    "exists": true,
+    "state": 1,
+    "path": "C:\\Users\\adamm\\OneDrive\\Plocha\\WWW\\ahoy-house-monorepo\\client\\styles\\components\\_feature-card.scss"
+  },
+  "styles/components/_header.scss": {
+    "mt": "Thu Feb 23 2023 20:41:41 GMT-0800 (Pacific Standard Time)",
+    "exists": true,
+    "state": 1,
+    "path": "C:\\Users\\adamm\\OneDrive\\Plocha\\WWW\\ahoy-house-monorepo\\client\\styles\\components\\_header.scss"
+  },
+  "styles/components/_hero.scss": {
+    "mt": "Thu Feb 23 2023 14:35:34 GMT-0800 (Pacific Standard Time)",
+    "exists": true,
+    "state": 1,
+    "path": "C:\\Users\\adamm\\OneDrive\\Plocha\\WWW\\ahoy-house-monorepo\\client\\styles\\components\\_hero.scss"
+  },
+  "styles/components/_index.scss": {
+    "mt": "Wed Feb 22 2023 15:58:31 GMT-0800 (Pacific Standard Time)",
+    "exists": true,
+    "state": 1,
+    "path": "C:\\Users\\adamm\\OneDrive\\Plocha\\WWW\\ahoy-house-monorepo\\client\\styles\\components\\_index.scss"
+  },
+  "styles/components/_input.scss": {
+    "mt": "Wed Feb 22 2023 17:48:30 GMT-0800 (Pacific Standard Time)",
+    "exists": true,
+    "state": 1,
+    "path": "C:\\Users\\adamm\\OneDrive\\Plocha\\WWW\\ahoy-house-monorepo\\client\\styles\\components\\_input.scss"
+  },
+  "styles/components/_modal.scss": {
+    "mt": "Tue Mar 07 2023 15:08:45 GMT-0800 (Pacific Standard Time)",
+    "exists": true,
+    "state": 1,
+    "path": "C:\\Users\\adamm\\OneDrive\\Plocha\\WWW\\ahoy-house-monorepo\\client\\styles\\components\\_modal.scss"
+  },
+  "styles/components/_property-calculation.scss": {
+    "mt": "Tue Mar 07 2023 15:03:59 GMT-0800 (Pacific Standard Time)",
+    "exists": true,
+    "state": 1,
+    "path": "C:\\Users\\adamm\\OneDrive\\Plocha\\WWW\\ahoy-house-monorepo\\client\\styles\\components\\_property-calculation.scss"
+  },
+  "styles/components/_property-card.scss": {
+    "mt": "Thu Feb 23 2023 20:28:04 GMT-0800 (Pacific Standard Time)",
+    "exists": true,
+    "state": 1,
+    "path": "C:\\Users\\adamm\\OneDrive\\Plocha\\WWW\\ahoy-house-monorepo\\client\\styles\\components\\_property-card.scss"
+  },
+  "styles/components/_room.scss": {
+    "mt": "Thu Feb 23 2023 20:41:14 GMT-0800 (Pacific Standard Time)",
+    "exists": true,
+    "state": 1,
+    "path": "C:\\Users\\adamm\\OneDrive\\Plocha\\WWW\\ahoy-house-monorepo\\client\\styles\\components\\_room.scss"
+  },
+  "styles/globals.scss": {
+    "mt": "Thu Feb 23 2023 13:28:18 GMT-0800 (Pacific Standard Time)",
+    "exists": true,
+    "state": 1,
+    "path": "C:\\Users\\adamm\\OneDrive\\Plocha\\WWW\\ahoy-house-monorepo\\client\\styles\\globals.scss"
+  },
+  "styles/layout/_index.scss": {
+    "mt": "Sat Jan 14 2023 16:44:58 GMT-0800 (Pacific Standard Time)",
+    "exists": true,
+    "state": 1,
+    "path": "C:\\Users\\adamm\\OneDrive\\Plocha\\WWW\\ahoy-house-monorepo\\client\\styles\\layout\\_index.scss"
+  },
+  "styles/main.scss": {
+    "mt": "Tue Feb 14 2023 22:24:16 GMT-0800 (Pacific Standard Time)",
+    "exists": true,
+    "state": 1,
+    "path": "C:\\Users\\adamm\\OneDrive\\Plocha\\WWW\\ahoy-house-monorepo\\client\\styles\\main.scss"
+  },
+  "styles/pages/_index.scss": {
+    "mt": "Tue Feb 14 2023 22:24:16 GMT-0800 (Pacific Standard Time)",
+    "exists": true,
+    "state": 1,
+    "path": "C:\\Users\\adamm\\OneDrive\\Plocha\\WWW\\ahoy-house-monorepo\\client\\styles\\pages\\_index.scss"
+  },
+  "styles/pages/_properties.scss": {
+    "mt": "Tue Mar 07 2023 14:48:23 GMT-0800 (Pacific Standard Time)",
+    "exists": true,
+    "state": 1,
+    "path": "C:\\Users\\adamm\\OneDrive\\Plocha\\WWW\\ahoy-house-monorepo\\client\\styles\\pages\\_properties.scss"
+  },
+  "tsconfig.json": {
+    "mt": "Thu Jan 12 2023 14:28:51 GMT-0800 (Pacific Standard Time)",
+    "exists": true,
+    "state": 1,
+    "path": "C:\\Users\\adamm\\OneDrive\\Plocha\\WWW\\ahoy-house-monorepo\\client\\tsconfig.json"
+  },
+  "types/property.ts": {
+    "mt": "Tue Feb 21 2023 13:25:43 GMT-0800 (Pacific Standard Time)",
+    "exists": true,
+    "state": 1,
+    "path": "C:\\Users\\adamm\\OneDrive\\Plocha\\WWW\\ahoy-house-monorepo\\client\\types\\property.ts"
+  },
+  "utils/apollo-client.ts": {
+    "mt": "Sun Mar 12 2023 13:35:10 GMT-0700 (Pacific Daylight Saving Time)",
+    "exists": true,
+    "state": 1,
+    "path": "C:\\Users\\adamm\\OneDrive\\Plocha\\WWW\\ahoy-house-monorepo\\client\\utils\\apollo-client.ts"
+  },
+  "utils/emailjs.util.ts": {
+    "mt": "Wed Feb 15 2023 10:18:14 GMT-0800 (Pacific Standard Time)",
+    "exists": true,
+    "state": 1,
+    "path": "C:\\Users\\adamm\\OneDrive\\Plocha\\WWW\\ahoy-house-monorepo\\client\\utils\\emailjs.util.ts"
+  }
+}

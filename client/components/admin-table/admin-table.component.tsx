@@ -3,6 +3,7 @@ import * as React from 'react';
 import Trash from '../../public/icons/trash.svg';
 import Pencil from '../../public/icons/pencil.svg';
 import { Action } from '../action/action.component';
+import Image from 'next/image';
 
 type Props = {
   th: string[];
@@ -31,7 +32,7 @@ export const AdminTable = ({ th, data, propertyList, handleDelete, handleEdit, i
               else if (key === 'image')
                 return (
                   <td key={i}>
-                    <img style={{ width: '100px' }} src={td['url']} />
+                    <Image alt='image' style={{ width: '100px' }} src={td['url']} />
                   </td>
                 );
               else if (key === 'url')

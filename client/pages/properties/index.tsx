@@ -4,14 +4,14 @@ import { PropertyCard } from '../../components/property-card/property-card.compo
 import { gql } from '@apollo/client';
 import { apolloClient } from '../../utils/apollo-client';
 import { Property } from '../../types/property';
-import { GetStaticProps } from 'next';
+import { GetServerSideProps, GetStaticProps } from 'next';
 import { GET_ACTIVE_PROPERTIES } from '../../apollo/property-queries';
 
 interface Props {
   properties: Property[];
 }
 
-export const getStaticProps: GetStaticProps<Props> = async () => {
+export const getServerSideProps: GetServerSideProps<Props> = async () => {
   const { data } = await apolloClient.query({
     query: GET_ACTIVE_PROPERTIES,
   });
