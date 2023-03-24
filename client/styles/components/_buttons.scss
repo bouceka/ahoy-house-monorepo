@@ -5,7 +5,7 @@
   &:link,
   &:visited {
     padding: 1rem 2.4rem;
-    @extend .paragraph--large;
+    @extend .paragraph--large--bold;
     cursor: pointer;
     display: inline-block;
     border: none;
@@ -56,8 +56,8 @@
     color: var(--text-white-primary);
     background-color: transparent;
     transition: background-color 0.2s;
-    padding: 1rem .4rem .6rem .4rem;
-    transition: border .2s;
+    padding: 1rem 0.4rem 0.6rem 0.4rem;
+    transition: border 0.2s;
     @extend .paragraph--large;
     &:hover {
       color: var(--color-secondary-400);

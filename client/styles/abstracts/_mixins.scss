@@ -21,7 +21,7 @@
   @if $heading {
     font-family: 'Halant', 'Times New Roman', Times, serif;
   } @else {
-    font-family: 'Avenir', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: 'Inter', Tahoma, Geneva, Verdana, sans-serif;
   }
 }
 
@@ -99,7 +99,7 @@
     @include body-text(500, $fontSize, $lineHeight);
 
     &--bold {
-      @include body-text(900, $fontSize, $lineHeight);
+      @include body-text(700, $fontSize, $lineHeight);
     }
   }
 }
@@ -108,7 +108,7 @@
     @include body-text(500, $fontSize, $lineHeight);
 
     &--bold {
-      @include body-text(900, $fontSize, $lineHeight);
+      @include body-text(700, $fontSize, $lineHeight);
     }
   }
 }

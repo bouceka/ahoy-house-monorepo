@@ -32,7 +32,7 @@ export const AdminTable = ({ th, data, propertyList, handleDelete, handleEdit, i
               else if (key === 'image')
                 return (
                   <td key={i}>
-                    <Image alt='image' style={{ width: '100px' }} src={td['url']} />
+                    <Image alt='image' width={100} height={100} style={{ objectFit: 'cover' }} src={td['url']} />
                   </td>
                 );
               else if (key === 'url')

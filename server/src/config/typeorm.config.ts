@@ -9,10 +9,10 @@ export const typeOrmConfig: TypeOrmModuleOptions = {
   database: process.env.POSTGRES_DATABASE || 'ahoy-house-dev',
   entities: [__dirname + '/../**/*.entity.{js,ts}'],
   synchronize: true,
-  ssl: true,
-  extra: {
-    ssl: {
-      rejectUnauthorized: false,
-    },
-  },
+  // ssl: true,
+  // extra: {
+  //   ssl: {
+  //     rejectUnauthorized: false,
+  //   },
+  // },
 };
