@@ -19,12 +19,10 @@ export const PropertyImageCarousel = ({ imageData, height, width }: Props) => {
   const prevItem = () => {
     const index = currentItem > 0 ? currentItem - 1 : size;
     setCurrentItem(index);
-    console.log(currentItem);
   };
 
   const nextItem = () => {
     const index = currentItem >= size ? 0 : currentItem + 1;
-    console.log(currentItem >= size);
     setCurrentItem(index);
   };
 

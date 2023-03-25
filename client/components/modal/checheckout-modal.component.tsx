@@ -60,16 +60,13 @@ export const CheckoutModal = ({ open, onClose, primaryAction, secondaryAction, c
                   initialValues={initialValue}
                   validationSchema={validationSchema}
                   onSubmit={async (values, actions) => {
-                    console.log(values);
                     try {
-                      console.log(values);
                       sendEmail({ ...calculation, ...values });
                       toast.success('Booking sent');
                       actions.resetForm();
                       onClose();
                     } catch (error) {
                       onClose();
-                      console.log(values);
                       actions.resetForm();
                     }
                   }}

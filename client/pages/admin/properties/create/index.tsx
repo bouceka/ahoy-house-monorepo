@@ -37,9 +37,6 @@ const validationSchema = yup.object().shape({
 
 const AddProperty = (props: Props) => {
   const [createProperty, { data, loading, error }] = useMutation(CREATE_PROPERTY);
-  console.log(data);
-  console.log(loading);
-  console.log(error);
 
   const submitForm = async (values: typeof initialValue) => {
     const { data } = await createProperty({
@@ -76,13 +73,11 @@ const AddProperty = (props: Props) => {
             validationSchema={validationSchema}
             onSubmit={async (values, actions) => {
               try {
-                console.log(values);
 
                 console.log(await submitForm(values));
                 toast.success('Form submitted');
                 // actions.resetForm();
               } catch (error) {
-                console.log(values);
                 toast.error('Submission failed');
                 // actions.resetForm();
               }

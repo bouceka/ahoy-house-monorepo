@@ -1,7 +1,7 @@
 // @flow
 import * as React from 'react';
 import { Property, Room } from '../../types/property';
-import { GetStaticPaths, GetStaticPropsContext } from 'next';
+import { GetServerSideProps, GetStaticPaths, GetStaticPropsContext } from 'next';
 import { Header } from '../../components/header/header.component';
 import Head from 'next/head';
 import { PropertyImageCarousel } from '../../components/property-card/property-image-carousel.component';
@@ -17,8 +17,9 @@ type Props = {
   property: Property;
 };
 
-export const getStaticProps = async ({ params }: GetStaticPropsContext<{ slug: string }>) => {
-  const data = params?.slug ? await fetchActiveProperty(params?.slug) : '';
+export const getServerSideProps: GetServerSideProps<Props> = async (context) => {
+  const data =
+    context.params?.slug && !Array.isArray(context.params?.slug) ? await fetchActiveProperty(context.params?.slug) : '';
   return {
     props: {
       property: data ? data.getActiveProperty : [],
@@ -26,20 +27,29 @@ export const getStaticProps = async ({ params }: GetStaticPropsContext<{ slug: s
   };
 };
 
-export const getStaticPaths: GetStaticPaths = async () => {
-  const properties: Property[] = await fetchActiveProperties();
-  const paths = properties.map((property) => {
-    return {
-      params: {
-        slug: property.id,
-      },
-    };
-  });
-  return {
-    paths,
-    fallback: false,
-  };
-};
+// export const getStaticProps = async ({ params }: GetStaticPropsContext<{ slug: string }>) => {
+//   const data = params?.slug ? await fetchActiveProperty(params?.slug) : '';
+//   return {
+//     props: {
+//       property: data ? data.getActiveProperty : [],
+//     },
+//   };
+// };
+
+// export const getStaticPaths: GetStaticPaths = async () => {
+//   const properties: Property[] = await fetchActiveProperties();
+//   const paths = properties.map((property) => {
+//     return {
+//       params: {
+//         slug: property.id,
+//       },
+//     };
+//   });
+//   return {
+//     paths,
+//     fallback: false,
+//   };
+// };
 
 const PropertyDetail = ({ property }: Props) => {
   const [selectedRoom, setSelectedRoom] = useState(property.rooms[0] ?? null);

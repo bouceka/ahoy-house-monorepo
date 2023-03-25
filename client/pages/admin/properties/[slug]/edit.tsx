@@ -1,5 +1,5 @@
 // @flow
-import { GetStaticPaths, GetStaticPropsContext } from 'next';
+import { GetServerSideProps, GetServerSidePropsContext, GetStaticPaths, GetStaticPropsContext } from 'next';
 import * as React from 'react';
 import { UPDATE_PROPERTY, fetchProperties, fetchProperty } from '../../../../apollo/property-queries';
 import { Property } from '../../../../types/property';
@@ -24,8 +24,18 @@ type Props = {
   property: Property;
 };
 
-export const getStaticProps = async ({ params }: GetStaticPropsContext<{ slug: string }>) => {
-  const data = params?.slug ? await fetchProperty(params?.slug) : '';
+// export const getStaticProps = async ({ params }: GetStaticPropsContext<{ slug: string }>) => {
+//   const data = params?.slug ? await fetchProperty(params?.slug) : '';
+//   return {
+//     props: {
+//       property: data ? data.getProperty : [],
+//     },
+//   };
+// };
+
+export const getServerSideProps: GetServerSideProps<Props> = async (context) => {
+  const data =
+    context.params?.slug && !Array.isArray(context.params?.slug) ? await fetchProperty(context.params?.slug) : '';
   return {
     props: {
       property: data ? data.getProperty : [],
@@ -33,20 +43,20 @@ export const getStaticProps = async ({ params }: GetStaticPropsContext<{ slug: s
   };
 };
 
-export const getStaticPaths: GetStaticPaths = async () => {
-  const properties: Property[] = await fetchProperties();
-  const paths = properties.map((property) => {
-    return {
-      params: {
-        slug: property.id,
-      },
-    };
-  });
-  return {
-    paths,
-    fallback: false,
-  };
-};
+// export const getStaticPaths: GetStaticPaths = async () => {
+//   const properties: Property[] = await fetchProperties();
+//   const paths = properties.map((property) => {
+//     return {
+//       params: {
+//         slug: property.id,
+//       },
+//     };
+//   });
+//   return {
+//     paths,
+//     fallback: false,
+//   };
+// };
 
 const validationSchema = yup.object().shape({
   name: yup.string().required('Name of the property is required'),
@@ -141,7 +151,6 @@ const EditProperty = ({ property }: Props) => {
                   await submitForm(values);
                   toast.success('Form submitted');
                 } catch (error) {
-                  console.log(values);
                   toast.error('Submission failed');
                 }
               }}

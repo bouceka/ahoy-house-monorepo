@@ -11,7 +11,7 @@ import { AdminNav } from '../../../../components/admin-nav/admin-nav.component';
 import { Input } from '../../../../components/input/input.component';
 import { Action } from '../../../../components/action/action.component';
 import { fetchProperties, fetchProperty } from '../../../../apollo/property-queries';
-import { GetStaticPaths, GetStaticPropsContext } from 'next';
+import { GetServerSidePropsContext, GetStaticPaths, GetStaticPropsContext } from 'next';
 import { Property } from '../../../../types/property';
 import { Breadcrumbs } from '../../../../components/breadcrumbs/breadcrumbs.components';
 
@@ -100,13 +100,10 @@ const AddRoom = ({property}: Props) => {
             validationSchema={validationSchema}
             onSubmit={async (values, actions) => {
               try {
-                console.log(values);
-
                 console.log(await submitForm(values));
                 toast.success('Form submitted');
                 // actions.resetForm();
               } catch (error) {
-                console.log(values);
                 toast.error('Submission failed');
                 // actions.resetForm();
               }

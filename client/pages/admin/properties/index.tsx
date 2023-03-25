@@ -3,7 +3,7 @@ import Head from 'next/head';
 import * as React from 'react';
 import { AdminNav } from '../../../components/admin-nav/admin-nav.component';
 import { Property } from '../../../types/property';
-import { GetStaticProps } from 'next';
+import { GetServerSideProps, GetStaticProps } from 'next';
 import { apolloClient } from '../../../utils/apollo-client';
 import { DELETE_PROPERTY, GET_ALL_PROPERTIES } from '../../../apollo/property-queries';
 import { AdminTable } from '../../../components/admin-table/admin-table.component';
@@ -19,7 +19,7 @@ interface Props {
   properties: Property[];
 }
 
-export const getStaticProps: GetStaticProps<Props> = async () => {
+export const getServerSideProps: GetServerSideProps<Props> = async () => {
   const { data } = await apolloClient.query({
     query: GET_ALL_PROPERTIES,
   });

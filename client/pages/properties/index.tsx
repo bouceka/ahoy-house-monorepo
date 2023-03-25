@@ -13,6 +13,7 @@ import { useState } from 'react';
 import { sortBy } from 'sort-by-typescript';
 import ChevronDown from '../../public/icons/chevron/down.svg';
 import { Breadcrumbs } from '../../components/breadcrumbs/breadcrumbs.components';
+import { SelectEventHandler } from 'rc-menu/lib/interface';
 
 interface Props {
   propertyList: Property[];
@@ -71,7 +72,7 @@ export default function Properties({ propertyList, ...props }: Props) {
     }
   };
 
-  function onSelect({ key }: { key: SortBySelect }) {
+  function onSelect({ key }: any) {
     handleSortBy(key);
     setSortBySelect(key);
   }

@@ -83,7 +83,6 @@ export const PropertyCalculation = ({ room, property }: Props) => {
           const tax = handleTaxProportion(roomPrice);
           const totalPrice = tax + roomPrice;
           try {
-            console.log(values);
             setCalculation({
               checkIn: values.checkIn,
               checkOut: values.checkOut,
@@ -94,7 +93,6 @@ export const PropertyCalculation = ({ room, property }: Props) => {
             setOpenModal(true);
             // actions.resetForm();
           } catch (error) {
-            console.log(values);
             actions.resetForm();
           }
         }}

@@ -3,10 +3,10 @@ import * as React from 'react';
 import { Formik } from 'formik';
 import Head from 'next/head';
 import { ToastContainer, toast } from 'react-toastify';
-import { GetStaticPaths, GetStaticPropsContext } from 'next';
+import { GetServerSideProps, GetStaticPaths, GetStaticPropsContext } from 'next';
 import * as yup from 'yup';
 import { useMutation } from '@apollo/client';
-import {  UPDATE_ROOM, fetchRoom, fetchRooms } from '../../../../apollo/room-queries';
+import { UPDATE_ROOM, fetchRoom, fetchRooms } from '../../../../apollo/room-queries';
 import { Room } from '../../../../types/property';
 import { AdminNav } from '../../../../components/admin-nav/admin-nav.component';
 import { Input } from '../../../../components/input/input.component';
@@ -18,9 +18,9 @@ type Props = {
   room: Room;
 };
 
-export const getStaticProps = async ({ params }: GetStaticPropsContext<{ slug: string }>) => {
-  console.log(params?.slug);
-  const data = params?.slug ? await fetchRoom(params?.slug) : '';
+export const getServerSideProps: GetServerSideProps<Props> = async (context) => {
+  const data =
+    context.params?.slug && !Array.isArray(context.params?.slug) ? await fetchRoom(context.params?.slug) : '';
   return {
     props: {
       room: data ? data.getRoom : [],
@@ -28,21 +28,20 @@ export const getStaticProps = async ({ params }: GetStaticPropsContext<{ slug: s
   };
 };
 
-export const getStaticPaths: GetStaticPaths = async () => {
-  const rooms: Room[] = await fetchRooms();
-  console.log(rooms);
-  const paths = rooms.map((room) => {
-    return {
-      params: {
-        slug: room.id,
-      },
-    };
-  });
-  return {
-    paths,
-    fallback: false,
-  };
-};
+// export const getStaticPaths: GetStaticPaths = async () => {
+//   const rooms: Room[] = await fetchRooms();
+//   const paths = rooms.map((room) => {
+//     return {
+//       params: {
+//         slug: room.id,
+//       },
+//     };
+//   });
+//   return {
+//     paths,
+//     fallback: false,
+//   };
+// };
 
 const validationSchema = yup.object().shape({
   name: yup.string().required('Name of the property is required'),
@@ -67,8 +66,6 @@ const EditRoom = ({ room }: Props) => {
   };
 
   const submitForm = async (values: typeof initialValue) => {
-    console.log(values);
-
     const { data } = await updateRoom({
       variables: {
         description: values.description,
@@ -102,13 +99,10 @@ const EditRoom = ({ room }: Props) => {
             validationSchema={validationSchema}
             onSubmit={async (values, actions) => {
               try {
-                console.log(values);
-
                 console.log(await submitForm(values));
                 toast.success('Form submitted');
                 // actions.resetForm();
               } catch (error) {
-                console.log(values);
                 toast.error('Submission failed');
                 // actions.resetForm();
               }

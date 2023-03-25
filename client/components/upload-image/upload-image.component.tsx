@@ -16,7 +16,6 @@ export const UploadImage = ({ propertyId }: Props) => {
   function onChange(event: React.ChangeEvent<HTMLInputElement>) {
     if (event.target.validity.valid && event.target.files && event.target.files[0]) {
       const file = event.target.files[0];
-      console.log(file);
       if (file.size < 600000) {
         uploadFileMutation({
           variables: { file, propertyId },
