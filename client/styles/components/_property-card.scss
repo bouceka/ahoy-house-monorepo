@@ -30,6 +30,10 @@
     align-items: center;
     justify-content: flex-end;
     gap: 1.6rem;
+
+    & > a {
+      align-self: end
+    }
   }
 
   &__price-range {
