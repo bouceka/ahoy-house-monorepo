@@ -12,6 +12,7 @@ import { AdminNav } from '../../../../components/admin-nav/admin-nav.component';
 import { Input } from '../../../../components/input/input.component';
 import { Action } from '../../../../components/action/action.component';
 import 'react-toastify/dist/ReactToastify.css';
+import { Breadcrumbs } from '../../../../components/breadcrumbs/breadcrumbs.components';
 
 type Props = {
   room: Room;
@@ -95,8 +96,7 @@ const EditRoom = ({ room }: Props) => {
       <main className='page '>
         <ToastContainer style={{ fontSize: '1.6rem' }} pauseOnHover hideProgressBar />
         <div className='row'>
-          <h1 className='heading'>Add Property</h1>
-
+          <h1 className='heading'>Edit Room</h1>
           <Formik
             initialValues={initialValue}
             validationSchema={validationSchema}
@@ -117,7 +117,7 @@ const EditRoom = ({ room }: Props) => {
             {({ values, handleSubmit, handleChange, isSubmitting, dirty, isValid, errors, ...props }) => {
               return (
                 <>
-                  <form onSubmit={handleSubmit}>
+                  <form className='form' onSubmit={handleSubmit}>
                     <Input
                       onChange={handleChange}
                       value={values.name}
@@ -178,7 +178,7 @@ const EditRoom = ({ room }: Props) => {
                       placeholder='e.g. lkusdf-21312-asdasd'
                     />
                     <Action disabled={!isValid || !dirty} as='button' type='submit' styleType='primary'>
-                      Submit
+                      Edit Room
                     </Action>
                   </form>
                 </>

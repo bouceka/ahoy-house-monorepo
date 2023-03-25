@@ -13,6 +13,7 @@ import { useState } from 'react';
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import { Action } from '../../../components/action/action.component';
+import { Breadcrumbs } from '../../../components/breadcrumbs/breadcrumbs.components';
 
 interface Props {
   properties: Property[];
@@ -59,14 +60,17 @@ const AdminProperties = ({ properties, ...props }: Props) => {
       <ToastContainer style={{ fontSize: '1.6rem' }} pauseOnHover hideProgressBar />
       <main className='page '>
         <div className='row'>
-          <h1 className='heading'>Properties</h1>
-          <Action styleType='outline' as='link' href={`/admin/properties/create`}>
-            Add Property
-          </Action>
+          <div className='page-title'>
+            <h1 className='heading'>Properties</h1>
+            <Action styleType='outline' as='link' href={`/admin/properties/create`}>
+              Add property
+            </Action>
+          </div>
+          <Breadcrumbs />
           <AdminTable
             data={propertyList}
-            propertyList={['name', 'isActive', 'livingArea', 'address','rooms', 'edit']}
-            th={['#', 'Name of Property', 'Is Active', 'Living Area', 'Address','No. Rooms', 'Edit']}
+            propertyList={['name', 'isActive', 'livingArea', 'address', 'rooms', 'edit']}
+            th={['#', 'Name of Property', 'Is Active', 'Living Area', 'Address', 'No. Rooms', 'Edit']}
             handleDelete={handleDeleteProperty}
             handleEdit={(id: string) => handleEdit(id)}
           />

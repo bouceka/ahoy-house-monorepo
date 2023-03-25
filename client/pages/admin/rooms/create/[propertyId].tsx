@@ -13,6 +13,7 @@ import { Action } from '../../../../components/action/action.component';
 import { fetchProperties, fetchProperty } from '../../../../apollo/property-queries';
 import { GetStaticPaths, GetStaticPropsContext } from 'next';
 import { Property } from '../../../../types/property';
+import { Breadcrumbs } from '../../../../components/breadcrumbs/breadcrumbs.components';
 
 type Props = {
   property: Property
@@ -94,7 +95,6 @@ const AddRoom = ({property}: Props) => {
         <div className='row'>
           <h1 className='heading'>Add Room of property {property.name}</h1>
           <h2 className='heading'>ID: {property.id}</h2>
-
           <Formik
             initialValues={initialValue}
             validationSchema={validationSchema}
@@ -115,7 +115,7 @@ const AddRoom = ({property}: Props) => {
             {({ values, handleSubmit, handleChange, isSubmitting, dirty, isValid, errors, ...props }) => {
               return (
                 <>
-                  <form onSubmit={handleSubmit}>
+                  <form className='form' onSubmit={handleSubmit}>
                     <Input
                       onChange={handleChange}
                       value={values.name}

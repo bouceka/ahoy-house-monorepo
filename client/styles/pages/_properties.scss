@@ -73,9 +73,10 @@
   }
 }
 
-.property-page {
+.page-title {
   display: flex;
   justify-content: space-between;
+  margin-bottom: 2.4rem;
 }
 
 .rotate-chevron {
@@ -84,5 +85,36 @@
 
   &.active {
     transform: rotate(-180deg);
+  }
+}
+
+.edit-property {
+  display: flex;
+  justify-content: space-between;
+  gap: 2.4rem;
+
+  @include respond(tab-land) {
+    flex-direction: column;
+  }
+
+  & .right-section {
+    display: flex;
+    flex-direction: column;
+    gap: 2.4rem;
+
+    & .image-section {
+      display: flex;
+      flex-direction: column;
+      gap: 0.8rem;
+    }
+    & .room-section {
+      display: flex;
+      flex-direction: column;
+      gap: 0.8rem;
+      align-items: flex-end;
+      @include respond(tab-land) {
+        align-items: flex-start;
+      }
+    }
   }
 }

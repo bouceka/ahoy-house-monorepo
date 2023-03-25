@@ -111,7 +111,7 @@ export default function Properties({ propertyList, ...props }: Props) {
       <Header imageExtend={true} type='solid' position='sticky' />
       <main>
         <div className='row page '>
-          <div className='property-page'>
+          <div className='page-title'>
             <h2 className='heading--bold'>Our Properties</h2>
             <Dropdown trigger={['click']} overlay={menu} animation='slide-up' onVisibleChange={onVisibleChange}>
               <button className='sort-by'>

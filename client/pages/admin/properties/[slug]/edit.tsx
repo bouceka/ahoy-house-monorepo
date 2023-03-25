@@ -1,11 +1,7 @@
 // @flow
 import { GetStaticPaths, GetStaticPropsContext } from 'next';
 import * as React from 'react';
-import {
-  UPDATE_PROPERTY,
-  fetchProperties,
-  fetchProperty,
-} from '../../../../apollo/property-queries';
+import { UPDATE_PROPERTY, fetchProperties, fetchProperty } from '../../../../apollo/property-queries';
 import { Property } from '../../../../types/property';
 import * as yup from 'yup';
 import { useMutation } from '@apollo/client';
@@ -22,6 +18,7 @@ import { DELETE_ROOM } from '../../../../apollo/room-queries';
 import 'react-toastify/dist/ReactToastify.css';
 import { UploadImage } from '../../../../components/upload-image/upload-image.component';
 import { DELETE_IMAGE } from '../../../../apollo/image.quries';
+import { Breadcrumbs } from '../../../../components/breadcrumbs/breadcrumbs.components';
 
 type Props = {
   property: Property;
@@ -106,7 +103,6 @@ const EditProperty = ({ property }: Props) => {
   const handleEdit = (roomId: string) => router.push(`/admin/rooms/${roomId}/edit`);
 
   const submitForm = async (values: typeof initialValue) => {
-
     const { data } = await updateProperty({
       variables: {
         description: values.description,
@@ -135,118 +131,126 @@ const EditProperty = ({ property }: Props) => {
       <main className='page '>
         <div className='row'>
           <h1 className='heading'>Edit Property</h1>
-
-          <Formik
-            initialValues={initialValue}
-            validationSchema={validationSchema}
-            onSubmit={async (values, actions) => {
-              try {
-                await submitForm(values);
-                toast.success('Form submitted');
-              } catch (error) {
-                console.log(values);
-                toast.error('Submission failed');
-              }
-            }}
-          >
-            {({ values, handleSubmit, handleChange, isSubmitting, dirty, isValid, errors, ...props }) => {
-              return (
-                <>
-                  <form onSubmit={handleSubmit}>
-                    <Input
-                      onChange={handleChange}
-                      value={values.name}
-                      required
-                      name='name'
-                      label='Property Name'
-                      placeholder='e.g. Silver House'
-                    />
-                    <Input
-                      onChange={handleChange}
-                      value={values.description}
-                      required
-                      name='description'
-                      type='textarea'
-                      label='Description'
-                      placeholder='Describe the property'
-                    />
-                    <Input
-                      onChange={handleChange}
-                      value={values.numberBaths}
-                      required
-                      name='numberBaths'
-                      type='number'
-                      label='Number of bathrooms'
-                      placeholder='e.g. 1'
-                    />
-                    <Input
-                      onChange={handleChange}
-                      value={values.numberRooms}
-                      required
-                      name='numberRooms'
-                      type='number'
-                      label='Number of bedrooms'
-                      placeholder='e.g. 1'
-                    />
-                    <Input
-                      onChange={handleChange}
-                      value={values.livingArea}
-                      required
-                      name='livingArea'
-                      type='number'
-                      label='Living Area (sqft) '
-                      placeholder='e.g. 981'
-                    />
-                    <Input
-                      onChange={handleChange}
-                      value={values.address}
-                      required
-                      name='address'
-                      label='Address'
-                      placeholder='e.g. 1234 56 Ave, Vancouver, BC'
-                    />
-                    <Input
-                      onChange={handleChange}
-                      value={values.postalCode}
-                      required
-                      name='postalCode'
-                      label='Postal Code'
-                      placeholder='e.g. V6M 5T1'
-                    />
-                    <Input
-                      onChange={() => props.setFieldValue('isActive', !values.isActive)}
-                      checked={values.isActive}
-                      type='checkbox'
-                      name='active'
-                      label='Is Property Active?'
-                    />
-                    <Action disabled={!isValid || !dirty} as='button' type='submit' styleType='primary'>
-                      Submit
-                    </Action>
-                  </form>
-                </>
-              );
-            }}
-          </Formik>
-          <Action styleType='outline' as='link' href={`/admin/rooms/create/${property.id}`}>
-            Add Room
-          </Action>
-          <AdminTable
-            th={['#', 'Name of Room', 'Price Per Night', 'Living Area', 'Capacity', 'Edit']}
-            propertyList={['name', 'pricePerNight', 'livingArea', 'capacity', 'edit']}
-            data={roomList}
-            handleDelete={handleDeleteRoom}
-            handleEdit={(id: string) => handleEdit(id)}
-          />
-          <UploadImage propertyId={property.id} />
-          <AdminTable
-            th={['#', 'Image Preview', 'URL', 'Edit']}
-            propertyList={['image', 'url', 'edit']}
-            data={imageList}
-            handleDelete={handleDeleteImage}
-            handleEdit={(id: string) => handleEdit(id)}
-            isEditable={false}
-          />
+          <Breadcrumbs />
+          <div className='edit-property'>
+            <Formik
+              initialValues={initialValue}
+              validationSchema={validationSchema}
+              onSubmit={async (values, actions) => {
+                try {
+                  await submitForm(values);
+                  toast.success('Form submitted');
+                } catch (error) {
+                  console.log(values);
+                  toast.error('Submission failed');
+                }
+              }}
+            >
+              {({ values, handleSubmit, handleChange, isSubmitting, dirty, isValid, errors, ...props }) => {
+                return (
+                  <>
+                    <form className='form' onSubmit={handleSubmit}>
+                      <Input
+                        onChange={handleChange}
+                        value={values.name}
+                        required
+                        name='name'
+                        label='Property Name'
+                        placeholder='e.g. Silver House'
+                      />
+                      <Input
+                        onChange={handleChange}
+                        value={values.description}
+                        required
+                        name='description'
+                        type='textarea'
+                        label='Description'
+                        placeholder='Describe the property'
+                      />
+                      <Input
+                        onChange={handleChange}
+                        value={values.numberBaths}
+                        required
+                        name='numberBaths'
+                        type='number'
+                        label='Number of bathrooms'
+                        placeholder='e.g. 1'
+                      />
+                      <Input
+                        onChange={handleChange}
+                        value={values.numberRooms}
+                        required
+                        name='numberRooms'
+                        type='number'
+                        label='Number of bedrooms'
+                        placeholder='e.g. 1'
+                      />
+                      <Input
+                        onChange={handleChange}
+                        value={values.livingArea}
+                        required
+                        name='livingArea'
+                        type='number'
+                        label='Living Area (sqft) '
+                        placeholder='e.g. 981'
+                      />
+                      <Input
+                        onChange={handleChange}
+                        value={values.address}
+                        required
+                        name='address'
+                        label='Address'
+                        placeholder='e.g. 1234 56 Ave, Vancouver, BC'
+                      />
+                      <Input
+                        onChange={handleChange}
+                        value={values.postalCode}
+                        required
+                        name='postalCode'
+                        label='Postal Code'
+                        placeholder='e.g. V6M 5T1'
+                      />
+                      <Input
+                        onChange={() => props.setFieldValue('isActive', !values.isActive)}
+                        checked={values.isActive}
+                        type='checkbox'
+                        name='active'
+                        label='Is Property Active?'
+                      />
+                      <Action disabled={!isValid || !dirty} as='button' type='submit' styleType='primary'>
+                        Edit Property
+                      </Action>
+                    </form>
+                  </>
+                );
+              }}
+            </Formik>
+            <div className='right-section'>
+              <div className='room-section'>
+                <Action styleType='outline' as='link' href={`/admin/rooms/create/${property.id}`}>
+                  Add Room
+                </Action>
+                <AdminTable
+                  th={['#', 'Name of Room', 'Price Per Night', 'Living Area', 'Capacity', 'Edit']}
+                  propertyList={['name', 'pricePerNight', 'livingArea', 'capacity', 'edit']}
+                  data={roomList}
+                  handleDelete={handleDeleteRoom}
+                  handleEdit={(id: string) => handleEdit(id)}
+                />
+              </div>
+              <div className='image-section'>
+                <UploadImage propertyId={property.id} />
+                <AdminTable
+                  th={['#', 'Image Preview', 'URL', 'Edit']}
+                  propertyList={['image', 'url', 'edit']}
+                  data={imageList}
+                  handleDelete={handleDeleteImage}
+                  handleEdit={(id: string) => handleEdit(id)}
+                  isEditable={false}
+                />
+              </div>
+            </div>
+          </div>
         </div>
       </main>
     </>

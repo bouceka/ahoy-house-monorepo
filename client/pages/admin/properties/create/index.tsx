@@ -10,6 +10,7 @@ import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import { useMutation } from '@apollo/client';
 import { CREATE_PROPERTY } from '../../../../apollo/property-queries';
+import { Breadcrumbs } from '../../../../components/breadcrumbs/breadcrumbs.components';
 
 type Props = {};
 
@@ -69,7 +70,7 @@ const AddProperty = (props: Props) => {
         <ToastContainer style={{ fontSize: '1.6rem' }} pauseOnHover hideProgressBar />
         <div className='row'>
           <h1 className='heading'>Add Property</h1>
-
+          <Breadcrumbs />
           <Formik
             initialValues={initialValue}
             validationSchema={validationSchema}
@@ -90,7 +91,7 @@ const AddProperty = (props: Props) => {
             {({ values, handleSubmit, handleChange, isSubmitting, dirty, isValid, errors, ...props }) => {
               return (
                 <>
-                  <form onSubmit={handleSubmit}>
+                  <form className='form' onSubmit={handleSubmit}>
                     <Input
                       onChange={handleChange}
                       value={values.name}
