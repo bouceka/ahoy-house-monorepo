@@ -16,3 +16,9 @@ export const typeOrmConfig: TypeOrmModuleOptions = {
   //   },
   // },
 };
+
+// host: process.env.POSTGRES_HOST || 'localhost',
+// port: 2389 ||5432,
+// username: process.env.POSTGRES_USERNAME || 'user',
+// password: process.env.POSTGRES_PASSWORD || 'password',
+// database: process.env.POSTGRES_DATABASE || 'ahoy-house-dev',

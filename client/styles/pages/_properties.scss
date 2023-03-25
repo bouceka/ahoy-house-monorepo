@@ -44,3 +44,45 @@
     grid-row: 1/2;
   }
 }
+
+.sort-by {
+  all: unset;
+  padding: 0.6rem 1rem;
+  background-color: #f2f2f2;
+  border: 1px solid #c4c4c4;
+  border-radius: 4px;
+  transition: all 0.2s;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+
+  &:hover {
+    background-color: var(--color-primary-25);
+  }
+
+  &:active {
+    background-color: var(--color-primary-50);
+  }
+}
+
+.sort-item {
+  cursor: pointer;
+  &:hover {
+    background-color: var(--color-primary-25);
+  }
+}
+
+.property-page {
+  display: flex;
+  justify-content: space-between;
+}
+
+.rotate-chevron {
+  transform: rotate(0);
+  transition: transform 0.3s;
+
+  &.active {
+    transform: rotate(-180deg);
+  }
+}

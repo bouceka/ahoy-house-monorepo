@@ -4,7 +4,7 @@ import { createUploadLink } from 'apollo-upload-client';
 
 export const apolloClient = new ApolloClient({
   link: createUploadLink({
-    uri: 'https://ahoy-house-server-21666.nodechef.com/graphql', //http://localhost:3000/graphql
+    uri: 'http://localhost:3000/graphql', //'https://ahoy-house-server-21666.nodechef.com/graphql',
     headers: {
       'Apollo-Require-Preflight': 'true',
     },
