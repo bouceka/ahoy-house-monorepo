@@ -30,12 +30,12 @@ export const Header = ({ position, imageExtend = false, type = 'solid' }: Props)
 
             <ul className='menu__links'>
               <li>
-                <Link className='btn--link' href='/'>
+                <Link className='btn--header' href='/'>
                   Home
                 </Link>
               </li>
               <li>
-                <Link className='btn--link' href='/properties'>
+                <Link className='btn--header' href='/properties'>
                   Properties
                 </Link>
               </li>

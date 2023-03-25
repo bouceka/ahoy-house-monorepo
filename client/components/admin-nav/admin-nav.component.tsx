@@ -14,12 +14,12 @@ export const AdminNav = (props: Props) => {
           </h2>
           <ul className='menu__links'>
             <li>
-              <Link className='btn--link' href='/'>
+              <Link className='btn--header' href='/'>
                 Home
               </Link>
             </li>
             <li>
-              <Link className='btn--link' href='/admin/properties'>
+              <Link className='btn--header' href='/admin/properties'>
                 Properties
               </Link>
             </li>
