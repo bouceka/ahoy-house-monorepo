@@ -111,6 +111,7 @@
     .menu__links {
       position: absolute;
       top: 11rem;
+      z-index: 2;
       left: -200rem;
       width: 100%;
       background-color: var(--color-primary-800);
