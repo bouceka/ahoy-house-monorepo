@@ -59,7 +59,7 @@ const PropertyDetail = ({ property }: Props) => {
       <ToastContainer style={{ fontSize: '1.6rem' }} pauseOnHover hideProgressBar />
       <main>
         <div className='row page'>
-          <h1 className='heading'>{property.name}</h1>
+          <h1 className='heading--bold'>{property.name}</h1>
           <div className='row-2-1'>
             <div className='property-gallery'>
               <PropertyImageCarousel imageData={property.images} width='100%' height='100%' />

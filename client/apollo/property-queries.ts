@@ -41,6 +41,7 @@ export const GET_ACTIVE_PROPERTIES = gql`
       postalCode
       name
       isActive
+      rating
       rooms {
         id
         description
@@ -49,13 +50,13 @@ export const GET_ACTIVE_PROPERTIES = gql`
         pricePerNight
         capacity
       }
-      images{
-      propertyId
-      publicId
-      url
-      id
-      createdAt
-    }
+      images {
+        propertyId
+        publicId
+        url
+        id
+        createdAt
+      }
     }
   }
 `;
@@ -71,6 +72,7 @@ export const GET_ALL_PROPERTIES = gql`
       postalCode
       name
       isActive
+      rating
       rooms {
         id
         description
@@ -79,13 +81,13 @@ export const GET_ALL_PROPERTIES = gql`
         pricePerNight
         capacity
       }
-      images{
-      propertyId
-      publicId
-      url
-      id
-      createdAt
-    }
+      images {
+        propertyId
+        publicId
+        url
+        id
+        createdAt
+      }
     }
   }
 `;
@@ -102,6 +104,7 @@ export const GET_ACTIVE_PROPERTY = gql`
       postalCode
       name
       isActive
+      rating
       rooms {
         id
         description
@@ -110,13 +113,13 @@ export const GET_ACTIVE_PROPERTY = gql`
         pricePerNight
         capacity
       }
-      images{
-      propertyId
-      publicId
-      url
-      id
-      createdAt
-    }
+      images {
+        propertyId
+        publicId
+        url
+        id
+        createdAt
+      }
     }
   }
 `;
@@ -140,29 +143,26 @@ export const GET_PROPERTY = gql`
         pricePerNight
         capacity
       }
-      images{
-      propertyId
-      publicId
-      url
-      id
-      createdAt
-    }
+      images {
+        propertyId
+        publicId
+        url
+        id
+        createdAt
+      }
     }
   }
 `;
 
 export const DELETE_PROPERTY = gql`
-mutation deleteProperty(
-    $id: String!
-  ) {
-    deleteProperty(
-      id: $id
-    ) {
+  mutation deleteProperty($id: String!) {
+    deleteProperty(id: $id) {
       name
     }
-  }`
+  }
+`;
 
-  export const UPDATE_PROPERTY = gql`
+export const UPDATE_PROPERTY = gql`
   mutation updateProperty(
     $id: ID!
     $numberBaths: Float!
@@ -190,8 +190,7 @@ mutation deleteProperty(
       name
     }
   }
-`
-
+`;
 
 export const fetchActiveProperty = async (id: string) => {
   const { data } = await apolloClient.query({

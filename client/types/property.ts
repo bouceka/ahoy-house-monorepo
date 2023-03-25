@@ -7,6 +7,8 @@ export interface Property {
   name: string;
   description: string;
   address: string;
+  rating: number;
+  priceFrom?: number | null;
   isActive: boolean;
   images: PropertyImage[];
   rooms: Room[];
@@ -25,6 +27,6 @@ export interface Room {
   description: string;
   livingArea: number;
   pricePerNight: number;
-  propertyId:string
-  amenities:string,
+  propertyId: string;
+  amenities: string;
 }

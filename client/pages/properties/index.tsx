@@ -35,11 +35,11 @@ export default function Properties({ properties, ...props }: Props) {
       <Header imageExtend={true} type='solid' position='sticky' />
       <main>
         <div className='row page'>
-          <h2 className='heading'>Our Properties</h2>
+          <h2 className='heading--bold'>Our Properties</h2>
 
           <section className='properties-grid'>
             {properties.map((property, index) => (
-              <PropertyCard key={index} property={property} index={index}/>
+              <PropertyCard key={index} property={property} index={index} />
             ))}
           </section>
         </div>

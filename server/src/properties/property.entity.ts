@@ -47,6 +47,10 @@ export class Property {
   @Field()
   address: string;
 
+  @Column({ type: 'numeric', nullable: true })
+  @Field({ nullable: true })
+  rating: number;
+
   @Column()
   @Field()
   isActive: boolean;

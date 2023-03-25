@@ -6,7 +6,7 @@
     inset 0 0 0 2px var(--color-neutral-200);
   border-radius: 5px;
   overflow: hidden;
-	width: 50.4rem;
+  width: 50.4rem;
   @include respond(phone) {
     width: 45.6rem;
   }
@@ -16,17 +16,52 @@
   &__content {
     padding: 1.6rem 2.4rem;
     display: flex;
-    flex-direction: column;
-    gap: 1.6rem;
-    position: relative;
+    justify-content: space-between;
   }
 
+  &__left {
+    display: flex;
+    flex-direction: column;
+    gap: 1.6rem;
+  }
+  &__right {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 1.6rem;
+  }
+
+  &__price-range {
+    @extend .paragraph--medium;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.4rem;
+    &__first {
+      display: block;
+      @extend .paragraph--xlarge--bold;
+    }
+  }
   &__row {
     display: flex;
-    gap: 1.6rem;
+    gap: 0.8rem;
 
     & img {
-      margin-right: 1.6rem;
+      margin-right: 0.8rem;
+    }
+  }
+  .star-rating {
+    position: relative;
+    margin-right: 0.8rem;
+    & .filled-stars {
+      padding: 0;
+      position: absolute;
+      z-index: 1;
+      top: 0;
+      left: 0;
+      overflow: hidden;
+      white-space: nowrap;
     }
   }
   &__icon {
