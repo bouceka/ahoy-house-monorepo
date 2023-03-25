@@ -30,7 +30,10 @@ export class Image {
   @Field()
   roomId: string;
 
-  @ManyToOne(() => Property, (property) => property.images)
+  // TODO: Delete images on cloud possible solution cascade: 'remove' https://github.com/typeorm/typeorm/issues/4419
+  @ManyToOne(() => Property, (property) => property.images, {
+    onDelete: 'CASCADE',
+  })
   @Field(() => Property)
   property: Property;
 

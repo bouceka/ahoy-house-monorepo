@@ -45,7 +45,9 @@ export class Room {
   @Field(() => ID)
   propertyId: string;
 
-  @ManyToOne(() => Property, (property) => property.rooms)
+  @ManyToOne(() => Property, (property) => property.rooms, {
+    onDelete: 'CASCADE',
+  })
   @Field(() => Property)
   property: Property;
 
@@ -53,7 +55,7 @@ export class Room {
   @Field(() => [OccupiedRoom])
   occupiedRooms?: OccupiedRoom[];
 
-  @OneToMany(() => Image, (image) => image.room)
+  @OneToMany(() => Image, (image) => image.room, { onDelete: 'CASCADE' })
   @Field(() => [Image])
   images?: Image[];
 }
