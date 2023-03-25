@@ -12,6 +12,7 @@ import 'rc-dropdown/assets/index.css';
 import { useState } from 'react';
 import { sortBy } from 'sort-by-typescript';
 import ChevronDown from '../../public/icons/chevron/down.svg';
+import { Breadcrumbs } from '../../components/breadcrumbs/breadcrumbs.components';
 
 interface Props {
   propertyList: Property[];
@@ -120,6 +121,7 @@ export default function Properties({ propertyList, ...props }: Props) {
               </button>
             </Dropdown>
           </div>
+          <Breadcrumbs />
           <section className='properties-grid'>
             {properties
               ? properties.map((property, index) => <PropertyCard key={index} property={property} index={index} />)

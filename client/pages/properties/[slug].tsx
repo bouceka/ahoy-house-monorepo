@@ -11,6 +11,7 @@ import 'react-toastify/dist/ReactToastify.css';
 import { fetchActiveProperties, fetchActiveProperty } from '../../apollo/property-queries';
 import { RoomThumbnail } from '../../components/room-thumbnail/room-thumbnail.component';
 import { useState } from 'react';
+import { Breadcrumbs } from '../../components/breadcrumbs/breadcrumbs.components';
 
 type Props = {
   property: Property;
@@ -60,6 +61,7 @@ const PropertyDetail = ({ property }: Props) => {
       <main>
         <div className='row page'>
           <h1 className='heading--bold'>{property.name}</h1>
+          <Breadcrumbs />
           <div className='row-2-1'>
             <div className='property-gallery'>
               <PropertyImageCarousel imageData={property.images} width='100%' height='100%' />
