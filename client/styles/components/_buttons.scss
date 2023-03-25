@@ -52,7 +52,7 @@
       background-color: var(--color-primary-100);
     }
   }
-  &--link {
+  &--header {
     color: var(--text-white-primary);
     background-color: transparent;
     transition: background-color 0.2s;
@@ -67,6 +67,22 @@
     &:active {
       color: var(--color-secondary-500);
       border-bottom: 2px solid var(--color-secondary-500);
+    }
+  }
+  &#{&}--link {
+    color: var(--text-black-secondary);
+    background-color: transparent;
+    transition: background-color 0.2s;
+    padding: 0.6rem 0;
+    transition: border 0.2s;
+    @extend .paragraph--medium;
+    &:hover {
+      color: var(--color-primary-600);
+      text-decoration: underline;
+    }
+
+    &:active {
+      color: var(--color-primary-800);
     }
   }
 
