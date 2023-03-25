@@ -121,7 +121,6 @@ export default function Properties({ propertyList, ...props }: Props) {
               </button>
             </Dropdown>
           </div>
-          <Breadcrumbs />
           <section className='properties-grid'>
             {properties
               ? properties.map((property, index) => <PropertyCard key={index} property={property} index={index} />)
