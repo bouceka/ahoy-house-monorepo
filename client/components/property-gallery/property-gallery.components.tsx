@@ -1,14 +1,15 @@
 // @flow
 import * as React from 'react';
-import { PropertyImageCarousel } from '../property-card/property-image-carousel.component';
+
 import { PropertyImage } from '../../types/property';
+import { PropertyImageCarousel } from '../property-card/property-image-carousel.component';
 type Props = {
-images: PropertyImage[]
+  images: PropertyImage[];
 };
-export const PropertyGallery = ({images}: Props) => {
-	return (
-		<div>
-			<PropertyImageCarousel imageData={images} />
-		</div>
-	);
+export const PropertyGallery = ({ images }: Props) => {
+  return (
+    <div>
+      <PropertyImageCarousel imageData={images} />
+    </div>
+  );
 };

@@ -7,12 +7,12 @@ type Props = {
 };
 export const CarouselButtons = (props: Props) => {
   return (
-    <div className='carousel-buttons'>
-      <button className='carousel-button left' onClick={props.prevItem}>
-        <Image src='/icons/chevron/left.svg' width='32' height='32' alt='' />
+    <div className="carousel-buttons">
+      <button className="carousel-button left" onClick={props.prevItem}>
+        <Image src="/icons/chevron/left.svg" width="32" height="32" alt="" />
       </button>
-      <button className='carousel-button right' onClick={props.nextItem}>
-        <Image src='/icons/chevron/right.svg' width='32' height='32' alt='' />
+      <button className="carousel-button right" onClick={props.nextItem}>
+        <Image src="/icons/chevron/right.svg" width="32" height="32" alt="" />
       </button>
     </div>
   );

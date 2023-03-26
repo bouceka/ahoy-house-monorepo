@@ -1,10 +1,11 @@
 // @flow
-import * as React from 'react';
-import { CarouselButtons } from './carousel-buttons.component';
-import { useRef, useState } from 'react';
 import Image from 'next/image';
-import { CarouselProgressBar } from './carousel-progress-bar.component';
+import * as React from 'react';
+import { useRef, useState } from 'react';
+
 import { PropertyImage } from '../../types/property';
+import { CarouselButtons } from './carousel-buttons.component';
+import { CarouselProgressBar } from './carousel-progress-bar.component';
 
 type Props = {
   imageData: PropertyImage[];
@@ -28,7 +29,7 @@ export const PropertyImageCarousel = ({ imageData, height, width }: Props) => {
 
   return (
     <div>
-      <section className='property-carousel' style={{ height, width }}>
+      <section className="property-carousel" style={{ height, width }}>
         {images.length > 0 ? (
           images.map((image, index) => (
             <Image
@@ -36,18 +37,18 @@ export const PropertyImageCarousel = ({ imageData, height, width }: Props) => {
               width={504}
               height={272}
               src={image.url}
-              alt='Property photo'
+              alt="Property photo"
               key={image.id}
             />
           ))
         ) : (
           <Image
-            alt='no photo'
-            className='active slide'
+            alt="no photo"
+            className="active slide"
             width={504}
             height={272}
-            key='unique-id'
-            src='/static/illustrations/no-photo.jpeg'
+            key="unique-id"
+            src="/static/illustrations/no-photo.jpeg"
           />
         )}
         {images.length > 1 ? (

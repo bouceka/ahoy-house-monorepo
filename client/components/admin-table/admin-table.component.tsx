@@ -1,9 +1,10 @@
 // @flow
-import * as React from 'react';
-import Trash from '../../public/icons/trash.svg';
-import Pencil from '../../public/icons/pencil.svg';
-import { Action } from '../action/action.component';
 import Image from 'next/image';
+import * as React from 'react';
+
+import Pencil from '../../public/icons/pencil.svg';
+import Trash from '../../public/icons/trash.svg';
+import { Action } from '../action/action.component';
 
 type Props = {
   th: string[];
@@ -13,9 +14,16 @@ type Props = {
   handleEdit: (id: string) => void;
   isEditable?: boolean;
 };
-export const AdminTable = ({ th, data, propertyList, handleDelete, handleEdit, isEditable = true }: Props) => {
+export const AdminTable = ({
+  th,
+  data,
+  propertyList,
+  handleDelete,
+  handleEdit,
+  isEditable = true,
+}: Props) => {
   return (
-    <table className='admin-table'>
+    <table className="admin-table">
       <thead>
         <tr>
           {th.map((th, index) => (
@@ -28,17 +36,24 @@ export const AdminTable = ({ th, data, propertyList, handleDelete, handleEdit, i
           <tr key={index}>
             <th>{index + 1}</th>
             {propertyList.map((key, i) => {
-              if (key === 'rooms' && td[key]) return <td key={i}>{`${td[key].length}`}</td>;
+              if (key === 'rooms' && td[key])
+                return <td key={i}>{`${td[key].length}`}</td>;
               else if (key === 'image')
                 return (
                   <td key={i}>
-                    <Image alt='image' width={100} height={100} style={{ objectFit: 'cover' }} src={td['url']} />
+                    <Image
+                      alt="image"
+                      width={100}
+                      height={100}
+                      style={{ objectFit: 'cover' }}
+                      src={td['url']}
+                    />
                   </td>
                 );
               else if (key === 'url')
                 return (
                   <td key={i}>
-                    <Action as='link' styleType='outline' href={td['url']}>
+                    <Action as="link" styleType="outline" href={td['url']}>
                       Link
                     </Action>
                   </td>

@@ -1,10 +1,11 @@
 // @flow
 import { ApolloQueryResult, useMutation, useQuery } from '@apollo/client';
+import { useRouter } from 'next/router';
 import * as React from 'react';
+import { toast } from 'react-toastify';
+
 import { UPLOAD_IMAGE } from '../../apollo/image.quries';
 import { apolloClient } from '../../utils/apollo-client';
-import { useRouter } from 'next/router';
-import { toast } from 'react-toastify';
 type Props = {
   propertyId: string;
   //   refetch: () => Promise<ApolloQueryResult<any>>
@@ -33,7 +34,7 @@ export const UploadImage = ({ propertyId }: Props) => {
   }
   return (
     <>
-      <input type='file' name='image' id='' onChange={onChange} />
+      <input type="file" name="image" id="" onChange={onChange} />
     </>
   );
 };

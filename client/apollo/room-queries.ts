@@ -1,4 +1,5 @@
 import { gql } from '@apollo/client';
+
 import { apolloClient } from '../utils/apollo-client';
 
 export const DELETE_ROOM = gql`
@@ -67,7 +68,6 @@ export const GET_ROOM = gql`
   }
 `;
 
-
 export const CREATE_ROOM = gql`
   mutation createRoom(
     $capacity: Float!
@@ -93,7 +93,6 @@ export const CREATE_ROOM = gql`
     }
   }
 `;
-
 
 export const fetchRoom = async (id: string) => {
   const { data } = await apolloClient.query({

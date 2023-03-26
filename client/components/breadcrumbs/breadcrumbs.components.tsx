@@ -1,7 +1,8 @@
 // @flow
-import * as React from 'react';
-import { Action } from '../action/action.component';
 import { useRouter } from 'next/router';
+import * as React from 'react';
+
+import { Action } from '../action/action.component';
 
 const capitalize = (word: string) => word.charAt(0).toUpperCase() + word.slice(1);
 
@@ -20,8 +21,8 @@ export const Breadcrumbs = () => {
       currentLink += `/${crumb}`;
       if (crumb !== '[slug]')
         return (
-          <div className='crumb' key={crumb}>
-            <Action as='link' styleType='link' href={currentLink}>
+          <div className="crumb" key={crumb}>
+            <Action as="link" styleType="link" href={currentLink}>
               {styleCrumb(crumb)}
             </Action>
           </div>
@@ -29,15 +30,15 @@ export const Breadcrumbs = () => {
     });
 
   crumbs.unshift(
-    <div className='crumb' key='home'>
-      <Action as='link' styleType='link' href={'/'}>
+    <div className="crumb" key="home">
+      <Action as="link" styleType="link" href={'/'}>
         Home
       </Action>
-    </div>
+    </div>,
   );
   return (
     <div>
-      <div className='row breadcrumbs'>{crumbs}</div>
+      <div className="row breadcrumbs">{crumbs}</div>
     </div>
   );
 };

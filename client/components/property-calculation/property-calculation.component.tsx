@@ -1,12 +1,13 @@
 // @flow
-import * as React from 'react';
-import { Input } from '../input/input.component';
-import * as yup from 'yup';
 import { Formik } from 'formik';
-import { Action } from '../action/action.component';
-import { Property, Room } from '../../types/property';
-import { CheckoutModal } from '../modal/checheckout-modal.component';
+import * as React from 'react';
 import { useState } from 'react';
+import * as yup from 'yup';
+
+import { Property, Room } from '../../types/property';
+import { Action } from '../action/action.component';
+import { Input } from '../input/input.component';
+import { CheckoutModal } from '../modal/checheckout-modal.component';
 type Props = {
   room: Room;
   property: Property;
@@ -77,7 +78,7 @@ export const PropertyCalculation = ({ room, property }: Props) => {
           // TODO: Refactor -> duplication
           const roomPrice = handleRoomPriceForPeriod(
             handleDateDifference(values.checkIn, values.checkOut),
-            room.pricePerNight
+            room.pricePerNight,
           );
 
           const tax = handleTaxProportion(roomPrice);
@@ -97,27 +98,35 @@ export const PropertyCalculation = ({ room, property }: Props) => {
           }
         }}
       >
-        {({ values, handleSubmit, handleChange, isSubmitting, dirty, isValid, errors }) => {
+        {({
+          values,
+          handleSubmit,
+          handleChange,
+          isSubmitting,
+          dirty,
+          isValid,
+          errors,
+        }) => {
           const roomPrice = handleRoomPriceForPeriod(
             handleDateDifference(values.checkIn, values.checkOut),
-            room.pricePerNight
+            room.pricePerNight,
           );
 
           const tax = handleTaxProportion(roomPrice);
           const totalPrice = tax + roomPrice;
           return (
             <>
-            <h3 className="heading">Rate</h3>
+              <h3 className="heading">Rate</h3>
               <form onSubmit={handleSubmit}>
                 <Input
                   min={new Date().toISOString().split('T')[0]}
                   onChange={handleChange}
                   value={values.checkIn}
                   required
-                  name='checkIn'
-                  type='date'
-                  label='Check In'
-                  placeholder='Check In'
+                  name="checkIn"
+                  type="date"
+                  label="Check In"
+                  placeholder="Check In"
                 />
                 <Input
                   disabled={!values.checkIn}
@@ -125,10 +134,10 @@ export const PropertyCalculation = ({ room, property }: Props) => {
                   onChange={handleChange}
                   value={values.checkOut}
                   required
-                  name='checkOut'
-                  type='date'
-                  label='Check Out'
-                  placeholder='Check Out'
+                  name="checkOut"
+                  type="date"
+                  label="Check Out"
+                  placeholder="Check Out"
                 />
                 <Input
                   min={1}
@@ -136,17 +145,28 @@ export const PropertyCalculation = ({ room, property }: Props) => {
                   onChange={handleChange}
                   value={values.noGuests}
                   required
-                  name='noGuests'
-                  type='number'
-                  label='Guests'
-                  placeholder='Number of guests'
+                  name="noGuests"
+                  type="number"
+                  label="Guests"
+                  placeholder="Number of guests"
                 />
-                <div className='property-calculation__summary'>
-                  <div className='paragraph--medium'>Room {!isValid || !dirty ? '$0' : `$${roomPrice}`}</div>
-                  <div className='paragraph--medium'>GST/PST (12%) {!isValid || !dirty ? '$0' : `$${tax}`}</div>
-                  <div className='paragraph--medium--bold'>Total {!isValid || !dirty ? '$0' : `$${totalPrice}`}</div>
+                <div className="property-calculation__summary">
+                  <div className="paragraph--medium">
+                    Room {!isValid || !dirty ? '$0' : `$${roomPrice}`}
+                  </div>
+                  <div className="paragraph--medium">
+                    GST/PST (12%) {!isValid || !dirty ? '$0' : `$${tax}`}
+                  </div>
+                  <div className="paragraph--medium--bold">
+                    Total {!isValid || !dirty ? '$0' : `$${totalPrice}`}
+                  </div>
                 </div>
-                <Action disabled={!isValid || !dirty} as='button' type='submit' styleType='primary'>
+                <Action
+                  disabled={!isValid || !dirty}
+                  as="button"
+                  type="submit"
+                  styleType="primary"
+                >
                   Book now
                 </Action>
               </form>

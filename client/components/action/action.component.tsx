@@ -22,13 +22,20 @@ type ButtonAsLink = BaseProps &
 type ButtonProps = ButtonAsButton | ButtonAsLink;
 
 export function Action(props: ButtonProps) {
-  const allClassNames = `btn btn--${props.styleType ? props.styleType : ''} ${props.className ? props.className : ''}`;
+  const allClassNames = `btn btn--${props.styleType ? props.styleType : ''} ${
+    props.className ? props.className : ''
+  }`;
 
   if (props.as === 'link') {
     const { className, styleType, as, ...rest } = props;
     return <Link className={allClassNames} {...rest} />;
   } else {
     const { className, styleType, as, ...rest } = props;
-    return <button className={`${allClassNames} ${props.disabled ? 'disabled' : ''}`} {...rest} />;
+    return (
+      <button
+        className={`${allClassNames} ${props.disabled ? 'disabled' : ''}`}
+        {...rest}
+      />
+    );
   }
 }

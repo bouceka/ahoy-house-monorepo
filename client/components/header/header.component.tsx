@@ -2,8 +2,9 @@
 import Image from 'next/image';
 import Link from 'next/link';
 import * as React from 'react';
-import { Action } from '../action/action.component';
+
 import useWindowDimensions from '../../hooks/window-dimension';
+import { Action } from '../action/action.component';
 type Props = {
   position: 'static' | 'relative' | 'absolute' | 'sticky' | 'fixed';
   imageExtend: boolean;
@@ -13,34 +14,44 @@ export const Header = ({ position, imageExtend = false, type = 'solid' }: Props)
   const { width, height } = useWindowDimensions();
   return (
     <>
-      <header className='header' style={{ position: position }}>
-        <div className='row'>
-          <nav className=' container'>
-            <Link href='/'>
+      <header className="header" style={{ position: position }}>
+        <div className="row">
+          <nav className=" container">
+            <Link href="/">
               {width && width >= 600 ? (
-                <Image src='/static/logos/ahoy-logo-white.png' height='64' width='315' alt='Ahoy House logo' />
+                <Image
+                  src="/static/logos/ahoy-logo-white.png"
+                  height="64"
+                  width="315"
+                  alt="Ahoy House logo"
+                />
               ) : (
-                <Image src='/static/logos/ahoy-logo-small.png' height='64' width='64' alt='Ahoy House logo' />
+                <Image
+                  src="/static/logos/ahoy-logo-small.png"
+                  height="64"
+                  width="64"
+                  alt="Ahoy House logo"
+                />
               )}
             </Link>
-            <input className='menu__btn' type='checkbox' id='menu-btn' />
-            <label className='menu__icon' htmlFor='menu-btn'>
-              <span className='icon'></span>
+            <input className="menu__btn" type="checkbox" id="menu-btn" />
+            <label className="menu__icon" htmlFor="menu-btn">
+              <span className="icon"></span>
             </label>
 
-            <ul className='menu__links'>
+            <ul className="menu__links">
               <li>
-                <Link className='btn--header' href='/'>
+                <Link className="btn--header" href="/">
                   Home
                 </Link>
               </li>
               <li>
-                <Link className='btn--header' href='/properties'>
+                <Link className="btn--header" href="/properties">
                   Properties
                 </Link>
               </li>
               <li>
-                <Action as='link' href='login' styleType='secondary'>
+                <Action as="link" href="login" styleType="secondary">
                   Sign Up
                 </Action>
               </li>
@@ -60,7 +71,7 @@ export const Header = ({ position, imageExtend = false, type = 'solid' }: Props)
           </ul> */}
           </nav>
         </div>
-        {imageExtend ? <div className='header__image'></div> : null}
+        {imageExtend ? <div className="header__image"></div> : null}
       </header>
     </>
   );

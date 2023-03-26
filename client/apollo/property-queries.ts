@@ -1,4 +1,5 @@
 import { gql } from '@apollo/client';
+
 import { apolloClient } from '../utils/apollo-client';
 
 export const CREATE_PROPERTY = gql`

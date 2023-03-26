@@ -1,11 +1,12 @@
 // @flow
+import { Formik } from 'formik';
 import * as React from 'react';
+import { toast } from 'react-toastify';
+import * as yup from 'yup';
+
+import { sendEmail } from '../../utils/emailjs.util';
 import { Action } from '../action/action.component';
 import { Input } from '../input/input.component';
-import { Formik } from 'formik';
-import * as yup from 'yup';
-import { sendEmail } from '../../utils/emailjs.util';
-import { toast } from 'react-toastify';
 
 type Props = {
   open: boolean;
@@ -21,7 +22,13 @@ type Props = {
   };
 };
 
-export const CheckoutModal = ({ open, onClose, primaryAction, secondaryAction, calculation }: Props) => {
+export const CheckoutModal = ({
+  open,
+  onClose,
+  primaryAction,
+  secondaryAction,
+  calculation,
+}: Props) => {
   const initialValue = {
     firstName: '',
     lastName: '',
@@ -38,22 +45,23 @@ export const CheckoutModal = ({ open, onClose, primaryAction, secondaryAction, c
   return (
     <>
       {!open ? null : (
-        <div onClick={onClose} className='modal__overlay'>
+        <div onClick={onClose} className="modal__overlay">
           <div
             onClick={(e) => {
               e.stopPropagation();
             }}
-            className='modal__container'
+            className="modal__container"
           >
-            <div className='modal'>
-              <button className='modal__close-btn' onClick={onClose}>
+            <div className="modal">
+              <button className="modal__close-btn" onClick={onClose}>
                 X
               </button>
-              <div className='modal__content'>
-                <div className='modal__text'>
-                  <h2 className='heading'>Checkout</h2>
-                  <p className='paragraph--medium'>
-                    To complete your order, please leave your contact information. Our team will contact you shortly{' '}
+              <div className="modal__content">
+                <div className="modal__text">
+                  <h2 className="heading">Checkout</h2>
+                  <p className="paragraph--medium">
+                    To complete your order, please leave your contact information. Our
+                    team will contact you shortly{' '}
                   </p>
                 </div>
                 <Formik
@@ -71,48 +79,61 @@ export const CheckoutModal = ({ open, onClose, primaryAction, secondaryAction, c
                     }
                   }}
                 >
-                  {({ values, handleSubmit, handleChange, isSubmitting, dirty, isValid, errors }) => {
+                  {({
+                    values,
+                    handleSubmit,
+                    handleChange,
+                    isSubmitting,
+                    dirty,
+                    isValid,
+                    errors,
+                  }) => {
                     return (
                       <>
                         <form onSubmit={handleSubmit}>
                           <Input
-                            label='First Name'
+                            label="First Name"
                             onChange={handleChange}
                             value={values.firstName}
                             required
-                            name='firstName'
-                            placeholder='e.g. John'
+                            name="firstName"
+                            placeholder="e.g. John"
                           />
                           <Input
-                            label='Last Name'
+                            label="Last Name"
                             onChange={handleChange}
                             value={values.lastName}
                             required
-                            name='lastName'
-                            placeholder='e.g. Doe'
+                            name="lastName"
+                            placeholder="e.g. Doe"
                           />
                           <Input
-                            label='Email'
-                            type='email'
+                            label="Email"
+                            type="email"
                             onChange={handleChange}
                             value={values.email}
                             required
-                            name='email'
-                            placeholder='e.g. john.doe@mail.com'
+                            name="email"
+                            placeholder="e.g. john.doe@mail.com"
                           />
                           <Input
-                            label='Phone number'
+                            label="Phone number"
                             onChange={handleChange}
                             value={values.phoneNumber}
                             required
-                            name='phoneNumber'
-                            placeholder='e.g. 123 456 7890'
+                            name="phoneNumber"
+                            placeholder="e.g. 123 456 7890"
                           />
-                          <div className='modal__btn-container'>
-                            <Action disabled={!isValid || !dirty} as='button' type='submit' styleType='primary'>
+                          <div className="modal__btn-container">
+                            <Action
+                              disabled={!isValid || !dirty}
+                              as="button"
+                              type="submit"
+                              styleType="primary"
+                            >
                               Book now!
                             </Action>
-                            <Action styleType='outline' onClick={primaryAction}>
+                            <Action styleType="outline" onClick={primaryAction}>
                               Cancel
                             </Action>
                           </div>

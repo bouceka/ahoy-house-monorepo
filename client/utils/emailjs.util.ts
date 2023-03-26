@@ -1,5 +1,5 @@
-import React, { useRef } from 'react';
 import emailjs from '@emailjs/browser';
+import React, { useRef } from 'react';
 
 export interface CheckoutEmail {
   noGuests: number;
@@ -12,12 +12,19 @@ export interface CheckoutEmail {
 }
 
 export const sendEmail = (emailData: any) => {
-  emailjs.send('service_o0s96du', 'ahoy-house-checkout', emailData, 'user_TyZBlYPi75Bh5IApRdRvV').then(
-    (result) => {
-      console.log(result.text);
-    },
-    (error) => {
-      console.log(error.text);
-    }
-  );
+  emailjs
+    .send(
+      'service_o0s96du',
+      'ahoy-house-checkout',
+      emailData,
+      'user_TyZBlYPi75Bh5IApRdRvV',
+    )
+    .then(
+      (result) => {
+        console.log(result.text);
+      },
+      (error) => {
+        console.log(error.text);
+      },
+    );
 };
