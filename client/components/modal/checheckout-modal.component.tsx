@@ -110,7 +110,7 @@ export const CheckoutModal = ({ open, onClose, primaryAction, secondaryAction, c
                           />
                           <div className='modal__btn-container'>
                             <Action disabled={!isValid || !dirty} as='button' type='submit' styleType='primary'>
-                              Submit
+                              Book now!
                             </Action>
                             <Action styleType='outline' onClick={primaryAction}>
                               Cancel

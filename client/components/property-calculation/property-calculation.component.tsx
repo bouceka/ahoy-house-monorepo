@@ -147,7 +147,7 @@ export const PropertyCalculation = ({ room, property }: Props) => {
                   <div className='paragraph--medium--bold'>Total {!isValid || !dirty ? '$0' : `$${totalPrice}`}</div>
                 </div>
                 <Action disabled={!isValid || !dirty} as='button' type='submit' styleType='primary'>
-                  Submit
+                  Book now
                 </Action>
               </form>
             </>
