@@ -1,8 +1,7 @@
-import { Inter } from "@next/font/google";
-import Head from "next/head";
+import Head from 'next/head';
 
-import { Header } from "../components/header/header.component";
-import { Hero } from "../components/hero/hero.component";
+import { Header } from '../components/header/header.component';
+import { Hero } from '../components/hero/hero.component';
 
 export default function Home() {
   return (

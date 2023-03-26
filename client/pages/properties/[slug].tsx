@@ -1,16 +1,13 @@
 // @flow
 import 'react-toastify/dist/ReactToastify.css';
 
-import { GetServerSideProps, GetStaticPaths, GetStaticPropsContext } from 'next';
+import { GetServerSideProps } from 'next';
 import Head from 'next/head';
 import * as React from 'react';
 import { useState } from 'react';
 import { ToastContainer } from 'react-toastify';
 
-import {
-  fetchActiveProperties,
-  fetchActiveProperty,
-} from '../../apollo/property-queries';
+import { fetchActiveProperty } from '../../apollo/property-queries';
 import { Breadcrumbs } from '../../components/breadcrumbs/breadcrumbs.components';
 import { Header } from '../../components/header/header.component';
 import { PropertyCalculation } from '../../components/property-calculation/property-calculation.component';
