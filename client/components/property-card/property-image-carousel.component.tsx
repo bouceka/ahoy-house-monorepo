@@ -37,7 +37,7 @@ export const PropertyImageCarousel = ({ imageData, height, width }: Props) => {
               height={272}
               src={image.url}
               alt='Property photo'
-              key={index}
+              key={image.id}
             />
           ))
         ) : (
@@ -46,6 +46,7 @@ export const PropertyImageCarousel = ({ imageData, height, width }: Props) => {
             className='active slide'
             width={504}
             height={272}
+            key='unique-id'
             src='/static/illustrations/no-photo.jpeg'
           />
         )}

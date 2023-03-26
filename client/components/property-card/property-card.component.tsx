@@ -18,7 +18,7 @@ export const PropertyCard = ({ index, property }: Props) => {
       : null;
   return (
     <div className='property-card'>
-      <PropertyImageCarousel imageData={property.images} />
+      <PropertyImageCarousel key={property.id} imageData={property.images} />
       <div className='property-card__content'>
         <div className='property-card__left'>
           <div className='property-card__row'>
