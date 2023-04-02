@@ -78,13 +78,7 @@
     bottom: 1.6rem;
   }
 
-	&:hover {
-		.carousel-button,
-		.carousel-progress-bar{
-			opacity: 100%;
-		}
 
-	}
 }
 
 .property-carousel {
@@ -99,6 +93,13 @@
 
   position: relative;
   overflow: hidden;
+	&:hover {
+		.carousel-button,
+		.carousel-progress-bar{
+			opacity: 100%;
+		}
+
+	}
 }
 
 .slide {
