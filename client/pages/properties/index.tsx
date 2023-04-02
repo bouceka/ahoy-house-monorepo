@@ -1,16 +1,13 @@
 import 'rc-dropdown/assets/index.css';
 
-import { gql } from '@apollo/client';
 import { GetServerSideProps } from 'next';
 import Head from 'next/head';
 import Dropdown from 'rc-dropdown';
 import Menu, { Item as MenuItem } from 'rc-menu';
-import { SelectEventHandler } from 'rc-menu/lib/interface';
 import { useState } from 'react';
 import { sortBy } from 'sort-by-typescript';
 
 import { GET_ACTIVE_PROPERTIES } from '../../apollo/property-queries';
-import { Breadcrumbs } from '../../components/breadcrumbs/breadcrumbs.components';
 import { Header } from '../../components/header/header.component';
 import { PropertyCard } from '../../components/property-card/property-card.component';
 import ChevronDown from '../../public/icons/chevron/down.svg';
@@ -134,7 +131,7 @@ export default function Properties({ propertyList, ...props }: Props) {
         <div className="row page ">
           <div className="page-title">
             <h2 className="heading--bold">Our Properties</h2>
-            <div className='sort-by-section'>
+            <div className="sort-by-section">
               <span>Sort by:</span>
               <Dropdown
                 trigger={['click']}
