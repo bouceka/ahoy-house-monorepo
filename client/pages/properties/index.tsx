@@ -43,11 +43,11 @@ export const getServerSideProps: GetServerSideProps<Props> = async () => {
 };
 
 enum SortBySelect {
-  lowPrice = 'LOW_PRICE',
-  highPrice = 'HIGH_PRICE',
-  lowRating = 'LOW_RATING',
-  highRating = 'HIGH_RATING',
-  DEFAULT = 'DEFAULT',
+  lowPrice = 'Price Low To High',
+  highPrice = 'Price High To Low',
+  highRating = 'Rating High To Low',
+  lowRating = 'Rating Low To High',
+  DEFAULT = 'Default',
 }
 
 export default function Properties({ propertyList, ...props }: Props) {
@@ -115,7 +115,7 @@ export default function Properties({ propertyList, ...props }: Props) {
         className="sort-item"
         key={SortBySelect.highPrice}
       >
-        Rating High To Low
+        Price High To Low
       </MenuItem>
     </Menu>
   );
@@ -134,19 +134,22 @@ export default function Properties({ propertyList, ...props }: Props) {
         <div className="row page ">
           <div className="page-title">
             <h2 className="heading--bold">Our Properties</h2>
-            <Dropdown
-              trigger={['click']}
-              overlay={menu}
-              animation="slide-up"
-              onVisibleChange={onVisibleChange}
-            >
-              <button className="sort-by">
-                {sortBySelect}
-                <ChevronDown
-                  className={`rotate-chevron ${openDropDown ? 'active' : ''}`}
-                />
-              </button>
-            </Dropdown>
+            <div className='sort-by-section'>
+              <span>Sort by:</span>
+              <Dropdown
+                trigger={['click']}
+                overlay={menu}
+                animation="slide-up"
+                onVisibleChange={onVisibleChange}
+              >
+                <button className="sort-by">
+                  {sortBySelect}
+                  <ChevronDown
+                    className={`rotate-chevron ${openDropDown ? 'active' : ''}`}
+                  />
+                </button>
+              </Dropdown>
+            </div>
           </div>
           <section className="properties-grid">
             {properties

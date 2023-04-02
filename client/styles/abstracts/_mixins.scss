@@ -101,6 +101,9 @@
     &--bold {
       @include body-text(700, $fontSize, $lineHeight);
     }
+    &--medium {
+      @include body-text(600, $fontSize, $lineHeight);
+    }
   }
 }
 @mixin caption($type, $fontSize, $lineHeight) {

@@ -71,7 +71,7 @@ const PropertyDetail = ({ property }: Props) => {
         <link rel="icon" href="/favicon.ico" />
         <meta name="language" content="en" />
       </Head>
-      <Header imageExtend={true} type="solid" position="sticky" />
+      <Header imageExtend={false} type="solid" position="sticky" />
       <ToastContainer style={{ fontSize: '1.6rem' }} pauseOnHover hideProgressBar />
       <main>
         <div className="row page">

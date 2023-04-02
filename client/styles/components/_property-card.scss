@@ -77,6 +77,14 @@
     right: 2.4rem;
     bottom: 1.6rem;
   }
+
+	&:hover {
+		.carousel-button,
+		.carousel-progress-bar{
+			opacity: 100%;
+		}
+
+	}
 }
 
 .property-carousel {
@@ -134,7 +142,7 @@
     align-items: center;
     justify-content: center;
     transition: all 0.2s;
-
+		opacity: 50%;
     &.left {
       left: 2%;
     }
@@ -153,6 +161,7 @@
 }
 
 .carousel-progress-bar {
+	opacity: 50%;
   position: absolute;
   left: 50%;
   transform: translateX(-50%);

@@ -64,6 +64,12 @@
   &:active {
     background-color: var(--color-primary-50);
   }
+
+	&-section{
+		display: flex;
+		gap: 1.6rem;
+		align-items: center;
+	}
 }
 
 .sort-item {
