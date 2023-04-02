@@ -21,6 +21,10 @@
       outline: 0.1rem solid var(--color-primary-400);
       border-color: var(--color-primary-400);
     }
+    &:disabled {
+      background-color: var(--color-neutral-50);
+      cursor: not-allowed;
+    }
   }
 
   .help-text {
