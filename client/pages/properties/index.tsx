@@ -74,6 +74,7 @@ export default function Properties({ propertyList, ...props }: Props) {
   function onSelect({ key }: any) {
     handleSortBy(key);
     setSortBySelect(key);
+    setOpenDropDown(!openDropDown);
   }
 
   function onVisibleChange(visible: boolean) {
