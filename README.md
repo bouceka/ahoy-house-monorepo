@@ -1,6 +1,6 @@
 # Ahoy House - North Island College Capstone Project 309 
 
-![Project Summary](https://res.cloudinary.com/ahoy-house/image/upload/v1680848712/github/adam-boucek-309-project-summary_k3ymtd.png)
+![Project Summary](https://res.cloudinary.com/ahoy-house/image/upload/c_fill,h_630,w_1200/v1680848712/github/adam-boucek-309-project-summary_k3ymtd.png)
 
 ## Project summary 
 
@@ -20,10 +20,10 @@ I picked this project to test my knowledge of front-end, back-end, and database 
 </p>
 
 ### Explore
-I started by designing a database model that illustrated what kind of data I wanted to store and what the relations between them were. The ERD model, as well as the sitemap, helped enormously in coding the back end.
+I started by designing a database model that illustrated what kind of data I wanted to store and what the relations between them were. The database model, as well as the sitemap, helped enormously in coding the back end.
 
 <p align="center">
-<img src="https://res.cloudinary.com/ahoy-house/image/upload/v1680848711/github/adam-boucek-309-erd-model_mhicgo.png" height="auto" width="700">
+<img src="https://res.cloudinary.com/ahoy-house/image/upload/v1681101715/github/adam-boucek-309-database-model_tukpel.png" height="auto" width="700">
 </p>
 
 <p align="center">
