@@ -75,10 +75,10 @@ const AddProperty = () => {
               try {
                 console.log(await submitForm(values));
                 toast.success('Form submitted');
-                // actions.resetForm();
+                actions.resetForm();
               } catch (error) {
                 toast.error('Submission failed');
-                // actions.resetForm();
+                actions.resetForm();
               }
             }}
           >

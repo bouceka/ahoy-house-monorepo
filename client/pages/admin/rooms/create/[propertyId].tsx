@@ -3,7 +3,7 @@ import 'react-toastify/dist/ReactToastify.css';
 
 import { useMutation } from '@apollo/client';
 import { Formik } from 'formik';
-import { GetServerSidePropsContext, GetStaticPaths, GetStaticPropsContext } from 'next';
+import { GetStaticPaths, GetStaticPropsContext } from 'next';
 import Head from 'next/head';
 import * as React from 'react';
 import { toast, ToastContainer } from 'react-toastify';
@@ -13,7 +13,6 @@ import { fetchProperties, fetchProperty } from '../../../../apollo/property-quer
 import { CREATE_ROOM } from '../../../../apollo/room-queries';
 import { Action } from '../../../../components/action/action.component';
 import { AdminNav } from '../../../../components/admin-nav/admin-nav.component';
-import { Breadcrumbs } from '../../../../components/breadcrumbs/breadcrumbs.components';
 import { Input } from '../../../../components/input/input.component';
 import { Property } from '../../../../types/property';
 

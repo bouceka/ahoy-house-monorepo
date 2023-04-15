@@ -3,16 +3,15 @@ import 'react-toastify/dist/ReactToastify.css';
 
 import { useMutation } from '@apollo/client';
 import { Formik } from 'formik';
-import { GetServerSideProps, GetStaticPaths, GetStaticPropsContext } from 'next';
+import { GetServerSideProps } from 'next';
 import Head from 'next/head';
 import * as React from 'react';
 import { toast, ToastContainer } from 'react-toastify';
 import * as yup from 'yup';
 
-import { fetchRoom, fetchRooms, UPDATE_ROOM } from '../../../../apollo/room-queries';
+import { fetchRoom, UPDATE_ROOM } from '../../../../apollo/room-queries';
 import { Action } from '../../../../components/action/action.component';
 import { AdminNav } from '../../../../components/admin-nav/admin-nav.component';
-import { Breadcrumbs } from '../../../../components/breadcrumbs/breadcrumbs.components';
 import { Input } from '../../../../components/input/input.component';
 import { Room } from '../../../../types/property';
 
@@ -31,21 +30,6 @@ export const getServerSideProps: GetServerSideProps<Props> = async (context) => 
     },
   };
 };
-
-// export const getStaticPaths: GetStaticPaths = async () => {
-//   const rooms: Room[] = await fetchRooms();
-//   const paths = rooms.map((room) => {
-//     return {
-//       params: {
-//         slug: room.id,
-//       },
-//     };
-//   });
-//   return {
-//     paths,
-//     fallback: false,
-//   };
-// };
 
 const validationSchema = yup.object().shape({
   name: yup.string().required('Name of the property is required'),

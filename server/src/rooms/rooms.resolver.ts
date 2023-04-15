@@ -33,16 +33,16 @@ export class RoomsResolver {
 
   // NOT TESTED
   @Mutation(() => Room)
-  // @UseGuards(JwtAuthGuard, RolesGuard)
-  // @Roles(RoleEnum.ADMIN, RoleEnum.SUPER_ADMIN)
+  @UseGuards(JwtAuthGuard, RolesGuard)
+  @Roles(RoleEnum.ADMIN, RoleEnum.SUPER_ADMIN)
   createRoom(@Args('createRoomInput') createRoomInput: CreateRoomInput) {
     return this.roomsService.create(createRoomInput);
   }
 
   // DONE
   @Query(() => [Room])
-  // @UseGuards(JwtAuthGuard, RolesGuard)
-  // @Roles(RoleEnum.ADMIN, RoleEnum.SUPER_ADMIN)
+  @UseGuards(JwtAuthGuard, RolesGuard)
+  @Roles(RoleEnum.ADMIN, RoleEnum.SUPER_ADMIN)
   getAllRooms() {
     return this.roomsService.findAll();
   }
@@ -54,8 +54,8 @@ export class RoomsResolver {
   }
 
   // // NOT TESTED
-  // @UseGuards(JwtAuthGuard, RolesGuard)
-  // @Roles(RoleEnum.ADMIN, RoleEnum.SUPER_ADMIN)
+  @UseGuards(JwtAuthGuard, RolesGuard)
+  @Roles(RoleEnum.ADMIN, RoleEnum.SUPER_ADMIN)
   @Mutation(() => Room)
   updateRoom(@Args('updateRoomInput') updateRoomInput: UpdateRoomInput) {
     return this.roomsService.update(updateRoomInput.id, updateRoomInput);
@@ -63,8 +63,8 @@ export class RoomsResolver {
 
   // NOT TESTED
   @Mutation(() => Room)
-  // @UseGuards(JwtAuthGuard, RolesGuard)
-  // @Roles(RoleEnum.ADMIN, RoleEnum.SUPER_ADMIN)
+  @UseGuards(JwtAuthGuard, RolesGuard)
+  @Roles(RoleEnum.ADMIN, RoleEnum.SUPER_ADMIN)
   deleteRoom(@Args('id') id: string) {
     return this.roomsService.remove(id);
   }

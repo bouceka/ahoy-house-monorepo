@@ -31,30 +31,6 @@ export const getServerSideProps: GetServerSideProps<Props> = async (context) => 
   };
 };
 
-// export const getStaticProps = async ({ params }: GetStaticPropsContext<{ slug: string }>) => {
-//   const data = params?.slug ? await fetchActiveProperty(params?.slug) : '';
-//   return {
-//     props: {
-//       property: data ? data.getActiveProperty : [],
-//     },
-//   };
-// };
-
-// export const getStaticPaths: GetStaticPaths = async () => {
-//   const properties: Property[] = await fetchActiveProperties();
-//   const paths = properties.map((property) => {
-//     return {
-//       params: {
-//         slug: property.id,
-//       },
-//     };
-//   });
-//   return {
-//     paths,
-//     fallback: false,
-//   };
-// };
-
 const PropertyDetail = ({ property }: Props) => {
   const [selectedRoom, setSelectedRoom] = useState(property.rooms[0] ?? null);
 

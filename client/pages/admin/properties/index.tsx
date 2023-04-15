@@ -34,11 +34,11 @@ export const getServerSideProps: GetServerSideProps<Props> = async () => {
 };
 
 const AdminProperties = ({ properties, ...props }: Props) => {
-  const [deleteProperty, { data, loading, error }] = useMutation(DELETE_PROPERTY);
+  const [deleteProperty, { error }] = useMutation(DELETE_PROPERTY);
   const [propertyList, setPropertyList] = useState(properties);
   const router = useRouter();
   const handleDeleteProperty = async (id: string) => {
-    const { data } = await deleteProperty({
+    await deleteProperty({
       variables: {
         id,
       },

@@ -30,8 +30,8 @@ export class ImageResolver {
   // }
 
   @Query(() => [Image])
-  // @UseGuards(JwtAuthGuard, RolesGuard)
-  // @Roles(RoleEnum.SUPER_ADMIN, RoleEnum.ADMIN)
+  @UseGuards(JwtAuthGuard, RolesGuard)
+  @Roles(RoleEnum.SUPER_ADMIN, RoleEnum.ADMIN)
   getAllImages() {
     return this.imageService.getAllImages();
   }
@@ -42,8 +42,8 @@ export class ImageResolver {
   }
 
   @Mutation(() => Image)
-  // @UseGuards(JwtAuthGuard, RolesGuard)
-  // @Roles(RoleEnum.SUPER_ADMIN, RoleEnum.ADMIN)
+  @UseGuards(JwtAuthGuard, RolesGuard)
+  @Roles(RoleEnum.SUPER_ADMIN, RoleEnum.ADMIN)
   async uploadImage(
     @Args('file', { type: () => GraphQLUpload })
     { createReadStream, filename }: Upload,

@@ -35,15 +35,6 @@ type Props = {
   property: Property;
 };
 
-// export const getStaticProps = async ({ params }: GetStaticPropsContext<{ slug: string }>) => {
-//   const data = params?.slug ? await fetchProperty(params?.slug) : '';
-//   return {
-//     props: {
-//       property: data ? data.getProperty : [],
-//     },
-//   };
-// };
-
 export const getServerSideProps: GetServerSideProps<Props> = async (context) => {
   const data =
     context.params?.slug && !Array.isArray(context.params?.slug)
@@ -55,21 +46,6 @@ export const getServerSideProps: GetServerSideProps<Props> = async (context) => 
     },
   };
 };
-
-// export const getStaticPaths: GetStaticPaths = async () => {
-//   const properties: Property[] = await fetchProperties();
-//   const paths = properties.map((property) => {
-//     return {
-//       params: {
-//         slug: property.id,
-//       },
-//     };
-//   });
-//   return {
-//     paths,
-//     fallback: false,
-//   };
-// };
 
 const validationSchema = yup.object().shape({
   name: yup.string().required('Name of the property is required'),
