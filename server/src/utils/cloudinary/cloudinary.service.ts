@@ -28,8 +28,8 @@ export class CloudinaryService {
     // TODO: Make the values global
     this.cloudinary.config({
       cloud_name: 'ahoy-house',
-      api_key: '356731613541981',
-      api_secret: 'O6JwBrL3MGhMVKZfsPQh-5TLnKU',
+      api_key: '##',
+      api_secret: '##',
     });
   }
 
