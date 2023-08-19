@@ -1,6 +1,6 @@
 # Ahoy House - North Island College Capstone Project 309 
 
-![Project Summary](https://res.cloudinary.com/ahoy-house/image/upload/c_fill,h_630,w_1200/v1680848712/github/adam-boucek-309-project-summary_k3ymtd.png)
+![Project Summary](https://res.cloudinary.com/boucekdev/image/upload/c_fill,h_630,w_1200/v1680848712/github/adam-boucek-309-project-summary_k3ymtd.png)
 
 ## Project summary 
 
@@ -16,25 +16,25 @@ Many competitors can offer an alternative solution for people to find a place to
 I picked this project to test my knowledge of front-end, back-end, and database modelling. For my technological stack, I chose NextJs, NestJs, GraphQL and PostgreSQL. To improve data modelling, I also implemented TypeORM. Even though I planned to develop the whole app, I primarily focused on learning these technologies.
 
 <p align="center">
-<img src="https://res.cloudinary.com/ahoy-house/image/upload/v1680848711/github/adam-boucek-309-architecture_zgrq9r.png" height="auto" width="700">
+<img src="https://res.cloudinary.com/boucekdev/image/upload/v1680848711/github/adam-boucek-309-architecture_zgrq9r.png" height="auto" width="700">
 </p>
 
 ### Explore
 I started by designing a database model that illustrated what kind of data I wanted to store and what the relations between them were. The database model, as well as the sitemap, helped enormously in coding the back end.
 
 <p align="center">
-<img src="https://res.cloudinary.com/ahoy-house/image/upload/v1681101715/github/adam-boucek-309-database-model_tukpel.png" height="auto" width="700">
+<img src="https://res.cloudinary.com/boucekdev/image/upload/v1681101715/github/adam-boucek-309-database-model_tukpel.png" height="auto" width="700">
 </p>
 
 <p align="center">
-<img src="https://res.cloudinary.com/ahoy-house/image/upload/v1680848712/github/adam-boucek-309-sitemap_ewxtep.png" height="auto" width="700">
+<img src="https://res.cloudinary.com/boucekdev/image/upload/v1680848712/github/adam-boucek-309-sitemap_ewxtep.png" height="auto" width="700">
 </p>
 
 
 The next step was to design low-fidelity wireframes to visualize the front end of the application. I wanted to communicate my project through MVP, which would include a homepage, a list of properties, a property detail page, and a checkout form.
 
 <p align="center">
-<img src="https://res.cloudinary.com/ahoy-house/image/upload/v1680848712/github/adam-boucek-309-wireframe_jioaha.png" height="auto" width="700">
+<img src="https://res.cloudinary.com/boucekdev/image/upload/v1680848712/github/adam-boucek-309-wireframe_jioaha.png" height="auto" width="700">
 </p>
 
 
